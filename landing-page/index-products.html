@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFUIX<< | Interface for Ultimate Innovation Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    :root {
+      --primary: #887EFF;
+      --primary-dark: #6D63E0;
+      --primary-light: #A59DFF;
+      --dark: #141429;
+      --dark-medium: #1E1E3F;
+      --dark-light: #2E2E59;
+      --light: #F8F8FF;
+      --gray: #94A3B8;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Sora', sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(20, 20, 41, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--light);
+      text-decoration: none;
+    }
+    
+    .logo span {
+      color: var(--primary);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+    
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--primary);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    .btn {
+      background: var(--primary);
+      color: var(--light);
+      border: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--light);
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: -10%;
+      width: 120%;
+      height: 120%;
+      background: radial-gradient(ellipse at center, rgba(136, 126, 255, 0.15) 0%, rgba(136, 126, 255, 0) 70%);
+      z-index: -1;
+    }
+    
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .hero h1::after {
+      content: '<<';
+      color: var(--primary);
+      margin-left: 10px;
+    }
+    
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: var(--gray);
+    }
+    
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    
+    .gradient-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--dark) 0%, var(--primary) 50%, var(--dark) 100%);
+      margin: 80px 0;
+    }
+    
+    /* Features */
+    .features {
+      padding: 80px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .section-title h2 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 16px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title h2::after {
+      content: '<<';
+      color: var(--primary);
+      margin-left: 10px;
+      font-size: 0.9em;
+    }
+    
+    .section-title p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .card {
+      background: var(--dark-medium);
+      border-radius: 12px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(136, 126, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .card-icon svg {
+      color: var(--primary);
+    }
+    
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+    
+    .card p {
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    
+    .card-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+    
+    .badge-available {
+      background: rgba(16, 185, 129, 0.1);
+      color: #10B981;
+    }
+    
+    .badge-soon {
+      background: rgba(245, 158, 11, 0.1);
+      color: #F59E0B;
+    }
+    
+    /* Why IFUIX */
+    .why-ifuix {
+      padding: 80px 0;
+      background: var(--dark-medium);
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .feature-item {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 16px;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    
+    .feature-item p {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+    
+    /* Brand System */
+    .brand-system {
+      padding: 80px 0;
+    }
+    
+    .brand-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      background: var(--dark-medium);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .brand-table th,
+    .brand-table td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--dark-light);
+    }
+    
+    .brand-table th {
+      font-family: 'Sora', sans-serif;
+      background: var(--dark-light);
+    }
+    
+    .color-sample {
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    
+    /* CTA */
+    .cta {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(to bottom, var(--dark), var(--dark-medium));
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(136, 126, 255, 0.1);
+      top: -150px;
+      right: -150px;
+      z-index: -1;
+    }
+    
+    .cta::after {
+      content: '';
+      position: absolute;
+      width: a00px;
+      height: 400px;
+      border-radius: 50%;
+      background: rgba(136, 126, 255, 0.05);
+      bottom: -200px;
+      left: -200px;
+      z-index: -1;
+    }
+    
+    .cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 20px;
+    }
+    
+    .cta p {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      color: var(--gray);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark-light);
+      padding: 60px 0 30px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-logo {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--light);
+      margin-bottom: 16px;
+      display: block;
+    }
+    
+    .footer-logo span {
+      color: var(--primary);
+    }
+    
+    .footer-desc {
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    
+    .footer-title {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-links a {
+      color: var(--gray);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid var(--dark-medium);
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--dark-medium);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .social-link:hover {
+      background: var(--primary);
+    }
+    
+    .social-link svg {
+      color: var(--light);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .hero-btns {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .hero-btns .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">IFUIX<span><<</span></a>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#why-ifuix">Why IFUIX</a>
+          <a href="#brand">Brand</a>
+        </div>
+        <a href="#get-started" class="btn">Get Started</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <h1>Interface for Ultimate Innovation Experience</h1>
+      <p>Elevate Your Digital Presence with a next-generation ecosystem crafted to redefine how you innovate, connect, and present yourself online.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn">Explore Products</a>
+        <a href="#" class="btn btn-outline">Learn More</a>
+      </div>
+      <div>
+        <img src="/api/placeholder/800/500" alt="IFUIX Platform Preview" style="max-width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+      </div>
+    </div>
+  </section>
+  
+  <div class="gradient-bar"></div>
+  
+  <section class="features" id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Products</h2>
+        <p>A suite of digital tools designed to enhance your professional presence and streamline your online experience.</p>
+      </div>
+      
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="user"></i>
+          </div>
+          <h3>IFUIX Card</h3>
+          <p>Your Digital Identity in One Link. Present yourself professionally—anytime, anywhere—with a single link.</p>
+          <a href="card.ifuix.com" class="btn btn-outline">Try IFUIX Card</a>
+          <div class="card-badge badge-available">Available Now</div>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="link"></i>
+          </div>
+          <h3>IFUIX Link</h3>
+          <p>All Your Links. One Simple Page. Organize all your important links in one clean and customizable landing page.</p>
+          <a href="link.ifuix.com" class="btn btn-outline">Join Waitlist</a>
+          <div class="card-badge badge-soon">Coming Soon</div>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="clock"></i>
+          </div>
+          <h3>IFUIX Reminder</h3>
+          <p>Never Miss to Share What Matters. A smart scheduling tool designed to help you plan, schedule, and send timely reminders.</p>
+          <a href="reminder.ifuix.com" class="btn btn-outline">Join Waitlist</a>
+          <div class="card-badge badge-soon">Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="why-ifuix" id="why-ifuix">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why IFUIX</h2>
+        <p>More than just a product — it's a movement toward a smarter, sharper digital identity.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i data-feather="layout"></i>
+          </div>
+          <h3>Minimalist Design</h3>
+          <p>Clean, elegant interfaces that put your content first</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i data-feather="smartphone"></i>
+          </div>
+          <h3>Mobile Optimized</h3>
+          <p>Perfect experience across all devices</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i data-feather="trending-up"></i>
+          </div>
+          <h3>Future Focused</h3>
+          <p>Built for the next generation of digital presence</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i data-feather="settings"></i>
+          </div>
+          <h3>Customizable</h3>
+          <p>Tailor everything to match your personal brand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="brand-system" id="brand">
+    <div class="container">
+      <div class="section-title">
+        <h2>Brand System</h2>
+        <p>Our distinctive visual identity creates a cohesive brand experience across all touchpoints.</p>
+      </div>
+      
+      <table class="brand-table">
+        <tr>
+          <th>Area</th>
+          <th>Style</th>
+        </tr>
+        <tr>
+          <td>Primary Color</td>
+          <td><span class="color-sample" style="background: #887EFF;"></span> #887EFF</td>
+        </tr>
+        <tr>
+          <td>Fonts</td>
+          <td>
+            <strong>Headings:</strong> Sora, Poppins, Clash Display<br>
+            <strong>Body:</strong> Inter, DM Sans, Manrope<br>
+            <strong>UI:</strong> Lexend, Inter
+          </td>
+        </tr>
+        <tr>
+          <td>Icons</td>
+          <td>Outline style from Feather, Lucide, or Tabler Icons</td>
+        </tr>
+        <tr>
+          <td>Tone</td>
+          <td>Clear, confident, futuristic</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  
+  <section class="cta" id="get-started">
+    <div class="container">
+      <h2>Let's Shift the Future Together</h2>
+      <p>Whether you're a freelancer, startup founder, or digital creator — IFUIX<< is your interface to innovation.</p>
+      <a href="#" class="btn">Get Started with IFUIX<<</a>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="#" class="footer-logo">IFUIX<span><<</span></a>
+          <p class="footer-desc">Interface for Ultimate Innovation Experience. Elevating your digital presence with modern solutions.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i data-feather="twitter"></i></a>
+            <a href="#" class="social-link"><i data-feather="instagram"></i></a>
+            <a href="#" class="social-link"><i data-feather="linkedin"></i></a>
+            <a href="#" class="social-link"><i data-feather="github"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#">IFUIX Card</a></li>
+            <li><a href="#">IFUIX Link</a></li>
+            <li><a href="#">IFUIX Reminder</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        &copy; 2025 IFUIX<< All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
