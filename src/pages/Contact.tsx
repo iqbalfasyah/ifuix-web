@@ -4,8 +4,8 @@ import { Button } from '../components/ui/Button';
 
 export const Contact = () => {
   return (
-    <div className="pt-24 pb-32">
-      <div className="max-w-6xl mx-auto px-6">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-32">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -17,10 +17,10 @@ export const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start">
+        <div className="grid lg:grid-cols-5 gap-8 md:gap-12 items-start">
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-6">
-            <a href="mailto:hello@ifuix.com" className="group p-8 rounded-3xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-start relative overflow-hidden">
+            <a href="mailto:hello@ifuix.com" className="group p-6 md:p-8 rounded-3xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-start relative overflow-hidden">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
                 <Mail className="w-6 h-6" />
               </div>
@@ -31,8 +31,8 @@ export const Contact = () => {
               </div>
             </a>
             
-            <div className="grid grid-cols-2 gap-6">
-              <a href="https://www.linkedin.com/in/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="group p-8 rounded-3xl border border-gray-100 bg-white hover:border-blue-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <a href="https://www.linkedin.com/in/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="group p-6 md:p-8 rounded-3xl border border-gray-100 bg-white hover:border-blue-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center">
                 <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
                   <Briefcase className="w-6 h-6" />
                 </div>
@@ -40,7 +40,7 @@ export const Contact = () => {
                 <p className="text-xs text-gray-500">@iqbalfasyah</p>
               </a>
               
-              <a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="group p-8 rounded-3xl border border-gray-100 bg-white hover:border-gray-900/50 hover:shadow-lg transition-all flex flex-col items-center text-center">
+              <a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="group p-6 md:p-8 rounded-3xl border border-gray-100 bg-white hover:border-gray-900/50 hover:shadow-lg transition-all flex flex-col items-center text-center">
                 <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-900 mb-4 group-hover:scale-110 transition-transform">
                   <Code className="w-6 h-6" />
                 </div>
@@ -51,7 +51,7 @@ export const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/20">
+          <div className="lg:col-span-3 bg-white p-6 md:p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/20">
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Send a Message</h2>
             
             <form action="https://formsubmit.co/hello@ifuix.com" method="POST" className="space-y-6">

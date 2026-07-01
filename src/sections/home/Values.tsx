@@ -26,8 +26,8 @@ const values = [
 
 export const Values = () => {
   return (
-    <section className="py-24 bg-gray-50 border-y border-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 md:py-24 bg-gray-50 border-y border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why IFUIX?</h2>
           <p className="text-lg text-gray-600">
@@ -43,7 +43,7 @@ export const Values = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
                 {value.icon}

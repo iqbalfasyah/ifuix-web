@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 export const CTA = () => {
   return (
-    <section className="py-24 bg-white border-t border-gray-100">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="py-16 md:py-24 bg-white border-t border-gray-100">
+      <div className="max-w-5xl mx-auto px-4 md:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-900 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden shadow-2xl"
+          className="bg-gray-900 rounded-3xl p-6 md:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />

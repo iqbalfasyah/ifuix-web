@@ -3,8 +3,8 @@ import { Shield } from 'lucide-react';
 
 export const About = () => {
   return (
-    <div className="pt-24 pb-32">
-      <div className="max-w-4xl mx-auto px-6">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-32">
+      <div className="max-w-4xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ export const About = () => {
           <div className="w-16 h-1 bg-gray-200 mx-auto rounded-full" />
 
           {/* Founder Section */}
-          <section className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-10 items-center">
+          <section className="bg-white p-6 md:p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-10 items-center">
             <div className="w-48 h-48 rounded-full bg-gray-100 flex-shrink-0 overflow-hidden border-4 border-white shadow-lg">
                {/* Placeholder for founder photo */}
                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center text-gray-400 font-bold text-2xl">

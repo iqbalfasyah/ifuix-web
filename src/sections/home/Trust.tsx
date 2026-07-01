@@ -4,8 +4,8 @@ import { Check, Code2, Monitor } from 'lucide-react';
 export const Trust = () => {
   return (
     <section className="py-20 bg-white border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
           
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-900 mb-6 mx-auto md:mx-0">

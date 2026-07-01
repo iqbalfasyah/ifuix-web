@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 export const FeaturedProduct = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+    <section className="py-16 md:py-24 bg-white overflow-hidden border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <motion.div 
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}

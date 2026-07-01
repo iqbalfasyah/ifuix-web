@@ -21,12 +21,12 @@ export const ProductDetail = () => {
   const prevSlide = () => setCurrentIndex((prev) => (prev === 0 ? screenshots.length - 1 : prev - 1));
 
   return (
-    <div className="pb-32">
+    <div className="pb-16 md:pb-32">
       {/* Hero */}
-      <section className="pt-24 pb-16 bg-gray-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="pt-20 md:pt-24 pb-16 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6">Fuira</h1>
+            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-6">Fuira</h1>
             <p className="text-2xl text-gray-600 mb-10">Fast. Private. Offline-first.</p>
             <div className="flex justify-center">
               <Link to="/download">
@@ -38,7 +38,7 @@ export const ProductDetail = () => {
       </section>
 
       {/* Screenshot Carousel */}
-      <section className="py-24 bg-white max-w-7xl mx-auto px-6">
+      <section className="py-16 md:py-24 bg-white max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">A Look Inside</h2>
           <p className="text-lg text-gray-500">A beautiful, distraction-free interface designed for deep work.</p>
@@ -96,7 +96,7 @@ export const ProductDetail = () => {
       </section>
 
       {/* Features List */}
-      <section className="py-24 bg-gray-50 border-t border-gray-100 px-6">
+      <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-100 px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900">Why Fuira?</h2>
         </div>
@@ -120,7 +120,7 @@ export const ProductDetail = () => {
       </section>
 
       {/* Design Principles */}
-      <section className="py-24 bg-white max-w-7xl mx-auto px-6">
+      <section className="py-16 md:py-24 bg-white max-w-7xl mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Designed for Focus</h2>
           <ul className="space-y-6 text-left">

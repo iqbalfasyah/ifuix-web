@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 export const Terms = () => {
   return (
-    <div className="pt-24 pb-32">
-      <div className="max-w-3xl mx-auto px-6 prose prose-lg prose-primary">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-32">
+      <div className="max-w-3xl mx-auto px-4 md:px-6 prose prose-lg prose-primary">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Terms of Service</h1>
           <p className="text-gray-500 mb-10">Last updated: {new Date().toLocaleDateString()}</p>
