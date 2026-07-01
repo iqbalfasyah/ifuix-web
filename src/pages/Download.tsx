@@ -8,7 +8,7 @@ export const Download = () => {
       <div className="max-w-4xl mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Download Fuira</h1>
-          <p className="text-xl text-gray-600 mb-2">Version 9.0.0</p>
+          <p className="text-xl text-gray-600 mb-2">Version 0.9.0-beta</p>
           <p className="text-sm text-gray-400">Requires Windows 10+ or macOS 12+</p>
         </motion.div>
 
@@ -18,7 +18,7 @@ export const Download = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Windows</h3>
             <p className="text-gray-500 mb-8">250 MB • .exe installer (64-bit)</p>
             <a 
-              href="https://github.com/iqbalfasyah/fuira-release/releases/download/v9.0.0/Fuira-Setup-9.0.0.exe" 
+              href="https://github.com/iqbalfasyah/fuira-release/releases/download/v0.9.0-beta/Fuira-Setup-0.9.0-beta.exe" 
               className="w-full mb-4 block"
             >
               <Button size="lg" className="w-full" leftIcon={<DownloadIcon className="w-5 h-5" />}>
@@ -41,10 +41,10 @@ export const Download = () => {
         </div>
 
         <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Release Notes (v9.0.0)</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Release Notes (v0.9.0-beta)</h2>
           <ul className="space-y-4">
             {[
-              'Initial public release of Fuira.',
+              'Initial public beta release of Fuira.',
               'Core workflow features implemented: Smart Reminder, Markdown Notes, Timer.',
               'Google Drive Sync configured for opt-in cross-device sync.',
               'Fully offline capable with Local Storage.',
