@@ -48,11 +48,8 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <div className="border-t border-gray-200 pt-8 flex flex-col justify-center items-center gap-4 text-sm text-gray-400 text-center">
           <p>© {currentYear} IFUIX. {t('footer.rights')}</p>
-          <div className="flex items-center gap-1">
-            {t('footer.made_with')} <span className="text-red-500">❤️</span> {t('footer.in_indo')}
-          </div>
         </div>
       </div>
     </footer>

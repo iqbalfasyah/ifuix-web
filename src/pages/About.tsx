@@ -32,11 +32,9 @@ export const About = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">{t('about.founder_title')}</h2>
           <div className="flex flex-col md:flex-row items-center gap-12 max-w-2xl mx-auto">
             <div className="w-40 h-40 rounded-2xl overflow-hidden shrink-0 border-4 border-white shadow-lg">
-              <img 
-                src="https://github.com/iqbalfasyah.png" 
-                alt="Iqbal Fasyah" 
-                className="w-full h-full object-cover grayscale"
-              />
+              <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-300">
+                <span className="text-5xl font-bold tracking-tighter">IF</span>
+              </div>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Iqbal Fasyah</h3>

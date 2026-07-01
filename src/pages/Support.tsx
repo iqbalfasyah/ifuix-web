@@ -48,7 +48,9 @@ export const Support = () => {
           <div className="border-t border-gray-100 pt-8 mt-8">
             <p className="text-xl italic text-gray-600 mb-4">"{t('support.thank_you')}"</p>
             <div className="flex items-center justify-center gap-4">
-              <img src="https://github.com/iqbalfasyah.png" alt={t('support.founder_name')} className="w-12 h-12 rounded-full grayscale" />
+              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 shrink-0">
+                <span className="text-xl font-bold tracking-tighter">IF</span>
+              </div>
               <div className="text-left">
                 <p className="font-bold text-gray-900">{t('support.founder_name')}</p>
                 <p className="text-sm text-gray-500">{t('support.founder_role')}</p>

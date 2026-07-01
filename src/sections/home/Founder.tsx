@@ -10,11 +10,9 @@ export const Founder = () => {
       <div className="max-w-4xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-48 h-48 rounded-full overflow-hidden shrink-0 border-4 border-gray-50 shadow-xl relative">
-            <img 
-              src="https://github.com/iqbalfasyah.png" 
-              alt="Iqbal Fasyah" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-            />
+            <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-300 transition-all duration-500 group-hover:text-gray-400 group-hover:bg-gray-200 cursor-default">
+              <span className="text-6xl font-bold tracking-tighter">IF</span>
+            </div>
           </div>
           
           <div>

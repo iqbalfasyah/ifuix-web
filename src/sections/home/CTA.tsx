@@ -21,7 +21,7 @@ export const CTA = () => {
               {t('cta.desc')}
             </p>
             <Link to="/products">
-              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-50" rightIcon={<ArrowRight className="w-5 h-5" />}>
+              <Button size="lg" variant="secondary" className="bg-white hover:bg-gray-50" rightIcon={<ArrowRight className="w-5 h-5" />}>
                 {t('cta.btn')}
               </Button>
             </Link>
