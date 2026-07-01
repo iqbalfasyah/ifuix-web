@@ -9,9 +9,9 @@ export const Support = () => {
   return (
     <div className="pt-20 md:pt-24 pb-16 md:pb-32 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
-        
+
         {/* Hero Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-3xl p-8 md:p-16 shadow-sm border border-gray-100 mb-12 text-center"
@@ -20,7 +20,7 @@ export const Support = () => {
             <Heart className="w-10 h-10 text-red-500 fill-red-500" />
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">{t('support.title')}</h1>
-          
+
           <div className="space-y-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 text-left md:text-center leading-relaxed">
             <p>{t('support.intro')}</p>
             <ul className="space-y-2 flex flex-col md:items-center">
@@ -45,24 +45,13 @@ export const Support = () => {
             </a>
           </div>
 
-          <div className="border-t border-gray-100 pt-8 mt-8">
-            <p className="text-xl italic text-gray-600 mb-4">"{t('support.thank_you')}"</p>
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 shrink-0">
-                <span className="text-xl font-bold tracking-tighter">IF</span>
-              </div>
-              <div className="text-left">
-                <p className="font-bold text-gray-900">{t('support.founder_name')}</p>
-                <p className="text-sm text-gray-500">{t('support.founder_role')}</p>
-              </div>
-            </div>
-          </div>
+
         </motion.div>
 
         {/* Why Support & Transparency Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -88,7 +77,7 @@ export const Support = () => {
             </ul>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -116,7 +105,7 @@ export const Support = () => {
         </div>
 
         {/* The Promise */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}

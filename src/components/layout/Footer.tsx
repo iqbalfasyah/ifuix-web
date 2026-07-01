@@ -21,7 +21,7 @@ export const Footer = () => {
               {t('footer.desc')}
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">{t('footer.products')}</h4>
             <ul className="space-y-3 text-sm text-gray-500">
@@ -35,7 +35,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-gray-500">
               <li><Link to="/about" className="hover:text-primary transition-colors">{t('footer.about')}</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">{t('footer.contact')}</Link></li>
-              <li><Link to="/support" className="hover:text-primary transition-colors flex items-center gap-2"><span className="text-red-500">❤️</span> Support IFUIX</Link></li>
+              <li><Link to="/support" className="hover:text-primary transition-colors flex items-center gap-2"><span className="text-red-500">❤️</span> Support</Link></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-200 pt-8 flex flex-col justify-center items-center gap-4 text-sm text-gray-400 text-center">
           <p>© {currentYear} IFUIX. {t('footer.rights')}</p>
         </div>

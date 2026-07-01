@@ -3,7 +3,6 @@ import { FeaturedProduct } from '../sections/home/FeaturedProduct';
 import { Trust } from '../sections/home/Trust';
 import { Values } from '../sections/home/Values';
 import { Principles } from '../sections/home/Principles';
-import { Founder } from '../sections/home/Founder';
 import { Roadmap } from '../sections/home/Roadmap';
 import { CTA } from '../sections/home/CTA';
 
@@ -15,7 +14,6 @@ export const Home = () => {
       <Trust />
       <Values />
       <Principles />
-      <Founder />
       <Roadmap />
       <CTA />
     </>
