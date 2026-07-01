@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Code, MessageCircle, Mail } from 'lucide-react';
+import { Shield, Code, Linkedin, Mail } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -23,7 +23,7 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4 text-gray-400">
               <a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Code className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/in/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
               <a href="mailto:hello@ifuix.com" className="hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>

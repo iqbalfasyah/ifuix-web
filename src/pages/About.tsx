@@ -35,9 +35,9 @@ export const About = () => {
             <div>
               <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-2">Meet the Founder</h2>
               <h3 className="text-3xl font-bold text-gray-900 mb-2">Iqbal Fasyah</h3>
-              <p className="text-gray-500 font-medium mb-6">Software Engineer</p>
+              <p className="text-gray-500 font-medium mb-6">Full Stack Software Engineer</p>
               <p className="text-gray-600 leading-relaxed">
-                Building thoughtful software from Indonesia. I started IFUIX because I was tired of tools that distract, track, and exploit users. My goal is to craft beautiful, single-purpose applications that respect your time and data.
+                Building thoughtful software from Indonesia with over 7 years of experience in web application and API development. I started IFUIX because I was tired of tools that distract, track, and exploit users. My goal is to craft beautiful, single-purpose applications that respect your time and data.
               </p>
             </div>
           </section>
