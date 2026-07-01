@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Github, Twitter, Mail } from 'lucide-react';
+import { Shield, Code, MessageCircle, Mail } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -17,8 +17,8 @@ export const Footer = () => {
               Thoughtful, privacy-first software designed to quietly help millions of people every day.
             </p>
             <div className="flex gap-4 text-gray-400">
-              <a href="#" className="hover:text-primary transition-colors"><Github className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-primary transition-colors"><Twitter className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-primary transition-colors"><Code className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
               <a href="#" className="hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>
