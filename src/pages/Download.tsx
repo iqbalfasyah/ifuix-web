@@ -18,9 +18,7 @@ export const Download = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Windows</h3>
             <p className="text-gray-500 mb-8">250 MB • .exe installer (64-bit)</p>
             <a 
-              href="https://github.com/iqbalfasyah/fuira-release/releases/latest" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="https://github.com/iqbalfasyah/fuira-release/releases/latest/download/Fuira-Setup.exe" 
               className="w-full mb-4 block"
             >
               <Button size="lg" className="w-full" leftIcon={<DownloadIcon className="w-5 h-5" />}>
