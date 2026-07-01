@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { Button } from '../../components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const FeaturedProduct = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
@@ -15,17 +18,19 @@ export const FeaturedProduct = () => {
             transition={{ duration: 0.6 }}
             className="w-full lg:w-1/2"
           >
-            <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Featured Product</span>
+            <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">
+              {t('featured.badge')}
+            </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Meet Fuira
+              {t('featured.title')}
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Our flagship desktop application designed to streamline your workflow with unparalleled speed and complete offline capability. Experience a new standard in software craftsmanship.
+              {t('featured.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/products/fuira">
                 <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                  Explore Fuira
+                  {t('featured.cta')}
                 </Button>
               </Link>
             </div>

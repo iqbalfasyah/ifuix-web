@@ -1,42 +1,32 @@
-import { motion } from 'framer-motion';
 import { Button } from '../../components/ui/Button';
-import { Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const CTA = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="py-16 md:py-24 bg-white border-t border-gray-100">
+    <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-gray-900 rounded-3xl p-6 md:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
+        <div className="bg-gray-900 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
           
-          <div className="relative z-10">
+          <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Start using Fuira today.
+              {t('cta.title')}
             </h2>
-            <p className="text-xl text-primary font-medium mb-10 max-w-2xl mx-auto flex items-center justify-center gap-4">
-              <span>Free.</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-              <span>Offline.</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-              <span>Privacy First.</span>
+            <p className="text-xl text-gray-400 mb-10">
+              {t('cta.desc')}
             </p>
-            <div className="flex justify-center">
-              <Link to="/download">
-                <Button size="lg" className="bg-primary hover:bg-orange-500 text-white" leftIcon={<Download className="w-5 h-5" />}>
-                  Download Fuira
-                </Button>
-              </Link>
-            </div>
+            <Link to="/products">
+              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-50" rightIcon={<ArrowRight className="w-5 h-5" />}>
+                {t('cta.btn')}
+              </Button>
+            </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

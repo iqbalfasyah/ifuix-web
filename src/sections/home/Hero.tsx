@@ -1,61 +1,49 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="relative overflow-hidden bg-white pt-20 md:pt-24 pb-16 md:pb-32">
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-orange-400/5 blur-3xl" />
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto"
-        >
-          <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6">
-            Introducing IFUIX
-          </span>
-          <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
-            Thoughtfully crafted software for a <span className="text-primary">noisy world.</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            We create beautifully crafted desktop software that respects your privacy, works offline, and helps you stay focused every day.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/download">
-              <Button size="lg" leftIcon={<Download className="w-5 h-5" />}>
-                Get Fuira
-              </Button>
-            </Link>
-            <Link to="/products">
-              <Button size="lg" variant="secondary" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                Explore IFUIX
-              </Button>
-            </Link>
-          </div>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-20 mx-auto max-w-5xl rounded-2xl border border-gray-200/60 bg-white/50 backdrop-blur-sm p-2 shadow-2xl shadow-gray-200/50"
-        >
-          <div className="aspect-[16/10] w-full rounded-xl bg-gray-900 flex items-center justify-center border border-gray-100 overflow-hidden relative shadow-inner">
-            <img 
-              src="/images/fuira/Schedule.png" 
-              alt="Fuira App Screenshot" 
-              className="w-full h-full object-cover object-left-top"
-            />
-          </div>
-        </motion.div>
+    <section className="relative overflow-hidden bg-white pt-24 md:pt-32 pb-16 md:pb-32">
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-tr from-primary/10 to-orange-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-400/10 to-primary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+
+      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6">
+              {t('hero.badge')}
+            </span>
+            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
+              {t('hero.title')}<span className="text-primary">{t('hero.title_highlight')}</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+              {t('hero.subtitle')}
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/products">
+                <Button size="lg" className="w-full sm:w-auto text-lg px-8" rightIcon={<ArrowRight className="w-5 h-5" />}>
+                  {t('hero.cta_explore')}
+                </Button>
+              </Link>
+              <Link to="/about">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8">
+                  {t('hero.cta_mission')}
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

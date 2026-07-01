@@ -1,46 +1,51 @@
 import { motion } from 'framer-motion';
-import { Shield } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="pt-20 md:pt-24 pb-16 md:pb-32">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
-            <Shield className="w-8 h-8" />
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">About IFUIX</h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            IFUIX is an independent software studio founded by Iqbal Fasyah.
-            <br/><br/>
-            We build thoughtful software focused on productivity, privacy, and simplicity.
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">{t('about.title')}</h1>
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            {t('about.desc')}
           </p>
         </motion.div>
 
-        <div className="space-y-16 max-w-3xl mx-auto">
-          <div className="w-16 h-1 bg-gray-200 mx-auto rounded-full" />
+        <div className="prose prose-lg mx-auto text-gray-600 mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('about.story_title')}</h2>
+          <p className="mb-6 leading-relaxed">
+            {t('about.story_p1')}
+          </p>
+          <p className="leading-relaxed">
+            {t('about.story_p2')}
+          </p>
+        </div>
 
-          {/* Founder Section */}
-          <section className="bg-white p-6 md:p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-10 items-center">
-            <div className="w-48 h-48 rounded-full bg-gray-100 flex-shrink-0 overflow-hidden border-4 border-white shadow-lg">
-               {/* Placeholder for founder photo */}
-               <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center text-gray-400 font-bold text-2xl">
-                 IF
-               </div>
+        <div className="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">{t('about.founder_title')}</h2>
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-2xl mx-auto">
+            <div className="w-40 h-40 rounded-2xl overflow-hidden shrink-0 border-4 border-white shadow-lg">
+              <img 
+                src="https://github.com/iqbalfasyah.png" 
+                alt="Iqbal Fasyah" 
+                className="w-full h-full object-cover grayscale"
+              />
             </div>
             <div>
-              <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-2">Meet the Founder</h2>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">Iqbal Fasyah</h3>
-              <p className="text-gray-500 font-medium mb-6">Full Stack Software Engineer</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Iqbal Fasyah</h3>
+              <p className="text-primary font-medium mb-4">{t('about.founder_role')}</p>
               <p className="text-gray-600 leading-relaxed">
-                Building thoughtful software from Indonesia. I started IFUIX because I was tired of tools that distract, track, and exploit users. My goal is to craft beautiful, single-purpose applications that respect your time and data.
+                {t('about.founder_desc')}
               </p>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </div>

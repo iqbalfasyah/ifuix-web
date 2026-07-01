@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "products": "Produk",
+    "download": "Unduh",
+    "contact": "Kontak",
+    "learn_more": "Pelajari",
+    "get_fuira": "Dapatkan Fuira"
+  },
+  "hero": {
+    "badge": "Memperkenalkan IFUIX",
+    "title": "Perangkat lunak yang dirancang cermat untuk ",
+    "title_highlight": "dunia yang bising.",
+    "subtitle": "Kami membangun aplikasi web dan desktop yang cepat, mengutamakan privasi, dan dirancang untuk membantu Anda fokus pada hal yang penting.",
+    "cta_explore": "Eksplorasi Produk",
+    "cta_mission": "Misi Kami"
+  },
+  "vision": {
+    "title": "Perangkat lunak harus menghargai Anda.",
+    "p1": "Di era notifikasi tanpa akhir, kelelahan berlangganan, dan pengambilan data, kami mengambil pendekatan berbeda.",
+    "p2": "Di IFUIX, kami percaya alat kerja harus memberdayakan Anda, bukan mengganggu Anda. Kami membangun perangkat lunak yang tidak menghalangi Anda sehingga Anda dapat bekerja maksimal.",
+    "f1_title": "Privasi Utama",
+    "f1_desc": "Tanpa telemetri, tanpa pelacak, tanpa menjual data.",
+    "f2_title": "Sangat Cepat",
+    "f2_desc": "Performa asli yang tidak membuat Anda menunggu.",
+    "f3_title": "Bayar Sekali",
+    "f3_desc": "Tanpa langganan bulanan. Anda membelinya, dan memilikinya selamanya."
+  },
+  "featured": {
+    "badge": "Produk Unggulan",
+    "title": "Perkenalkan Fuira",
+    "desc": "Aplikasi desktop andalan kami yang dirancang untuk merampingkan alur kerja Anda dengan kecepatan tak tertandingi dan kemampuan offline penuh. Rasakan standar baru dalam keahlian perangkat lunak.",
+    "cta": "Eksplorasi Fuira"
+  },
+  "trust": {
+    "title": "Dibangun Atas Dasar Kepercayaan",
+    "t1_title": "Inti Open Source",
+    "t1_desc": "Komponen utama perangkat lunak kami bersifat open source, memungkinkan komunitas memverifikasi klaim keamanan dan privasi kami.",
+    "t2_title": "Mengutamakan Offline",
+    "t2_desc": "Aplikasi kami dirancang untuk bekerja sempurna tanpa koneksi internet. Data Anda tetap di perangkat Anda.",
+    "t3_title": "Tanpa Telemetri",
+    "t3_desc": "Kami tidak mengumpulkan statistik penggunaan atau analitik. Urusan Anda adalah urusan Anda."
+  },
+  "values": {
+    "title": "Nilai Inti",
+    "v1_title": "Kesederhanaan",
+    "v1_desc": "Kami menghilangkan yang tidak perlu, menyisakan hanya yang penting untuk alur kerja Anda.",
+    "v2_title": "Keahlian",
+    "v2_desc": "Setiap piksel, animasi, dan baris kode dipertimbangkan dengan cermat.",
+    "v3_title": "Penghargaan",
+    "v3_desc": "Kami menghargai waktu, perhatian, dan privasi Anda.",
+    "v4_title": "Kemandirian",
+    "v4_desc": "Kami bangga menjadi independen dan hanya menjawab kepada pengguna kami."
+  },
+  "principles": {
+    "title": "Prinsip Desain",
+    "p1": "Performa adalah sebuah fitur.",
+    "p2": "Dukungan offline adalah wajib.",
+    "p3": "Hargai pengaturan sistem bawaan.",
+    "p4": "Tidak ada trik penipuan (dark patterns)."
+  },
+  "founder": {
+    "badge": "Sang Pendiri",
+    "title": "Halo, saya Iqbal.",
+    "quote": "Membangun perangkat lunak yang cermat dari Indonesia. Saya percaya perangkat lunak harus menghargai waktu, perhatian, dan privasi pengguna alih-alih mengeksploitasi mereka.",
+    "desc": "Saya memulai IFUIX sebagai misi pribadi untuk membangun alat yang saya harap ada. Tanpa modal ventura, tanpa metrik pertumbuhan yang agresif—hanya fokus tanpa henti pada menciptakan perangkat lunak berkualitas tinggi yang memecahkan masalah nyata secara elegan.",
+    "link": "Baca cerita lengkapnya"
+  },
+  "roadmap": {
+    "title": "Perjalanan Kami",
+    "subtitle": "Apa yang kami bangun dan kemana tujuan kami.",
+    "r1_title": "Fuira Desktop",
+    "r1_desc": "Rangkaian produktivitas offline-first yang paling utama.",
+    "r1_status": "Beta",
+    "r2_title": "Pustaka Open Source",
+    "r2_desc": "Memberi kembali kepada komunitas pengembang.",
+    "r2_status": "Sedang Berjalan",
+    "r3_title": "Aplikasi Mobile",
+    "r3_desc": "Membawa pengalaman IFUIX ke iOS dan Android.",
+    "r3_status": "Perencanaan",
+    "r4_title": "Sinkronisasi Cloud",
+    "r4_desc": "Sinkronisasi cloud opsional dengan enkripsi end-to-end.",
+    "r4_status": "Riset"
+  },
+  "cta": {
+    "title": "Siap mengubah cara Anda bekerja?",
+    "desc": "Bergabunglah dengan ribuan pengguna yang telah beralih ke alat pengutamaan privasi kami.",
+    "btn": "Mulai Hari Ini"
+  },
+  "footer": {
+    "desc": "Sebuah studio perangkat lunak independen yang merancang aplikasi cantik dan mengutamakan privasi.",
+    "products": "Produk",
+    "company": "Perusahaan",
+    "about": "Tentang Kami",
+    "contact": "Kontak",
+    "legal": "Legal",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Ketentuan",
+    "rights": "Hak cipta dilindungi.",
+    "made_with": "Dibuat dengan",
+    "in_indo": "di Indonesia"
+  },
+  "about": {
+    "title": "Tentang IFUIX",
+    "desc": "Kami adalah studio perangkat lunak kecil dan independen yang fokus pada pembuatan alat yang menghargai perhatian dan privasi Anda.",
+    "story_title": "Cerita Kami",
+    "story_p1": "IFUIX bermula sebagai pemberontakan terhadap industri perangkat lunak modern. Kami lelah dengan aplikasi yang membutuhkan koneksi internet untuk tugas-tugas dasar, melacak setiap klik, dan membebankan langganan bulanan untuk fitur-fitur sederhana.",
+    "story_p2": "Kami percaya bahwa perangkat lunak harus menjadi alat, bukan layanan. Ia harus memberdayakan Anda, berjalan sangat cepat di perangkat Anda, dan menjaga data Anda tetap milik Anda.",
+    "founder_title": "Tim",
+    "founder_role": "Full Stack Software Engineer",
+    "founder_desc": "Membangun perangkat lunak yang cermat dari Indonesia. Saya memulai IFUIX karena lelah dengan alat yang mengganggu, melacak, dan mengeksploitasi pengguna. Tujuan saya adalah merancang aplikasi yang indah dan berfokus tunggal yang menghargai waktu dan data Anda."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "desc": "Punya pertanyaan, masukan, atau sekadar ingin menyapa? Kami ingin mendengar dari Anda.",
+    "email": "Email",
+    "replies": "Dibalas secara pribadi oleh Iqbal Fasyah",
+    "form_title": "Kirim Pesan",
+    "form_name": "Nama Lengkap",
+    "form_email": "Alamat Email",
+    "form_message": "Pesan",
+    "form_btn": "Kirim Pesan"
+  },
+  "download": {
+    "title": "Unduh Fuira",
+    "subtitle": "Membutuhkan Windows 10+ atau macOS 12+",
+    "windows_desc": "70 MB • installer .exe (64-bit)",
+    "btn": "Unduh",
+    "mac_title": "macOS",
+    "mac_desc": "Universal Binary",
+    "mac_btn": "Segera Hadir",
+    "notes_title": "Catatan Rilis",
+    "n1": "Rilis beta publik awal dari Fuira.",
+    "n2": "Fitur alur kerja inti diimplementasikan: Pengingat Cerdas, Catatan Markdown, Timer.",
+    "n3": "Google Drive Sync dikonfigurasi untuk sinkronisasi antar perangkat opsional.",
+    "n4": "Mampu offline sepenuhnya dengan Penyimpanan Lokal."
+  },
+  "products": {
+    "title": "Produk Kami",
+    "badge": "Tersedia Sekarang",
+    "fuira_title": "Fuira",
+    "fuira_desc": "Rangkaian produktivitas offline-first yang paling utama. Kelola tugas, tulis catatan markdown, dan lacak waktu fokus Anda tanpa gangguan.",
+    "fuira_f1": "Performa aplikasi native yang sangat cepat",
+    "fuira_f2": "100% mampu berjalan offline",
+    "fuira_f3": "Sinkronisasi terenkripsi E2E opsional",
+    "btn_learn": "Pelajari Lebih Lanjut",
+    "btn_download": "Unduh"
+  },
+  "product_detail": {
+    "subtitle": "Cepat. Privat. Offline-first.",
+    "btn_download": "Unduh untuk Windows",
+    "look_title": "Tampilan Dalam",
+    "look_desc": "Antarmuka yang indah dan bebas gangguan dirancang untuk kerja mendalam.",
+    "s1": "Dashboard Utama",
+    "s2": "Jadwal & Tugas",
+    "s3": "Entri Tugas Pintar",
+    "s4": "Catatan Markdown",
+    "s5": "Timer Fokus",
+    "s6": "Sinkronisasi Google Drive",
+    "s7": "Pengaturan yang Dapat Disesuaikan",
+    "why_title": "Kenapa Fuira?",
+    "w1": "Pengingat Pintar",
+    "w2": "Catatan Markdown",
+    "w3": "Sinkronisasi Google Drive",
+    "w4": "Timer",
+    "w5": "Waktu Shalat",
+    "w6": "Penyimpanan Lokal",
+    "w7": "Notifikasi Asli",
+    "w8": "Lintas Platform",
+    "design_title": "Dirancang untuk Fokus",
+    "d1": "Waktu peluncuran instan dengan performa asli.",
+    "d2": "Tanpa pelacak, tanpa telemetri, tanpa analitik.",
+    "d3": "Bekerja sempurna tanpa koneksi internet.",
+    "d4": "Antarmuka minimalis yang tidak menghalangi Anda."
+  }
+}

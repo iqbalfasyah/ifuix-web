@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "about": "About",
+    "products": "Products",
+    "download": "Download",
+    "contact": "Contact",
+    "learn_more": "Learn More",
+    "get_fuira": "Get Fuira"
+  },
+  "hero": {
+    "badge": "Introducing IFUIX",
+    "title": "Thoughtfully crafted software for a ",
+    "title_highlight": "noisy world.",
+    "subtitle": "We build fast, privacy-first desktop and web applications designed to help you focus on what matters most.",
+    "cta_explore": "Explore Products",
+    "cta_mission": "Our Mission"
+  },
+  "vision": {
+    "title": "Software should respect you.",
+    "p1": "In an era of endless notifications, subscription fatigue, and data harvesting, we take a different approach.",
+    "p2": "At IFUIX, we believe tools should empower you, not distract you. We build software that gets out of your way so you can do your best work.",
+    "f1_title": "Privacy First",
+    "f1_desc": "No telemetry, no tracking pixels, no selling data.",
+    "f2_title": "Blazing Fast",
+    "f2_desc": "Native performance that doesn't keep you waiting.",
+    "f3_title": "Pay Once",
+    "f3_desc": "No subscriptions. You buy it, you own it forever."
+  },
+  "featured": {
+    "badge": "Featured Product",
+    "title": "Meet Fuira",
+    "desc": "Our flagship desktop application designed to streamline your workflow with unparalleled speed and complete offline capability. Experience a new standard in software craftsmanship.",
+    "cta": "Explore Fuira"
+  },
+  "trust": {
+    "title": "Built on Trust",
+    "t1_title": "Open Source Core",
+    "t1_desc": "Key components of our software are open source, allowing the community to verify our security and privacy claims.",
+    "t2_title": "Offline First",
+    "t2_desc": "Our applications are designed to work perfectly without an internet connection. Your data stays on your device.",
+    "t3_title": "Zero Telemetry",
+    "t3_desc": "We don't collect usage statistics or analytics. Your business is your business."
+  },
+  "values": {
+    "title": "Core Values",
+    "v1_title": "Simplicity",
+    "v1_desc": "We strip away the unnecessary, leaving only what's essential for your workflow.",
+    "v2_title": "Craftsmanship",
+    "v2_desc": "Every pixel, animation, and line of code is carefully considered.",
+    "v3_title": "Respect",
+    "v3_desc": "We respect your time, your attention, and your privacy.",
+    "v4_title": "Independence",
+    "v4_desc": "We are proudly independent and answer only to our users."
+  },
+  "principles": {
+    "title": "Design Principles",
+    "p1": "Performance is a feature.",
+    "p2": "Offline support is mandatory.",
+    "p3": "Respect system defaults.",
+    "p4": "No dark patterns."
+  },
+  "founder": {
+    "badge": "The Founder",
+    "title": "Hi, I'm Iqbal.",
+    "quote": "Building thoughtful software from Indonesia. I believe software should respect users' time, attention, and privacy instead of exploiting them.",
+    "desc": "I started IFUIX as a personal mission to build the tools I wished existed. No venture capital, no aggressive growth metrics—just a relentless focus on creating high-quality software that solves real problems elegantly.",
+    "link": "Read the full story"
+  },
+  "roadmap": {
+    "title": "Our Journey",
+    "subtitle": "What we're building and where we're going.",
+    "r1_title": "Fuira Desktop",
+    "r1_desc": "The ultimate offline-first productivity suite.",
+    "r1_status": "Beta",
+    "r2_title": "Open Source Libraries",
+    "r2_desc": "Giving back to the developer community.",
+    "r2_status": "In Progress",
+    "r3_title": "Mobile App",
+    "r3_desc": "Bringing the IFUIX experience to iOS and Android.",
+    "r3_status": "Planning",
+    "r4_title": "Cloud Sync",
+    "r4_desc": "End-to-end encrypted optional cloud sync.",
+    "r4_status": "Research"
+  },
+  "cta": {
+    "title": "Ready to change how you work?",
+    "desc": "Join thousands of users who have already switched to our privacy-first tools.",
+    "btn": "Get Started Today"
+  },
+  "footer": {
+    "desc": "An independent software studio crafting beautiful, privacy-first applications.",
+    "products": "Products",
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "made_with": "Made with",
+    "in_indo": "in Indonesia"
+  },
+  "about": {
+    "title": "About IFUIX",
+    "desc": "We are a small, independent software studio focused on creating tools that respect your attention and privacy.",
+    "story_title": "Our Story",
+    "story_p1": "IFUIX started as a rebellion against the modern software industry. We were tired of apps that required an internet connection for basic tasks, tracked every click, and charged monthly subscriptions for simple features.",
+    "story_p2": "We believe that software should be a tool, not a service. It should empower you, run blazingly fast on your device, and keep your data yours.",
+    "founder_title": "The Team",
+    "founder_role": "Full Stack Software Engineer",
+    "founder_desc": "Building thoughtful software from Indonesia. I started IFUIX because I was tired of tools that distract, track, and exploit users. My goal is to craft beautiful, single-purpose applications that respect your time and data."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "desc": "Have a question, feedback, or just want to say hi? We'd love to hear from you.",
+    "email": "Email",
+    "replies": "Replies personally by Iqbal Fasyah",
+    "form_title": "Send a Message",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_message": "Message",
+    "form_btn": "Send Message"
+  },
+  "download": {
+    "title": "Download Fuira",
+    "subtitle": "Requires Windows 10+ or macOS 12+",
+    "windows_desc": "70 MB • .exe installer (64-bit)",
+    "btn": "Download",
+    "mac_title": "macOS",
+    "mac_desc": "Universal Binary",
+    "mac_btn": "Coming Soon",
+    "notes_title": "Release Notes",
+    "n1": "Initial public beta release of Fuira.",
+    "n2": "Core workflow features implemented: Smart Reminder, Markdown Notes, Timer.",
+    "n3": "Google Drive Sync configured for opt-in cross-device sync.",
+    "n4": "Fully offline capable with Local Storage."
+  },
+  "products": {
+    "title": "Our Products",
+    "badge": "Available Now",
+    "fuira_title": "Fuira",
+    "fuira_desc": "The ultimate offline-first productivity suite. Manage tasks, write markdown notes, and track your focus time without distractions.",
+    "fuira_f1": "Blazing fast native performance",
+    "fuira_f2": "100% offline capable",
+    "fuira_f3": "Optional E2E encrypted sync",
+    "btn_learn": "Learn More",
+    "btn_download": "Download"
+  },
+  "product_detail": {
+    "subtitle": "Fast. Private. Offline-first.",
+    "btn_download": "Download for Windows",
+    "look_title": "A Look Inside",
+    "look_desc": "A beautiful, distraction-free interface designed for deep work.",
+    "s1": "Welcome Dashboard",
+    "s2": "Schedule & Tasks",
+    "s3": "Smart Task Entry",
+    "s4": "Markdown Notes",
+    "s5": "Focus Timer",
+    "s6": "Google Drive Sync",
+    "s7": "Customizable Settings",
+    "why_title": "Why Fuira?",
+    "w1": "Smart Reminder",
+    "w2": "Markdown Notes",
+    "w3": "Google Drive Sync",
+    "w4": "Timer",
+    "w5": "Prayer Time",
+    "w6": "Local Storage",
+    "w7": "Native Notification",
+    "w8": "Cross Platform",
+    "design_title": "Designed for Focus",
+    "d1": "Instant launch times with native performance.",
+    "d2": "No tracking pixels, no telemetry, no analytics.",
+    "d3": "Works perfectly without an internet connection.",
+    "d4": "Minimalist interface that gets out of your way."
+  }
+}
