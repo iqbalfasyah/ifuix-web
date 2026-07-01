@@ -87,7 +87,7 @@ export const Download = () => {
                 <Loader2 className="w-6 h-6 animate-spin text-primary" />
               </li>
             ) : hasNotes ? (
-              notes.map((note, idx) => (
+              notes.map((note: string, idx: number) => (
                 <li key={idx} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
                   <p>{note}</p>
