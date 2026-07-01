@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, Code2, HardDrive, Monitor } from 'lucide-react';
+import { Check, Code2, Monitor } from 'lucide-react';
 
 export const Trust = () => {
   return (

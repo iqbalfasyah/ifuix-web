@@ -13,11 +13,16 @@ export const Footer = () => {
               </div>
               <span className="font-bold text-xl tracking-tight text-gray-900">IFUIX</span>
             </Link>
-            <p className="text-gray-500 max-w-sm mb-6">
-              Thoughtful, privacy-first software designed to quietly help millions of people every day.
+            <p className="text-gray-900 font-medium text-lg mb-2">
+              Thoughtfully crafted software<br/>for everyday life.
+            </p>
+            <p className="text-gray-500 mb-6">
+              Built independently by <br/>
+              <span className="font-medium text-gray-700">Iqbal Fasyah</span> <br/>
+              Indonesia
             </p>
             <div className="flex gap-4 text-gray-400">
-              <a href="#" className="hover:text-primary transition-colors"><Code className="w-5 h-5" /></a>
+              <a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Code className="w-5 h-5" /></a>
               <a href="#" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
               <a href="mailto:hello@ifuix.com" className="hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
@@ -39,7 +44,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-gray-500">
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-              <li><a href="#" className="hover:text-primary transition-colors">GitHub</a></li>
+              <li><a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
               <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
@@ -48,7 +53,7 @@ export const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-200 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} IFUIX. Built independently in Indonesia.</p>
+          <p>© {new Date().getFullYear()} IFUIX.</p>
         </div>
       </div>
     </footer>

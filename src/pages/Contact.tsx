@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Code, MessageCircle } from 'lucide-react';
+import { Mail, Code, MessageCircle, User } from 'lucide-react';
 
 export const Contact = () => {
   return (
@@ -16,12 +16,15 @@ export const Contact = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-          <a href="mailto:hello@ifuix.com" className="group p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-center">
+          <a href="mailto:hello@ifuix.com" className="group p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-center relative overflow-hidden">
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
               <Mail className="w-6 h-6" />
             </div>
             <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-            <p className="text-sm text-gray-500">hello@ifuix.com</p>
+            <p className="text-sm text-gray-500 mb-4">hello@ifuix.com</p>
+            <div className="text-xs bg-gray-50 px-3 py-1 rounded-full text-gray-500 flex items-center gap-2">
+              <User className="w-3 h-3" /> Replies personally by Iqbal Fasyah
+            </div>
           </a>
           
           <a href="#" className="group p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-center">
@@ -29,15 +32,15 @@ export const Contact = () => {
               <MessageCircle className="w-6 h-6" />
             </div>
             <h3 className="font-bold text-gray-900 mb-1">Twitter / X</h3>
-            <p className="text-sm text-gray-500">@ifuix_hq</p>
+            <p className="text-sm text-gray-500">@iqbalfasyah</p>
           </a>
           
-          <a href="#" className="group p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-center">
+          <a href="https://github.com/iqbalfasyah" target="_blank" rel="noopener noreferrer" className="group p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/50 hover:shadow-lg transition-all flex flex-col items-center">
             <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-700 mb-4 group-hover:scale-110 transition-transform">
               <Code className="w-6 h-6" />
             </div>
             <h3 className="font-bold text-gray-900 mb-1">GitHub</h3>
-            <p className="text-sm text-gray-500">github.com/ifuix</p>
+            <p className="text-sm text-gray-500">github.com/iqbalfasyah</p>
           </a>
         </div>
       </div>
