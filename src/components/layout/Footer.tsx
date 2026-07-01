@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="flex gap-4 text-gray-400">
               <a href="#" className="hover:text-primary transition-colors"><Code className="w-5 h-5" /></a>
               <a href="#" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
+              <a href="mailto:hello@ifuix.com" className="hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>
           
@@ -29,6 +29,8 @@ export const Footer = () => {
               <li><Link to="/products/fuira" className="hover:text-primary transition-colors">Fuira</Link></li>
               <li><Link to="/products" className="hover:text-primary transition-colors">Upcoming</Link></li>
               <li><Link to="/download" className="hover:text-primary transition-colors">Downloads</Link></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Release Notes</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Changelog</a></li>
             </ul>
           </div>
           
@@ -37,6 +39,8 @@ export const Footer = () => {
             <ul className="space-y-3 text-gray-500">
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="#" className="hover:text-primary transition-colors">GitHub</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
               <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
             </ul>
@@ -44,7 +48,7 @@ export const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-200 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} IFUIX. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} IFUIX. Built independently in Indonesia.</p>
         </div>
       </div>
     </footer>

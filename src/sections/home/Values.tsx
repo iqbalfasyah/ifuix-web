@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Shield, WifiOff, Sparkles, MonitorSmartphone } from 'lucide-react';
+import { Shield, WifiOff, MonitorSmartphone, Sparkles } from 'lucide-react';
 
 const values = [
   {
@@ -13,20 +13,20 @@ const values = [
     description: 'Our applications work seamlessly without an internet connection, ensuring you are always productive.'
   },
   {
-    icon: <Sparkles className="w-6 h-6" />,
-    title: 'Beautiful UX',
-    description: 'Minimalist, fast, and delightful interfaces that get out of your way and let you focus on work.'
-  },
-  {
     icon: <MonitorSmartphone className="w-6 h-6" />,
     title: 'Cross Platform',
     description: 'Built to run flawlessly across Windows, macOS, and Linux with native performance and feel.'
+  },
+  {
+    icon: <Sparkles className="w-6 h-6" />,
+    title: 'Beautiful Experience',
+    description: 'Minimalist, fast, and delightful interfaces that get out of your way and let you focus on work.'
   }
 ];
 
 export const Values = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50 border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why IFUIX?</h2>

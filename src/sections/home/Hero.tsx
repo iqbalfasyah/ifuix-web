@@ -22,21 +22,21 @@ export const Hero = () => {
             Introducing IFUIX
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
-            Thoughtful software for a <span className="text-primary">noisy world.</span>
+            Thoughtfully crafted software for a <span className="text-primary">noisy world.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            We build beautifully crafted, privacy-first desktop applications that improve your everyday productivity without sacrificing your data.
+            We create beautifully crafted desktop software that respects your privacy, works offline, and helps you stay focused every day.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/download">
               <Button size="lg" leftIcon={<Download className="w-5 h-5" />}>
-                Download Fuira
+                Get Fuira
               </Button>
             </Link>
-            <Link to="/about">
+            <Link to="/products">
               <Button size="lg" variant="secondary" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                Our Philosophy
+                Explore IFUIX
               </Button>
             </Link>
           </div>
@@ -48,9 +48,12 @@ export const Hero = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-20 mx-auto max-w-5xl rounded-2xl border border-gray-200/60 bg-white/50 backdrop-blur-sm p-2 shadow-2xl shadow-gray-200/50"
         >
-          <div className="aspect-[16/9] w-full rounded-xl bg-gray-100 flex items-center justify-center border border-gray-100 overflow-hidden relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-gray-100 to-gray-50" />
-            <p className="text-gray-400 font-medium relative z-10">Hero Application Screenshot Placeholder</p>
+          <div className="aspect-[16/10] w-full rounded-xl bg-gray-900 flex items-center justify-center border border-gray-100 overflow-hidden relative shadow-inner">
+            <img 
+              src="/images/fuira/Schedule.png" 
+              alt="Fuira App Screenshot" 
+              className="w-full h-full object-cover object-left-top"
+            />
           </div>
         </motion.div>
       </div>

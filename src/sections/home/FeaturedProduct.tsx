@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const FeaturedProduct = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-white overflow-hidden border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <motion.div 
@@ -40,17 +40,18 @@ export const FeaturedProduct = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-orange-400/20 rounded-3xl transform rotate-3 scale-105 blur-lg" />
-              <div className="relative bg-white border border-gray-100 rounded-3xl shadow-xl overflow-hidden aspect-[4/3] flex flex-col">
-                <div className="h-10 bg-gray-50 border-b border-gray-100 flex items-center px-4 gap-2">
+              <div className="relative bg-white border border-gray-100 rounded-3xl shadow-xl overflow-hidden aspect-[16/10] flex flex-col">
+                <div className="h-10 bg-gray-50 border-b border-gray-100 flex items-center px-4 gap-2 shrink-0">
                   <div className="w-3 h-3 rounded-full bg-red-400" />
                   <div className="w-3 h-3 rounded-full bg-yellow-400" />
                   <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
-                <div className="flex-1 bg-gray-100 flex items-center justify-center p-8">
-                  <div className="text-center text-gray-400 font-medium">
-                    <p>Fuira App Interface</p>
-                    <p className="text-sm mt-2 font-normal">Coming Soon</p>
-                  </div>
+                <div className="flex-1 bg-gray-900 relative">
+                   <img 
+                      src="/images/fuira/Welcome.png" 
+                      alt="Fuira Welcome Screen" 
+                      className="w-full h-full object-cover object-left-top absolute inset-0"
+                    />
                 </div>
               </div>
             </div>

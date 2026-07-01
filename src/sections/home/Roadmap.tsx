@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 
 const items = [
-  { phase: 'Phase 1', title: 'v1.0 MVP', desc: 'Core Fuira functionality focused on privacy and speed.', status: 'current' },
-  { phase: 'Phase 2', title: 'v1.1 Productivity', desc: 'Advanced workflows and integrations.', status: 'upcoming' },
-  { phase: 'Phase 3', title: 'v1.2 AI', desc: 'On-device, privacy-preserving AI assistance.', status: 'future' },
-  { phase: 'Phase 4', title: 'v2.0 Cross Platform', desc: 'Native mobile companion apps.', status: 'future' },
+  { phase: 'Today', title: 'v1.0 MVP', desc: 'Core Fuira functionality focused on privacy and speed.', status: 'current' },
+  { phase: 'Tomorrow', title: 'v1.1 Productivity', desc: 'Advanced workflows and integrations.', status: 'upcoming' },
+  { phase: 'Future', title: 'v1.2 AI', desc: 'On-device, privacy-preserving AI assistance.', status: 'future' },
+  { phase: 'Beyond', title: 'v2.0 Cross Platform', desc: 'Native mobile companion apps.', status: 'future' },
 ];
 
 export const Roadmap = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Road Ahead</h2>

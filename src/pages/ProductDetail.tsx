@@ -18,9 +18,33 @@ export const ProductDetail = () => {
         </div>
       </section>
 
-      {/* Features */}
+      {/* Features List */}
       <section className="py-24 max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900">Why Fuira?</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          {[
+            'Smart Reminder',
+            'Markdown Notes',
+            'Google Drive Sync',
+            'Timer',
+            'Prayer Time',
+            'Local Storage',
+            'Native Notification',
+            'Cross Platform'
+          ].map((feature, i) => (
+            <div key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-gray-700 font-medium">{feature}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Screenshots */}
+      <section className="py-12 bg-white max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Designed for Focus</h2>
             <ul className="space-y-4">
@@ -37,10 +61,8 @@ export const ProductDetail = () => {
               ))}
             </ul>
           </div>
-          <div className="aspect-square bg-gray-100 rounded-3xl border border-gray-200 flex items-center justify-center p-8 shadow-inner">
-            <div className="w-full h-full bg-white rounded-xl shadow-md flex items-center justify-center text-gray-400">
-              Screenshot
-            </div>
+          <div className="bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden shadow-inner aspect-[16/10]">
+             <img src="/images/fuira/Schedule-Add.png" alt="Fuira Schedule" className="w-full h-full object-cover object-left-top" />
           </div>
         </div>
       </section>

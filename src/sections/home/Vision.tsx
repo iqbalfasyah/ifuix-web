@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const Vision = () => {
   return (
-    <section className="py-24 bg-gray-900 text-white">
+    <section className="py-24 bg-gray-900 text-white border-t border-gray-800">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,6 +15,7 @@ export const Vision = () => {
             "Build software that quietly helps millions of people every day."
           </h2>
           <p className="text-xl text-gray-400 leading-relaxed mb-12 max-w-3xl mx-auto">
+            Built independently in Indonesia. Founded by Iqbal Fasyah. <br/><br/>
             IFUIX started with a simple idea: software should respect users' time, attention, and privacy. We believe in quality over quantity, building tools that solve real problems while remaining intentionally simple.
           </p>
           

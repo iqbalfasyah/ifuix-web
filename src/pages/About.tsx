@@ -14,22 +14,22 @@ export const About = () => {
             <Shield className="w-8 h-8" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">About IFUIX</h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            IFUIX started with a simple idea: software should respect users' time, attention, and privacy.
-          </p>
+          <p className="text-xl text-gray-500 font-medium tracking-wide uppercase">Founded in Indonesia.</p>
         </motion.div>
 
-        <div className="space-y-24">
+        <div className="space-y-16 max-w-3xl mx-auto text-center">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              To create beautifully crafted software that improves everyday productivity without sacrificing privacy. We believe that your data belongs to you, and our tools are built to run offline-first, ensuring maximum security and speed.
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Our mission is to build software that quietly helps people every day. We believe software should respect users instead of exploiting them.
             </p>
           </section>
 
+          <div className="w-16 h-1 bg-gray-200 mx-auto rounded-full" />
+
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">The IFUIX Philosophy</h2>
-            <div className="grid sm:grid-cols-2 gap-8">
+            <div className="grid sm:grid-cols-2 gap-8 text-left mt-10">
               <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                 <h3 className="font-bold text-xl mb-3 text-gray-900">Quality over Quantity</h3>
                 <p className="text-gray-600">We don't build dozens of mediocre tools. We focus on single, polished applications that do one thing exceptionally well.</p>
