@@ -10,6 +10,7 @@ const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Con
 const Products = lazy(() => import('./pages/Products').then(m => ({ default: m.Products })));
 const ProductDetail = lazy(() => import('./pages/ProductDetail').then(m => ({ default: m.ProductDetail })));
 const Download = lazy(() => import('./pages/Download').then(m => ({ default: m.Download })));
+const Support = lazy(() => import('./pages/Support').then(m => ({ default: m.Support })));
 const Privacy = lazy(() => import('./pages/Privacy').then(m => ({ default: m.Privacy })));
 const Terms = lazy(() => import('./pages/Terms').then(m => ({ default: m.Terms })));
 
@@ -41,6 +42,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/products/fuira" element={<ProductDetail />} />
               <Route path="/download" element={<Download />} />
+              <Route path="/support" element={<Support />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="*" element={<div className="p-24 text-center text-gray-500">Page not found.</div>} />
