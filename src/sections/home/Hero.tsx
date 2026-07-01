@@ -20,16 +20,14 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6">
-              {t('hero.badge')}
-            </span>
+
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
               {t('hero.title')}<span className="text-primary">{t('hero.title_highlight')}</span>
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               {t('hero.subtitle')}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/products">
                 <Button size="lg" className="w-full sm:w-auto text-lg px-8" rightIcon={<ArrowRight className="w-5 h-5" />}>

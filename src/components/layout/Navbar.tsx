@@ -31,6 +31,7 @@ export const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-medium text-gray-600">
           <Link to="/about" className="hover:text-primary transition-colors">{t('nav.about')}</Link>
+          <Link to="/services" className="hover:text-primary transition-colors">{t('nav.services')}</Link>
           <Link to="/products" className="hover:text-primary transition-colors">{t('nav.products')}</Link>
           <Link to="/download" className="hover:text-primary transition-colors">{t('nav.download')}</Link>
           <Link to="/contact" className="hover:text-primary transition-colors">{t('nav.contact')}</Link>
@@ -76,6 +77,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl py-4 px-4 flex flex-col gap-4">
           <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg font-medium">{t('nav.about')}</Link>
+          <Link to="/services" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg font-medium">{t('nav.services')}</Link>
           <Link to="/products" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg font-medium">{t('nav.products')}</Link>
           <Link to="/download" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg font-medium">{t('nav.download')}</Link>
           <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg font-medium">{t('nav.contact')}</Link>

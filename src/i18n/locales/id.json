@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "Tentang",
+    "services": "Layanan",
     "products": "Produk",
     "download": "Unduh",
     "contact": "Kontak",
@@ -175,7 +176,6 @@
   },
   "support": {
     "title": "Dukung",
-    "intro": "IFUIX adalah studio perangkat lunak independen yang dibangun oleh satu pengembang dari Indonesia.",
     "no_ads": "Tidak ada iklan.",
     "no_tracking": "Tidak ada pelacakan.",
     "no_data": "Tidak ada pengumpulan data.",
@@ -200,5 +200,20 @@
     "promise_2": "Dukungan Anda membantu mempercepat pengembangan, bukan untuk membuka fitur-fitur esensial.",
     "wall_title": "Dinding Pendukung",
     "wall_empty": "Jadilah yang pertama mendukung IFUIX!"
+  },
+  "services": {
+    "title": "Pengembangan Perangkat Lunak Kustom",
+    "subtitle": "Wujudkan ide Anda dengan aplikasi modern, berskala besar, dan berkualitas tinggi.",
+    "web_title": "Aplikasi Web",
+    "web_desc": "Aplikasi web modern, responsif, dan berkinerja tinggi yang dibangun dengan teknologi terbaru seperti React, Tailwind, dan Node.js. Disesuaikan dengan kebutuhan bisnis Anda.",
+    "desktop_title": "Aplikasi Desktop",
+    "desktop_desc": "Aplikasi desktop berkinerja tinggi untuk Windows dan macOS. Dibangun untuk kecepatan, kemampuan offline, dan pengalaman pengguna yang mulus.",
+    "mobile_title": "Aplikasi Mobile",
+    "mobile_desc": "Aplikasi mobile lintas platform untuk iOS dan Android. Antarmuka yang menarik dan performa lancar untuk menjangkau pengguna Anda di mana saja.",
+    "trust_title": "Mengapa Bekerja Bersama Kami?",
+    "trust_desc": "Dengan rekam jejak yang terbukti dalam mengembangkan perangkat lunak kompleks dan mengutamakan privasi seperti Fuira, IFUIX menghadirkan keahlian teknis mendalam dan ketelitian desain di setiap proyek. Kami tidak hanya menulis kode; kami membuat produk andal yang akan disukai pengguna Anda.",
+    "cta_title": "Siap memulai proyek Anda?",
+    "cta_desc": "Mari diskusikan kebutuhan Anda dan bagaimana kami dapat membantu membangun produk hebat Anda selanjutnya.",
+    "cta_btn": "Hubungi Kami"
   }
 }

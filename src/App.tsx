@@ -6,6 +6,7 @@ import { MainLayout } from './layouts/MainLayout';
 // Phase 6: Code Splitting via Lazy Loading
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
 const About = lazy(() => import('./pages/About').then(m => ({ default: m.About })));
+const Services = lazy(() => import('./pages/Services').then(m => ({ default: m.Services })));
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const Products = lazy(() => import('./pages/Products').then(m => ({ default: m.Products })));
 const ProductDetail = lazy(() => import('./pages/ProductDetail').then(m => ({ default: m.ProductDetail })));
@@ -38,6 +39,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/products" element={<Products />} />
               <Route path="/products/fuira" element={<ProductDetail />} />

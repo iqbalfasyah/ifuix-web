@@ -22,7 +22,6 @@ export const Support = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">{t('support.title')}</h1>
 
           <div className="space-y-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 text-left md:text-center leading-relaxed">
-            <p>{t('support.intro')}</p>
             <ul className="space-y-2 flex flex-col md:items-center">
               <li className="flex items-center gap-3"><Shield className="w-5 h-5 text-green-500" /> {t('support.no_ads')}</li>
               <li className="flex items-center gap-3"><Shield className="w-5 h-5 text-green-500" /> {t('support.no_tracking')}</li>

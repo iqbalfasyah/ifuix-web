@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "About",
+    "services": "Services",
     "products": "Products",
     "download": "Download",
     "contact": "Contact",
@@ -8,7 +9,6 @@
     "get_fuira": "Get Fuira"
   },
   "hero": {
-    "badge": "Introducing IFUIX",
     "title": "Thoughtfully crafted software for a ",
     "title_highlight": "noisy world.",
     "subtitle": "We build fast, privacy-first desktop and web applications designed to help you focus on what matters most.",
@@ -175,7 +175,6 @@
   },
   "support": {
     "title": "Support",
-    "intro": "IFUIX is an independent software studio built by one developer from Indonesia.",
     "no_ads": "There are no ads.",
     "no_tracking": "There is no tracking.",
     "no_data": "There is no data collection.",
@@ -200,5 +199,20 @@
     "promise_2": "Your support helps accelerate development, not unlock essential features.",
     "wall_title": "Wall of Supporters",
     "wall_empty": "Be the first to support IFUIX!"
+  },
+  "services": {
+    "title": "Custom Software Development",
+    "subtitle": "Bringing your ideas to life with high-quality, scalable, and modern applications.",
+    "web_title": "Web Applications",
+    "web_desc": "Modern, responsive, and performant web applications built with the latest technologies like React, Tailwind, and Node.js. Tailored to your business needs.",
+    "desktop_title": "Desktop Applications",
+    "desktop_desc": "Powerful, native-feeling desktop applications for Windows and macOS. Built for speed, offline capabilities, and seamless user experience.",
+    "mobile_title": "Mobile Applications",
+    "mobile_desc": "Cross-platform mobile apps for iOS and Android. Engaging interfaces and smooth performance to reach your users wherever they are.",
+    "trust_title": "Why Work With Us?",
+    "trust_desc": "With a proven track record of developing complex, privacy-first software like Fuira, IFUIX brings deep technical expertise and a meticulous eye for design to every project. We don't just write code; we craft reliable products that your users will love.",
+    "cta_title": "Ready to start your project?",
+    "cta_desc": "Let's discuss your requirements and how we can help you build your next great product.",
+    "cta_btn": "Get in Touch"
   }
 }
