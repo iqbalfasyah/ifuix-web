@@ -26,7 +26,7 @@ export const Founder = () => {
           </p>
 
           <p className="text-xl text-gray-400 leading-relaxed mb-12 max-w-2xl mx-auto">
-            "With over 7 years of experience building applications in Indonesia, I believe software should respect users' time, attention, and privacy instead of exploiting them."
+            "Building thoughtful software from Indonesia. I believe software should respect users' time, attention, and privacy instead of exploiting them."
           </p>
           
           <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
