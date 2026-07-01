@@ -17,9 +17,16 @@ export const Download = () => {
             <Monitor className="w-12 h-12 text-gray-400 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Windows</h3>
             <p className="text-gray-500 mb-8">250 MB • .exe installer (64-bit)</p>
-            <Button size="lg" className="w-full mb-4" leftIcon={<DownloadIcon className="w-5 h-5" />}>
-              Download 
-            </Button>
+            <a 
+              href="https://github.com/iqbalfasyah/fuira-release/releases/latest" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full mb-4 block"
+            >
+              <Button size="lg" className="w-full" leftIcon={<DownloadIcon className="w-5 h-5" />}>
+                Download 
+              </Button>
+            </a>
             <div className="text-xs text-gray-400 w-full overflow-hidden text-ellipsis px-4" title="SHA256: 8f434346648f6b96e4ebdf209f80721eb6b29f9df36b47c0e6604fb6b93b8d64">
               SHA256: 8f434346648f6b96e4ebdf209f80721eb6b29f9df36b47c0e6604fb6b93b8d64
             </div>

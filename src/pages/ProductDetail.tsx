@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Download, CheckCircle2 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { Link } from 'react-router-dom';
 
 export const ProductDetail = () => {
   return (
@@ -12,7 +13,9 @@ export const ProductDetail = () => {
             <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6">Fuira</h1>
             <p className="text-2xl text-gray-600 mb-10">Fast. Private. Offline-first.</p>
             <div className="flex justify-center">
-              <Button size="lg" leftIcon={<Download className="w-5 h-5" />}>Download for Windows</Button>
+              <Link to="/download">
+                <Button size="lg" leftIcon={<Download className="w-5 h-5" />}>Download for Windows</Button>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -55,7 +58,8 @@ export const ProductDetail = () => {
                 'Minimalist interface that gets out of your way'
               ].map((feature, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
+                  <CheckCircle2 
+                    className="w-6 h-6 text-primary flex-shrink-0" />
                   <span className="text-gray-600 text-lg">{feature}</span>
                 </li>
               ))}
