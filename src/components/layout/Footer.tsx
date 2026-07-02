@@ -12,9 +12,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white transform transition-transform group-hover:scale-105">
-                <Shield className="w-5 h-5" />
-              </div>
+              <img src="/icon.svg" alt="IFUIX Logo" className="w-8 h-8 transform transition-transform group-hover:scale-105" />
               <span className="font-bold text-xl tracking-tight text-gray-900">IFUIX</span>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">

@@ -10,8 +10,8 @@ export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-white pt-24 md:pt-32 pb-16 md:pb-32">
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-tr from-primary/10 to-orange-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-400/10 to-primary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -22,7 +22,7 @@ export const Hero = () => {
           >
 
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
-              {t('hero.title')}<span className="text-primary">{t('hero.title_highlight')}</span>
+              {t('hero.title')}<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{t('hero.title_highlight')}</span>
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               {t('hero.subtitle')}

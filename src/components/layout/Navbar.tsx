@@ -22,9 +22,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group" onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-xl flex items-center justify-center text-white transform transition-transform group-hover:scale-105">
-            <Shield className="w-5 h-5 md:w-6 md:h-6" />
-          </div>
+          <img src="/icon.svg" alt="IFUIX Logo" className="w-8 h-8 md:w-10 md:h-10 transform transition-transform group-hover:scale-105" />
           <span className="font-bold text-xl md:text-2xl tracking-tight text-gray-900">IFUIX</span>
         </Link>
         

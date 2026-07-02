@@ -13,7 +13,7 @@ export const SEO = ({
   description = 'Thoughtful software for a noisy world. We build beautifully crafted, privacy-first desktop applications that improve your everyday productivity without sacrificing your data.',
   keywords = 'privacy, offline, software, desktop, productivity, fuira, ifuix',
   url = 'https://ifuix.com',
-  image = 'https://ifuix.com/logo-dark.png',
+  image = 'https://ifuix.com/icon.png',
 }: SEOProps) => {
   return (
     <Helmet>
