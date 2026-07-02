@@ -16,7 +16,10 @@ export const ProductDetail = () => {
     { src: "/images/fuira/Notes.png", label: t('product_detail.s4') },
     { src: "/images/fuira/Timer.png", label: t('product_detail.s5') },
     { src: "/images/fuira/Data_Sync.png", label: t('product_detail.s6') },
-    { src: "/images/fuira/Settings.png", label: t('product_detail.s7') },
+    { src: "/images/fuira/Setting.png", label: t('product_detail.s7') },
+    { src: "/images/fuira/Settings-Adzan.png", label: t('product_detail.s8') },
+    { src: "/images/fuira/features.png", label: t('product_detail.s9') },
+    { src: "/images/fuira/privacy.png", label: t('product_detail.s10') },
   ];
 
   useEffect(() => {
@@ -133,9 +136,9 @@ export const ProductDetail = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-gray-100 rounded-3xl p-8 relative overflow-hidden h-full min-h-[400px]">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-orange-400/20 mix-blend-multiply"></div>
-              {/* Optional secondary image/graphic can go here */}
+            <div className="bg-gray-100 rounded-3xl p-0 relative overflow-hidden h-full min-h-[400px]">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-orange-400/20 mix-blend-multiply z-10 pointer-events-none"></div>
+              <img src="/images/fuira/privacy.png" alt="Privacy Philosophy" className="absolute inset-0 w-full h-full object-cover object-center" />
             </div>
           </div>
         </div>
