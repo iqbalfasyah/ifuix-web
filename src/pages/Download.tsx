@@ -48,7 +48,6 @@ export const Download = () => {
   }, []);
 
   const latestRelease = releases.length > 0 ? releases[0] : null;
-  const version = latestRelease?.tag_name || 'v0.9.0-beta';
   
   const exeAsset = latestRelease?.assets?.find((a: any) => a.name.toLowerCase().endsWith('.exe'));
   const downloadUrl = exeAsset?.browser_download_url || 
