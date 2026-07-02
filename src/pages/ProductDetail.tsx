@@ -20,6 +20,7 @@ export const ProductDetail = () => {
     { src: "/images/fuira/Settings-Adzan.png", label: t('product_detail.s8') },
     { src: "/images/fuira/features.png", label: t('product_detail.s9') },
     { src: "/images/fuira/privacy.png", label: t('product_detail.s10') },
+    { src: "/images/fuira/Alert.png", label: t('product_detail.s11') },
   ];
 
   useEffect(() => {
