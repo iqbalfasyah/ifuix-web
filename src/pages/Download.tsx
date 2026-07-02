@@ -115,6 +115,19 @@ export const Download = () => {
             )}
           </ul>
         </div>
+        <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm max-w-3xl mx-auto mt-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('download.install_title')}</h2>
+          <div className="space-y-4 text-gray-600">
+            <p>{t('download.install_p1')}</p>
+            <p>{t('download.install_p2')}</p>
+            <p>{t('download.install_p3')}</p>
+            <ol className="list-decimal pl-5 space-y-2">
+              <li>{t('download.install_li1')}</li>
+              <li>{t('download.install_li2')}</li>
+            </ol>
+            <p className="pt-2 font-medium text-gray-500">{t('download.install_p4')}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

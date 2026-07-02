@@ -14,6 +14,7 @@ const Download = lazy(() => import('./pages/Download').then(m => ({ default: m.D
 const Support = lazy(() => import('./pages/Support').then(m => ({ default: m.Support })));
 const Privacy = lazy(() => import('./pages/Privacy').then(m => ({ default: m.Privacy })));
 const Terms = lazy(() => import('./pages/Terms').then(m => ({ default: m.Terms })));
+const Faq = lazy(() => import('./pages/Faq').then(m => ({ default: m.Faq })));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,6 +46,7 @@ function App() {
               <Route path="/products/fuira" element={<ProductDetail />} />
               <Route path="/download" element={<Download />} />
               <Route path="/support" element={<Support />} />
+              <Route path="/faq" element={<Faq />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="*" element={<div className="p-24 text-center text-gray-500">Page not found.</div>} />

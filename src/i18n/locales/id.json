@@ -5,6 +5,7 @@
     "products": "Produk",
     "download": "Unduh",
     "contact": "Kontak",
+    "faq": "FAQ",
     "learn_more": "Pelajari",
     "get_fuira": "Dapatkan Fuira"
   },
@@ -134,7 +135,14 @@
     "n1": "Rilis beta publik awal dari Fuira.",
     "n2": "Fitur alur kerja inti diimplementasikan: Pengingat Cerdas, Catatan Markdown, Timer.",
     "n3": "Google Drive Sync dikonfigurasi untuk sinkronisasi antar perangkat opsional.",
-    "n4": "Mampu offline sepenuhnya dengan Penyimpanan Lokal."
+    "n4": "Mampu offline sepenuhnya dengan Penyimpanan Lokal.",
+    "install_title": "Instalasi Pertama Kali",
+    "install_p1": "Fuira saat ini didistribusikan sebagai aplikasi independen.",
+    "install_p2": "Karena ini adalah aplikasi yang baru dirilis tanpa sertifikat penandatanganan kode komersial, Windows SmartScreen mungkin menampilkan peringatan selama instalasi pertama.",
+    "install_p3": "Untuk melanjutkan:",
+    "install_li1": "Klik \"More info\"",
+    "install_li2": "Klik \"Run anyway\"",
+    "install_p4": "Peringatan ini muncul hanya karena aplikasi ini baru—bukan karena mengandung malware."
   },
   "products": {
     "title": "Produk Kami",
@@ -215,5 +223,18 @@
     "cta_title": "Siap memulai proyek Anda?",
     "cta_desc": "Mari diskusikan kebutuhan Anda dan bagaimana kami dapat membantu membangun produk hebat Anda selanjutnya.",
     "cta_btn": "Hubungi Kami"
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "desc": "Temukan jawaban untuk pertanyaan umum tentang Fuira dan IFUIX.",
+    "q1": "Mengapa Windows menampilkan peringatan?",
+    "a1_p1": "Fuira saat ini dikembangkan sebagai aplikasi desktop independen.",
+    "a1_p2": "Karena aplikasi ini belum ditandatangani dengan sertifikat komersial, Windows SmartScreen mungkin menampilkan peringatan \"Unknown Publisher\".",
+    "a1_p3": "Ini BUKAN indikasi malware.",
+    "a1_p4": "Fuira terbuka tentang apa yang dilakukannya:",
+    "a1_li1": "Tanpa iklan",
+    "a1_li2": "Tanpa pelacakan",
+    "a1_li3": "Offline-first",
+    "a1_li4": "Google Drive hanya dengan izin Anda"
   }
 }

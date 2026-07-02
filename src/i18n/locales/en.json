@@ -5,6 +5,7 @@
     "products": "Products",
     "download": "Download",
     "contact": "Contact",
+    "faq": "FAQ",
     "learn_more": "Learn More",
     "get_fuira": "Get Fuira"
   },
@@ -133,7 +134,14 @@
     "n1": "Initial public beta release of Fuira.",
     "n2": "Core workflow features implemented: Smart Reminder, Markdown Notes, Timer.",
     "n3": "Google Drive Sync configured for opt-in cross-device sync.",
-    "n4": "Fully offline capable with Local Storage."
+    "n4": "Fully offline capable with Local Storage.",
+    "install_title": "First-time Installation",
+    "install_p1": "Fuira is currently distributed as an independent application.",
+    "install_p2": "Because it is a newly released app without a commercial code-signing certificate, Windows SmartScreen may display a warning during the first installation.",
+    "install_p3": "To continue:",
+    "install_li1": "Click \"More info\"",
+    "install_li2": "Click \"Run anyway\"",
+    "install_p4": "This warning appears only because the application is new—not because it contains malware."
   },
   "products": {
     "title": "Our Products",
@@ -214,5 +222,18 @@
     "cta_title": "Ready to start your project?",
     "cta_desc": "Let's discuss your requirements and how we can help you build your next great product.",
     "cta_btn": "Get in Touch"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "desc": "Find answers to common questions about Fuira and IFUIX.",
+    "q1": "Why does Windows show a warning?",
+    "a1_p1": "Fuira is currently developed as an independent desktop application.",
+    "a1_p2": "Because the application has not yet been code-signed with a commercial certificate, Windows SmartScreen may display an \"Unknown Publisher\" warning.",
+    "a1_p3": "This does NOT indicate malware.",
+    "a1_p4": "Fuira is open about what it does:",
+    "a1_li1": "No ads",
+    "a1_li2": "No tracking",
+    "a1_li3": "Offline-first",
+    "a1_li4": "Google Drive only with your permission"
   }
 }
