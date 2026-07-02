@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 export const ProductDetail = () => {
   const { t } = useTranslation();
   const [activeImage, setActiveImage] = useState(0);
+  const [version, setVersion] = useState<string>('v0.9.5');
   
   const screenshots = [
     { src: "/images/fuira/Welcome.png", label: t('product_detail.s1') },
@@ -30,6 +31,19 @@ export const ProductDetail = () => {
     return () => clearInterval(timer);
   }, [screenshots.length]);
 
+  useEffect(() => {
+    fetch('https://api.github.com/repos/iqbalfasyah/fuira-release/releases/latest')
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.tag_name) {
+          setVersion(data.tag_name);
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching release:', err);
+      });
+  }, []);
+
   return (
     <div className="pb-16 md:pb-32">
       {/* Product Hero */}
@@ -37,7 +51,17 @@ export const ProductDetail = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-6">Fuira</h1>
-            <p className="text-2xl text-gray-600 mb-10">{t('product_detail.subtitle')}</p>
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-sm font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">
+                🟡 Beta {version}
+              </span>
+              <span className="text-gray-400">•</span>
+              <span className="text-gray-600">Free</span>
+              <span className="text-gray-400">•</span>
+              <span className="text-gray-600">Offline First</span>
+              <span className="text-gray-400">•</span>
+              <span className="text-gray-600">Privacy First</span>
+            </div>
             <div className="flex justify-center">
               <Link to="/download">
                 <Button size="lg" className="w-full sm:w-auto px-8" leftIcon={<Download className="w-5 h-5" />}>
