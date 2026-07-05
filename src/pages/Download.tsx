@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Download as DownloadIcon, Apple, Monitor, Loader2 } from 'lucide-react';
+import { Download as DownloadIcon, Apple, Monitor, Loader2, Globe } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -14,13 +14,13 @@ export const Download = () => {
   // Fallback release in case of GitHub API rate limits
   const fallbackRelease = {
     id: 'fallback',
-    tag_name: 'v0.9.5-beta',
-    name: '0.9.5-beta',
-    body: 'Bug fixes and performance improvements.\n- Offline-first support\n- UI improvements',
+    tag_name: 'v0.9.7-beta',
+    name: '0.9.7-beta',
+    body: 'New features and improvements.\n- Sync conflict resolution\n- UI improvements\n- Startup & system tray options',
     assets: [
       {
-        name: 'Fuira-Setup-0.9.5-beta.exe',
-        browser_download_url: 'https://github.com/iqbalfasyah/fuira-release/releases/download/v0.9.5-beta/Fuira-Setup-0.9.5-beta.exe',
+        name: 'Fuira-Setup-0.9.7-beta.exe',
+        browser_download_url: 'https://github.com/iqbalfasyah/fuira-release/releases/download/v0.9.7-beta/Fuira-Setup-0.9.7-beta.exe',
         size: 78643200
       }
     ]
@@ -73,7 +73,7 @@ export const Download = () => {
           </Link>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-20">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
           <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl shadow-gray-200/40 text-center relative overflow-hidden flex flex-col items-center">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
             <Monitor className="w-12 h-12 text-gray-400 mb-6" />
@@ -101,6 +101,15 @@ export const Download = () => {
             <p className="text-gray-400 mb-8">{t('download.mac_desc')}</p>
             <Button size="lg" variant="outline" className="w-full text-gray-400 border-gray-300" disabled>
               {t('download.mac_btn')}
+            </Button>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 border-dashed text-center flex flex-col items-center">
+            <Globe className="w-12 h-12 text-gray-400 mb-6" />
+            <h3 className="text-2xl font-bold text-gray-400 mb-2">{t('download.web_title')}</h3>
+            <p className="text-gray-400 mb-8">{t('download.web_desc')}</p>
+            <Button size="lg" variant="outline" className="w-full text-gray-400 border-gray-300" disabled>
+              {t('download.web_btn')}
             </Button>
           </div>
         </div>
@@ -184,7 +193,7 @@ export const Download = () => {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I sync?</h3>
-              <p className="text-gray-600">Currently, syncing across devices is not supported as data is stored locally, but we are exploring secure sync options for future updates.</p>
+              <p className="text-gray-600">Yes! Fuira supports optional syncing via Google Drive so you can back up and sync your data across devices, including sync conflict resolution.</p>
             </div>
           </div>
         </div>

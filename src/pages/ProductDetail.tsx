@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 export const ProductDetail = () => {
   const { t } = useTranslation();
   const [activeImage, setActiveImage] = useState(0);
-  const [version, setVersion] = useState<string>('v0.9.5');
+  const [version, setVersion] = useState<string>('v0.9.7-beta');
   
   const screenshots = [
     { src: "/images/fuira/Welcome.png", label: t('product_detail.s1') },
@@ -32,11 +32,11 @@ export const ProductDetail = () => {
   }, [screenshots.length]);
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/iqbalfasyah/fuira-release/releases/latest')
+    fetch('https://api.github.com/repos/iqbalfasyah/fuira-release/releases')
       .then(res => res.json())
       .then(data => {
-        if (data && data.tag_name) {
-          setVersion(data.tag_name);
+        if (Array.isArray(data) && data.length > 0 && data[0].tag_name) {
+          setVersion(data[0].tag_name);
         }
       })
       .catch(err => {
@@ -53,7 +53,7 @@ export const ProductDetail = () => {
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-6">Fuira</h1>
             <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-sm font-medium">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">
-                🟡 Beta {version}
+                🟡 {version}
               </span>
               <span className="text-gray-400">•</span>
               <span className="text-gray-600">Free</span>
