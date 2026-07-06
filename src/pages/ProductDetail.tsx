@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 export const ProductDetail = () => {
   const { t } = useTranslation();
   const [activeImage, setActiveImage] = useState(0);
-  const [version, setVersion] = useState<string>('v0.9.7-beta');
+  const [version, setVersion] = useState<string>('v0.9.8-beta');
   
   const screenshots = [
     { src: "/images/fuira/Welcome.png", label: t('product_detail.s1') },

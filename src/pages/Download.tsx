@@ -14,14 +14,14 @@ export const Download = () => {
   // Fallback release in case of GitHub API rate limits
   const fallbackRelease = {
     id: 'fallback',
-    tag_name: 'v0.9.7-beta',
-    name: '0.9.7-beta',
-    body: 'New features and improvements.\n- Sync conflict resolution\n- UI improvements\n- Startup & system tray options',
+    tag_name: 'v0.9.8-beta',
+    name: '0.9.8-beta',
+    body: '- **Startup Performance:** Optimized startup performance by shifting the daily auto-backup processes to run asynchronously, fixing freezing delays on the first open of the day.\n- **In-App Updater:** Enhanced layout and logic of the top-banner auto-updater flow (Available, Downloading, Ready to Install).\n- **Layout Tweaks:** Fixed layout alignment for notes tags in 1 line, adjusted developer overlay mode, and removed unnecessary horizontal scrollbars from left panels.',
     assets: [
       {
-        name: 'Fuira-Setup-0.9.7-beta.exe',
-        browser_download_url: 'https://github.com/iqbalfasyah/fuira-release/releases/download/v0.9.7-beta/Fuira-Setup-0.9.7-beta.exe',
-        size: 78643200
+        name: 'Fuira-Setup-0.9.8-beta.exe',
+        browser_download_url: 'https://github.com/iqbalfasyah/fuira-release/releases/download/v0.9.8-beta/Fuira-Setup-0.9.8-beta.exe',
+        size: 73066843
       }
     ]
   };
@@ -135,7 +135,7 @@ export const Download = () => {
 
         <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
-            <h2 className="text-2xl font-bold text-gray-900">{t('download.notes_title')}</h2>
+            <h2 className="text-2xl font-bold text-gray-900">{t('download.notes_title', { version: latestRelease?.name || latestRelease?.tag_name || 'v0.9.8-beta' })}</h2>
             <a href="https://github.com/iqbalfasyah/fuira-release/releases" target="_blank" rel="noopener noreferrer">
               <Button size="sm" variant="outline">GitHub Releases</Button>
             </a>

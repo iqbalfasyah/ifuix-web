@@ -133,7 +133,7 @@
     "web_title": "Web App",
     "web_desc": "Access from anywhere",
     "web_btn": "Coming Soon",
-    "notes_title": "Release Notes (v0.9.7-beta)",
+    "notes_title": "Release Notes ({{version}})",
     "n1": "New: Sync conflict resolution (Keep Local, Use Cloud, or Merge).",
     "n2": "New: Dynamic dashboard greeting and startup/system tray options.",
     "n3": "Enhanced UI/UX with full multi-language support (English & Indonesian).",

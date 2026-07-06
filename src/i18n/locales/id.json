@@ -134,7 +134,7 @@
     "web_title": "Aplikasi Web",
     "web_desc": "Akses dari mana saja",
     "web_btn": "Segera Hadir",
-    "notes_title": "Catatan Rilis (v0.9.7-beta)",
+    "notes_title": "Catatan Rilis ({{version}})",
     "n1": "Baru: Resolusi konflik sinkronisasi (Simpan Lokal, Gunakan Cloud, atau Gabungkan).",
     "n2": "Baru: Sapaan dashboard dinamis dan opsi startup/sistem tray.",
     "n3": "Peningkatan UI/UX dengan dukungan multi-bahasa penuh (Inggris & Indonesia).",
