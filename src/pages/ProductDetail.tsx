@@ -63,7 +63,7 @@ export const ProductDetail = () => {
               <span className="text-gray-600">Privacy First</span>
             </div>
             <div className="flex justify-center">
-              <Link to="/download">
+              <Link to="/download/fuira">
                 <Button size="lg" className="w-full sm:w-auto px-8" leftIcon={<Download className="w-5 h-5" />}>
                   {t('product_detail.btn_download')}
                 </Button>

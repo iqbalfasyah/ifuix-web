@@ -5,11 +5,7 @@ import { Button } from '../components/ui/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-
-export const Download = () => {
-  const { t } = useTranslation();
-  const [releases, setReleases] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+import { SEO } from '../components/seo/SEO';
 
   // Fallback release in case of GitHub API rate limits
   const fallbackRelease = {
@@ -25,6 +21,11 @@ export const Download = () => {
       }
     ]
   };
+
+export const Download = () => {
+  const { t } = useTranslation();
+  const [releases, setReleases] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('https://api.github.com/repos/iqbalfasyah/fuira-release/releases')
@@ -56,6 +57,7 @@ export const Download = () => {
 
   return (
     <div className="pt-20 md:pt-24 pb-16 md:pb-32">
+      <SEO title={`${t('download.title')} | IFUIX`} description={t('download.subtitle')} url="https://ifuix.com/download/fuira" />
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -149,7 +151,7 @@ export const Download = () => {
             ) : releases.length > 0 ? (
               releases.map((rel: any, idx: number) => {
                 // Strip null bytes and replacement chars caused by encoding mismatches
-                const cleanNotes = (rel.body || '').replace(/\0/g, '').replace(/\uFFFD/g, '');
+                const cleanNotes = (rel.body || '').replaceAll(String.fromCharCode(0), '').replace(/\uFFFD/g, '');
                 
                 return (
                   <details key={rel.id} open={idx === 0} className="group border-b border-gray-100 pb-4 mb-4 last:border-0 last:pb-0 last:mb-0">

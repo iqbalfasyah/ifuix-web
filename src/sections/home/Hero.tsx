@@ -1,48 +1,65 @@
-import { motion } from 'framer-motion';
-import { Button } from '../../components/ui/Button';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-
+import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 export const Hero = () => {
-  const { t } = useTranslation();
-
+  const { t } = useTranslation()
   return (
-    <section className="relative overflow-hidden bg-white pt-24 md:pt-32 pb-16 md:pb-32">
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-secondary/10 to-primary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
-
-      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-
-            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight mb-8">
-              {t('hero.title')}<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{t('hero.title_highlight')}</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              {t('hero.subtitle')}
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/products">
-                <Button size="lg" className="w-full sm:w-auto text-lg px-8" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                  {t('hero.cta_explore')}
-                </Button>
-              </Link>
-              <Link to="/about">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8">
-                  {t('hero.cta_mission')}
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
+    <section className="studio-hero">
+      <div className="studio-container hero-layout">
+        <div className="hero-copy">
+          <span className="eyebrow">
+            <span className="status-dot" />
+            {t('studio.independent')}
+          </span>
+          <h1>
+            {t('studio.heroLine1')}
+            <br />
+            <span>{t('studio.heroLine2')}</span>
+          </h1>
+          <p>{t('studio.heroDescription')}</p>
+          <div className="hero-actions">
+            <a href="#our-products" className="primary-action">
+              {t('studio.explore')}
+              <ArrowDown size={18} />
+            </a>
+            <Link to="/about" className="text-action">
+              {t('studio.story')}
+              <ArrowUpRight size={18} />
+            </Link>
+          </div>
+          <div className="hero-footnote">
+            <span>01 — {t('studio.productivity')}</span>
+            <span>02 — {t('studio.learning')}</span>
+          </div>
         </div>
+        <Link to="/products/kebunpintar" className="hero-showcase">
+          <div className="showcase-top">
+            <span>
+              <span className="status-dot" />
+              {t('studio.introducing')}
+            </span>
+            <ArrowUpRight size={22} />
+          </div>
+          <div className="showcase-screen">
+            <img
+              src="/images/kebunpintar/home.png"
+              width="1200"
+              height="800"
+              alt={t('studio.kebunpintar.imageAlt')}
+              fetchPriority="high"
+            />
+          </div>
+          <div className="showcase-caption">
+            <div>
+              <span>{t('studio.learning')}</span>
+              <strong>KebunPintar</strong>
+            </div>
+            <span className="showcase-round">
+              <ArrowUpRight size={23} />
+            </span>
+          </div>
+        </Link>
       </div>
     </section>
-  );
-};
+  )
+}

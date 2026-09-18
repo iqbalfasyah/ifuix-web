@@ -40,4 +40,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url><loc>https://ifuix.com/products/kebunpintar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ifuix.com/download/kebunpintar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ifuix.com/download/fuira</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

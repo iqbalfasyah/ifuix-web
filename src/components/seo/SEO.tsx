@@ -9,9 +9,9 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = 'IFUIX | Privacy-First Software',
-  description = 'Thoughtful software for a noisy world. We build beautifully crafted, privacy-first desktop applications that improve your everyday productivity without sacrificing your data.',
-  keywords = 'privacy, offline, software, desktop, productivity, fuira, ifuix',
+  title = 'IFUIX | Apps for focus and learning',
+  description = 'Discover Fuira for everyday productivity and KebunPintar for learning letters and numbers. Official IFUIX downloads and installation guides.',
+  keywords = 'offline, software, desktop, android, education, kebunpintar, productivity, fuira, ifuix',
   url = 'https://ifuix.com',
   image = 'https://ifuix.com/icon.png',
 }: SEOProps) => {

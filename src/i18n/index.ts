@@ -20,3 +20,9 @@ i18n
   });
 
 export default i18n;
+
+const updateDocumentLanguage = () => {
+  document.documentElement.lang = i18n.language?.startsWith('id') ? 'id' : 'en';
+};
+i18n.on('languageChanged', updateDocumentLanguage);
+updateDocumentLanguage();

@@ -1,0 +1,982 @@
+:root {
+  --studio-ink: #282920;
+  --studio-muted: #686b61;
+  --studio-paper: #faf9f5;
+  --studio-border: #e4e5dc;
+  --garden: #306b4a;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+body {
+  margin: 0;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #bc4c0e;
+  outline-offset: 5px;
+}
+img {
+  max-width: 100%;
+}
+.studio-container {
+  width: min(1200px, calc(100% - 64px));
+  margin-inline: auto;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+}
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5b8055;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.primary-action,
+.text-action,
+.download-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.primary-action {
+  padding: 15px 22px;
+  color: white;
+  background: #b9470d;
+  border-radius: 9px;
+}
+.primary-action:hover {
+  background: #973909;
+  transform: translateY(-2px);
+}
+.text-action {
+  color: var(--studio-ink);
+}
+.text-action:hover {
+  color: #ac400c;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 26px;
+}
+.studio-hero {
+  background: var(--studio-paper);
+  border-bottom: 1px solid var(--studio-border);
+  padding: 76px 0 84px;
+  color: var(--studio-ink);
+}
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+.hero-copy h1 {
+  font-size: clamp(38px, 4.2vw, 61px);
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+  margin: 27px 0;
+}
+.hero-copy h1 span {
+  color: #b9470d;
+}
+.hero-copy > p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--studio-muted);
+  max-width: 460px;
+  margin: 0 0 30px;
+}
+.hero-footnote {
+  display: flex;
+  gap: 25px;
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--studio-border);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--studio-muted);
+}
+.hero-showcase {
+  background: #e9efdf;
+  border: 1px solid #d4dec7;
+  border-radius: 16px;
+  display: block;
+  padding: 23px;
+  transform: rotate(2deg);
+  transition: transform 0.3s;
+  box-shadow: 0 16px 40px #273f2510;
+  color: var(--studio-ink);
+}
+.hero-showcase:hover {
+  transform: rotate(0);
+}
+.showcase-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+.showcase-top > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+.showcase-screen {
+  border: 6px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 20px #263a2814;
+}
+.showcase-screen img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  background: #fffcf2;
+}
+.showcase-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.showcase-caption strong {
+  display: block;
+  font-size: 29px;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+.showcase-caption > div > span {
+  font-size: 11px;
+  color: #576b4b;
+}
+.showcase-round {
+  display: grid;
+  place-items: center;
+  background: #ffffffaa;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.studio-products {
+  padding: 80px 0 88px;
+  background: #fff;
+}
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+.section-heading h2,
+.studio-contact h2,
+.kebun-parent h2 {
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.2;
+  margin-top: 12px;
+}
+.section-heading > p {
+  max-width: 350px;
+  color: var(--studio-muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 3px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.product-card {
+  border: 1px solid var(--studio-border);
+  border-radius: 13px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.product-preview {
+  position: relative;
+  display: block;
+  padding: 64px 30px 0;
+  background: #eff3e9;
+  overflow: hidden;
+  height: 285px;
+}
+.product-card.focus .product-preview {
+  background: #f4ece3;
+}
+.platform-pill {
+  position: absolute;
+  left: 25px;
+  top: 21px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #42513b;
+}
+.focus .platform-pill {
+  color: #795635;
+}
+.product-preview img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px 8px 0 0;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 20px #20202013;
+  transition: transform 0.3s;
+}
+.product-preview:hover img {
+  transform: translateY(-5px);
+}
+.product-card-content {
+  padding: 27px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.product-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.product-title h3 {
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+.product-title > span {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--studio-muted);
+  font-weight: 650;
+  text-align: right;
+}
+.product-card-content > p {
+  color: var(--studio-muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 13px 0 20px;
+  flex: 1;
+}
+.feature-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 25px;
+  padding: 0;
+}
+.feature-chips li {
+  font-size: 10px;
+  padding: 6px 9px;
+  border: 1px solid var(--studio-border);
+  border-radius: 5px;
+  color: #505647;
+}
+.card-actions {
+  border-top: 1px solid var(--studio-border);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.download-action {
+  font-size: 12px;
+  color: var(--studio-muted);
+}
+.download-action:hover {
+  color: #b9470d;
+}
+.studio-values {
+  padding: 60px 0;
+  background: var(--studio-paper);
+  border-block: 1px solid var(--studio-border);
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  margin-top: 32px;
+}
+.values-grid svg {
+  color: var(--garden);
+}
+.values-grid h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 18px 0 9px;
+  letter-spacing: -0.02em;
+}
+.values-grid p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--studio-muted);
+}
+.studio-contact {
+  padding-block: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.studio-contact p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--studio-muted);
+}
+.studio-page {
+  padding: 55px 0 90px;
+  background: var(--studio-paper);
+  min-height: 70vh;
+}
+.page-intro {
+  max-width: 780px;
+  margin-bottom: 42px;
+}
+.page-intro h1 {
+  font-size: clamp(34px, 4.4vw, 55px);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+  margin: 17px 0 20px;
+}
+.page-intro p {
+  color: var(--studio-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+.download-footnote {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--studio-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--studio-muted);
+  margin-bottom: 30px;
+}
+.kebun-hero {
+  background: #f0f4e9;
+  padding: 32px 0 65px;
+}
+.kebun-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 60px;
+}
+.kebun-hero .eyebrow {
+  display: block;
+  color: var(--garden);
+}
+.app-icon {
+  border-radius: 17px;
+  margin: 23px 0 20px;
+  object-fit: contain;
+}
+.kebun-hero h1 {
+  font-size: clamp(36px, 4vw, 54px);
+  letter-spacing: -0.05em;
+  font-weight: 650;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.kebun-hero h1 span {
+  color: var(--garden);
+}
+.kebun-hero-layout > div > p:not(.small-note) {
+  font-size: 16px;
+  color: #59654f;
+  line-height: 1.85;
+  max-width: 490px;
+  margin-bottom: 26px;
+}
+.garden-action {
+  background: var(--garden);
+}
+.garden-action:hover {
+  background: #245338;
+}
+.small-note {
+  font-size: 12px !important;
+  line-height: 1.8;
+  color: var(--studio-muted);
+  margin-top: 20px;
+}
+.kebun-preview {
+  background: #fff;
+  border: 8px solid #fff;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px #2f553914;
+  overflow: hidden;
+  transform: rotate(1deg);
+}
+.kebun-preview img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  background: #fffcf2;
+}
+.kebun-features {
+  padding-block: 70px;
+}
+.screenshot-section {
+  background: var(--studio-paper);
+  padding-block: 70px;
+  border-block: 1px solid var(--studio-border);
+}
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+.screenshot-grid button {
+  width: 100%;
+  border: 1px solid var(--studio-border);
+  border-radius: 11px;
+  overflow: hidden;
+  background: #fff;
+  padding: 9px;
+}
+.screenshot-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fffcf2;
+  transition: transform 0.25s;
+}
+.screenshot-grid button:hover img {
+  transform: scale(1.015);
+}
+.screenshot-grid figcaption {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 16px 2px;
+}
+.screenshot-grid figcaption span {
+  font-weight: 400;
+  color: #858a7f;
+}
+.kebun-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding-block: 75px;
+}
+.kebun-parent p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--studio-muted);
+  margin-top: 20px;
+}
+.parent-note {
+  padding: 30px;
+  border: 1px solid var(--studio-border);
+  border-radius: 12px;
+  background: var(--studio-paper);
+}
+.parent-note h3 {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.parent-note p {
+  margin: 12px 0 22px;
+}
+.screenshot-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(1100px, 94vw);
+  max-height: 94dvh;
+  padding: 42px 14px 14px;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+}
+.screenshot-dialog::backdrop {
+  background: #142219cc;
+}
+.screenshot-dialog img {
+  max-height: 78dvh;
+  width: 100%;
+  object-fit: contain;
+}
+.screenshot-dialog p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.dialog-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  border: 0;
+  background: #f1f2ed;
+  border-radius: 50%;
+  padding: 5px;
+}
+.install-layout {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 65px;
+  align-items: start;
+}
+.apk-card {
+  position: sticky;
+  top: 108px;
+  padding: 28px;
+  border: 1px solid #d8e1ce;
+  border-radius: 14px;
+  background: #f0f4e9;
+}
+.apk-card .app-icon {
+  margin-top: 0;
+}
+.apk-card h2 {
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+.apk-platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--garden);
+  font-size: 13px;
+  margin: 10px 0 23px;
+}
+.release-details {
+  border-block: 1px solid #d8e1ce;
+  padding: 14px 0;
+  margin-bottom: 22px;
+  font-size: 13px;
+}
+.release-details > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.release-details dt {
+  color: var(--studio-muted);
+}
+.release-details dd {
+  font-weight: 600;
+}
+.apk-card .primary-action {
+  width: 100%;
+}
+.apk-filename {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--studio-muted);
+}
+.apk-offline {
+  border-top: 1px solid #d8e1ce;
+  margin-top: 24px;
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--garden);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.apk-offline svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.checksum {
+  font-size: 11px;
+  margin-top: 16px;
+  color: var(--studio-muted);
+}
+.checksum summary {
+  cursor: pointer;
+}
+.checksum code {
+  display: block;
+  overflow-wrap: anywhere;
+  margin-top: 10px;
+}
+.install-guide h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  margin-top: 12px;
+}
+.install-steps {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+.install-steps > li {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.step-number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #cfddc4;
+  background: #edf3e5;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--garden);
+}
+.install-steps h3 {
+  font-size: 16px;
+  font-weight: 650;
+  margin: 3px 0 7px;
+}
+.install-steps p,
+.install-faq p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--studio-muted);
+}
+.install-note {
+  padding: 18px 20px;
+  background: #f5eee0;
+  border-left: 3px solid #bf9450;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #716044;
+}
+.faq-heading {
+  margin: 40px 0 15px !important;
+}
+.install-faq {
+  border-bottom: 1px solid var(--studio-border);
+  padding: 17px 0;
+}
+.install-faq summary {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.install-faq p {
+  padding: 12px 0 2px;
+}
+.release-pending {
+  padding: 16px;
+  background: #fff;
+  border-radius: 9px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.release-pending a {
+  margin-top: 12px;
+}
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 15px;
+  z-index: 100;
+  background: #fff;
+  padding: 14px;
+  border: 2px solid #b9470d;
+  border-radius: 8px;
+}
+.skip-link:focus {
+  top: 10px;
+}
+@media (min-width: 1440px) {
+  .studio-hero {
+    padding-block: 95px;
+  }
+  .hero-layout {
+    gap: 85px;
+  }
+}
+@media (max-width: 1023px) {
+  .hero-layout {
+    gap: 32px;
+  }
+  .hero-copy h1 {
+    font-size: 43px;
+  }
+  .hero-showcase {
+    padding: 17px;
+  }
+  .hero-copy > p {
+    font-size: 15px;
+  }
+  .hero-footnote {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .product-preview {
+    height: 240px;
+  }
+  .product-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .product-title > span {
+    text-align: left;
+  }
+  .kebun-hero-layout {
+    gap: 30px;
+  }
+  .install-layout {
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 35px;
+  }
+  .kebun-parent {
+    gap: 35px;
+  }
+  .values-grid {
+    gap: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .studio-container {
+    width: calc(100% - 36px);
+  }
+  .studio-hero {
+    padding: 38px 0 48px;
+  }
+  .hero-layout,
+  .kebun-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .hero-copy h1 {
+    font-size: clamp(37px, 8.5vw, 52px);
+    margin-block: 23px;
+  }
+  .hero-copy > p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .hero-actions {
+    gap: 20px;
+  }
+  .hero-footnote {
+    margin-top: 30px;
+    padding-top: 18px;
+  }
+  .hero-showcase {
+    max-width: 520px;
+    width: calc(100% - 10px);
+    margin-inline: auto;
+    transform: rotate(1deg);
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .section-heading > p {
+    margin-top: 17px;
+    max-width: 100%;
+  }
+  .studio-products {
+    padding: 47px 0;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .product-preview {
+    height: 250px;
+    padding: 55px 20px 0;
+  }
+  .product-preview img {
+    height: 245px;
+  }
+  .product-card-content {
+    padding: 23px;
+  }
+  .product-title {
+    flex-direction: row;
+    align-items: center;
+  }
+  .product-title > span {
+    text-align: right;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .values-grid > div {
+    border-bottom: 1px solid var(--studio-border);
+    padding-bottom: 22px;
+  }
+  .values-grid > div:last-child {
+    border: 0;
+    padding-bottom: 0;
+  }
+  .values-grid h3 {
+    margin-top: 12px;
+  }
+  .studio-values {
+    padding-block: 40px;
+  }
+  .studio-contact {
+    display: block;
+    padding-block: 45px;
+  }
+  .studio-contact .primary-action {
+    margin-top: 24px;
+  }
+  .studio-page {
+    padding: 30px 0 50px;
+  }
+  .page-intro h1 {
+    font-size: 36px;
+  }
+  .page-intro p {
+    font-size: 15px;
+  }
+  .kebun-hero {
+    padding-bottom: 40px;
+  }
+  .kebun-hero h1 {
+    font-size: 40px;
+  }
+  .kebun-hero .app-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .kebun-features,
+  .screenshot-section {
+    padding-block: 43px;
+  }
+  .screenshot-grid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .kebun-parent {
+    grid-template-columns: 1fr;
+    padding-block: 45px;
+    gap: 25px;
+  }
+  .install-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .apk-card {
+    position: static;
+    max-width: 480px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .install-guide h2 {
+    font-size: 26px;
+  }
+  .install-steps {
+    margin-top: 25px;
+  }
+  .install-steps > li {
+    gap: 13px;
+  }
+  .screenshot-dialog {
+    padding-top: 44px;
+  }
+  .eyebrow {
+    font-size: 10px;
+  }
+  .showcase-caption strong {
+    font-size: 26px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-showcase,
+  .kebun-preview {
+    transform: none;
+  }
+}
+
+.activation-note {
+  padding: 24px 28px;
+  margin-top: 30px;
+  border: 1px solid #d8e1ce;
+  background: #f1f5eb;
+  border-radius: 10px;
+}
+.activation-note h3 {
+  font-size: 18px;
+  font-weight: 650;
+}
+.activation-note p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--studio-muted);
+  margin: 10px 0 15px;
+}
+.activation-note .text-action {
+  color: var(--garden);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
