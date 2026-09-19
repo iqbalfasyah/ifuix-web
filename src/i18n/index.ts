@@ -13,7 +13,12 @@ i18n
       en: { translation: en },
       id: { translation: id },
     },
-    fallbackLng: 'en',
+    // Indonesian is the first-visit default; a later manual choice is kept locally.
+    fallbackLng: 'id',
+    detection: {
+      order: ['localStorage'],
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false,
     },

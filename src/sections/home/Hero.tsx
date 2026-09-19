@@ -52,7 +52,7 @@ export const Hero = () => {
           <div className="showcase-caption">
             <div>
               <span>{t('studio.learning')}</span>
-              <strong>KebunPintar</strong>
+              <strong>Kebun Pintar: Huruf &amp; Angka</strong>
             </div>
             <span className="showcase-round">
               <ArrowUpRight size={23} />

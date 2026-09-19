@@ -35,7 +35,7 @@ export const KebunPintar = () => {
   return (
     <>
       <SEO
-        title="KebunPintar — Belajar Huruf & Angka | IFUIX"
+        title="Kebun Pintar: Huruf & Angka | IFUIX"
         description={t('kebun.description')}
         url="https://ifuix.com/products/kebunpintar"
         image="https://ifuix.com/images/kebunpintar/home.png"

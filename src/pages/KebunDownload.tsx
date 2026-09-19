@@ -20,7 +20,7 @@ export const KebunDownload = () => {
       <div className="studio-container">
         <Link className="back-link" to="/products/kebunpintar">
           <ArrowLeft size={16} />
-          KebunPintar
+          Kebun Pintar: Huruf & Angka
         </Link>
         <header className="page-intro">
           <span className="eyebrow">{t('studio.officialDownloads')}</span>
@@ -36,7 +36,7 @@ export const KebunDownload = () => {
               width="72"
               height="72"
             />
-            <h2>KebunPintar</h2>
+            <h2>Kebun Pintar: Huruf & Angka</h2>
             <p className="apk-platform">
               <Smartphone size={18} />
               Android · APK

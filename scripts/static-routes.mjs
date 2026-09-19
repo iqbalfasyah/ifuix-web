@@ -13,7 +13,7 @@ const pages = {
     'Meet Fuira for Windows and KebunPintar for Android.',
   ],
   'products/kebunpintar': [
-    'KebunPintar — Belajar Huruf & Angka | IFUIX',
+    'Kebun Pintar: Huruf & Angka | IFUIX',
     'Belajar huruf A–Z dan angka 0–20 dengan suara Indonesia. Android 8.0+, trial 24 jam, lalu aktivasi perangkat.',
   ],
   'download/kebunpintar': [

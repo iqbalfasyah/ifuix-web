@@ -285,7 +285,7 @@
       "category": "Edukasi",
       "imageAlt": "Beranda KebunPintar dengan pilihan Dunia Huruf dan Kebun Angka",
       "label": "UNTUK SI KECIL",
-      "description": "Kenali huruf, temukan angka, dan belajar lewat permainan kecil bersama Pupi. Dilengkapi suara berbahasa Indonesia.",
+      "description": "Belajar huruf A-Z dan angka 0-20 untuk anak usia 3-6 tahun.",
       "chip1": "Huruf A–Z",
       "chip2": "Angka 0–20",
       "chip3": "Materi offline"
@@ -302,8 +302,8 @@
   },
   "kebun": {
     "badge": "KEBUNPINTAR · BERMAIN & BELAJAR",
-    "title": "Petualangan kecil.",
-    "titleAccent": "Penemuan besar.",
+    "title": "Kebun Pintar:",
+    "titleAccent": "Huruf & Angka",
     "description": "Teman belajar huruf A–Z dan angka 0–20 untuk anak usia 3–6 tahun. Kenali, dengarkan, lalu coba bersama Pupi, selangkah demi selangkah.",
     "download": "Unduh untuk Android",
     "seeInside": "Lihat tampilannya",
@@ -333,12 +333,12 @@
     "installGuide": "Cara instal KebunPintar"
   },
   "install": {
-    "intro": "Pasang KebunPintar melalui file APK resmi. Panduan ini ditujukan untuk orang tua atau pendamping.",
+    "intro": "Pasang Kebun Pintar: Huruf & Angka melalui file APK resmi. Panduan ini ditujukan untuk orang tua atau pendamping.",
     "version": "Versi",
     "size": "Ukuran",
     "downloadApk": "Unduh APK Android",
     "pending": "Tautan APK sedang disiapkan. Hubungi kami untuk informasi ketersediaan versi Android.",
-    "notPlayStore": "KebunPintar belum tersedia di Google Play Store. Instalasi dilakukan langsung melalui file APK.",
+    "notPlayStore": "Kebun Pintar: Huruf & Angka belum tersedia di Google Play Store. Instalasi dilakukan langsung melalui file APK.",
     "offline": "Materi dan suara bekerja offline selama trial atau setelah aktivasi.",
     "forParents": "PANDUAN UNTUK ORANG TUA",
     "step1Title": "Unduh APK dari halaman ini",

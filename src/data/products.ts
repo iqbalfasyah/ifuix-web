@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 'kebunpintar',
-    name: 'KebunPintar',
+    name: 'Kebun Pintar: Huruf & Angka',
     image: '/images/kebunpintar/home.png',
     platform: 'Android',
     tone: 'garden',
@@ -31,7 +31,7 @@ export const kebunRelease: {
   version: '3.2.1',
   url: '/downloads/Kebun-Pintar-3.2.1-Android.apk',
   filename: 'Kebun-Pintar-3.2.1-Android.apk',
-  sizeMB: '10.36',
-  sha256: '8715292fab0f324bf3ffe84f4bf992408ac004c9809703c8a820bfc44c9583c2',
+  sizeMB: '9.88',
+  sha256: 'dba0ac7294012d10450ec4cc9627153da9becc11499c8f381a510cdba85f35a6',
   minAndroid: '8.0',
 }

@@ -284,7 +284,7 @@
       "category": "Education",
       "imageAlt": "KebunPintar home screen with letter and number activities",
       "label": "FOR LITTLE EXPLORERS",
-      "description": "Meet letters, discover numbers, and learn through little games with Pupi. Includes Indonesian narration.",
+      "description": "Learn letters A-Z and numbers 0-20 for children ages 3-6.",
       "chip1": "Letters A–Z",
       "chip2": "Numbers 0–20",
       "chip3": "Offline activities"
@@ -301,8 +301,8 @@
   },
   "kebun": {
     "badge": "KEBUNPINTAR · PLAY & LEARN",
-    "title": "Little adventures.",
-    "titleAccent": "Big discoveries.",
+    "title": "Kebun Pintar:",
+    "titleAccent": "Letters & Numbers",
     "description": "A companion for discovering letters A–Z and numbers 0–20, designed for ages 3–6. Explore, listen, and practice with Pupi, one small step at a time.",
     "download": "Download for Android",
     "seeInside": "Take a look inside",
@@ -332,12 +332,12 @@
     "installGuide": "How to install KebunPintar"
   },
   "install": {
-    "intro": "Install KebunPintar using the official APK. This guide is for parents and caregivers.",
+    "intro": "Install Kebun Pintar: Letters & Numbers using the official APK. This guide is for parents and caregivers.",
     "version": "Version",
     "size": "Size",
     "downloadApk": "Download Android APK",
     "pending": "The APK download is being prepared. Contact us for Android availability.",
-    "notPlayStore": "KebunPintar is not yet on Google Play. Install it directly using the APK file.",
+    "notPlayStore": "Kebun Pintar: Letters & Numbers is not yet on Google Play. Install it directly using the APK file.",
     "offline": "Content and audio work offline during the trial or after activation.",
     "forParents": "A GUIDE FOR PARENTS",
     "step1Title": "Download the APK from this page",
