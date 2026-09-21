@@ -13,6 +13,7 @@ const ProductDetail = lazy(() => import('./pages/ProductDetail').then(m => ({ de
 const Downloads = lazy(() => import('./pages/Downloads').then(m => ({ default: m.Downloads })));
 const KebunPintar = lazy(() => import('./pages/KebunPintar').then(m => ({ default: m.KebunPintar })));
 const KebunDownload = lazy(() => import('./pages/KebunDownload').then(m => ({ default: m.KebunDownload })));
+const KebunPrivacy = lazy(() => import('./pages/KebunPrivacy').then(m => ({ default: m.KebunPrivacy })));
 const Download = lazy(() => import('./pages/Download').then(m => ({ default: m.Download })));
 const Support = lazy(() => import('./pages/Support').then(m => ({ default: m.Support })));
 const Privacy = lazy(() => import('./pages/Privacy').then(m => ({ default: m.Privacy })));
@@ -49,8 +50,11 @@ function App() {
               <Route path="/products/fuira" element={<ProductDetail />} />
               <Route path="/download" element={<Downloads />} />
               <Route path="/download/fuira" element={<Download />} />
+              <Route path="/kebunpintar" element={<KebunPintar />} />
               <Route path="/products/kebunpintar" element={<KebunPintar />} />
               <Route path="/download/kebunpintar" element={<KebunDownload />} />
+              <Route path="/kebunpintar/privacy" element={<KebunPrivacy />} />
+              <Route path="/privacy/kebunpintar" element={<KebunPrivacy />} />
               <Route path="/support" element={<Support />} />
               <Route path="/faq" element={<Faq />} />
               <Route path="/privacy" element={<Privacy />} />

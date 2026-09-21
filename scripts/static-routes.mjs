@@ -14,11 +14,23 @@ const pages = {
   ],
   'products/kebunpintar': [
     'Kebun Pintar: Huruf & Angka | IFUIX',
-    'Belajar huruf A–Z dan angka 0–20 dengan suara Indonesia. Android 8.0+, trial 24 jam, lalu aktivasi perangkat.',
+    'Belajar huruf A–Z dan angka 0–20 interaktif dengan suara Indonesia. Ramah anak usia dini, bebas iklan, dan aman untuk keluarga.',
+  ],
+  kebunpintar: [
+    'Kebun Pintar: Huruf & Angka | IFUIX',
+    'Belajar huruf A–Z dan angka 0–20 interaktif dengan suara Indonesia. Ramah anak usia dini, bebas iklan, dan aman untuk keluarga.',
+  ],
+  'kebunpintar/privacy': [
+    'Kebijakan Privasi Kebun Pintar | IFUIX',
+    'Kebijakan privasi resmi untuk aplikasi Kebun Pintar: Huruf & Angka. Dirancang untuk keluarga, 100% bebas iklan, tanpa pengumpulan data pribadi.',
+  ],
+  'privacy/kebunpintar': [
+    'Kebijakan Privasi Kebun Pintar | IFUIX',
+    'Kebijakan privasi resmi untuk aplikasi Kebun Pintar: Huruf & Angka. Dirancang untuk keluarga, 100% bebas iklan, tanpa pengumpulan data pribadi.',
   ],
   'download/kebunpintar': [
-    'Download KebunPintar 3.2.1 for Android | IFUIX',
-    'Unduh APK resmi KebunPintar 3.2.1 untuk Android 8.0+. Panduan instalasi, trial 24 jam, dan informasi aktivasi.',
+    'Download KebunPintar for Android | IFUIX',
+    'Unduh KebunPintar untuk Android 8.0+. Panduan instalasi dan informasi rilis.',
   ],
   'products/fuira': [
     'Fuira — Your everyday workspace | IFUIX',

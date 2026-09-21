@@ -166,10 +166,16 @@ export const KebunPintar = () => {
         <div className="parent-note">
           <h3>{t('kebun.futureTitle')}</h3>
           <p>{t('kebun.futureDescription')}</p>
-          <Link to="/download/kebunpintar" className="text-action">
-            {t('kebun.installGuide')}
-            <ArrowRight size={18} />
-          </Link>
+          <div className="flex flex-wrap items-center gap-4 mt-4">
+            <Link to="/download/kebunpintar" className="text-action">
+              {t('kebun.installGuide')}
+              <ArrowRight size={18} />
+            </Link>
+            <Link to="/kebunpintar/privacy" className="text-action">
+              Kebijakan Privasi &amp; Keamanan Anak
+              <ArrowRight size={18} />
+            </Link>
+          </div>
         </div>
       </section>
       <dialog
