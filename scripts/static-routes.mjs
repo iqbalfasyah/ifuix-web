@@ -20,6 +20,8 @@ if (!assets.script || !assets.styles.length)
   throw new Error('Missing Vite entry assets')
 for (const route of Object.keys(seoPages)) {
   const html = await render(route, assets)
+  if (html.includes('<!--$?-->') || html.includes('<!--$!-->'))
+    throw new Error(`Unresolved Suspense content on ${route}`)
   if (
     !html.includes('<h1') ||
     (html.match(/rel="canonical"/g) ?? []).length !== 1

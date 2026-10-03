@@ -44,3 +44,11 @@ For the verified `https://ifuix.com/` property, submit `sitemap.xml` in Search C
 Official guidance:
 - https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+## Hero follow-up — 2026-10-03
+
+- Home hero now introduces IFUIX generally: **IFUIX. Untuk keseharianmu.** Product-specific copy is presented in the carousel on the right.
+- The carousel uses the shared catalog (Framix, Kebun Pintar, Fuira), with real screenshots, product links, position indicators, dot/arrow controls, and an optional 6.5-second rotation. Hover and keyboard focus pause rotation independently. Manual navigation pauses autoplay; reduced-motion preferences disable autoplay. Both languages are supported.
+- Slide heights remain stable at 390, 768 and 1440 pixels. Mobile stacks the carousel below the introduction.
+- A stronger no-JavaScript check caught streamed Suspense content that depended on a reveal script. The build now resolves lazy pages, then serializes complete HTML with `renderToString`; unresolved Suspense boundaries fail the build. The home hero is visibly rendered with JavaScript disabled.
+- Build, lint, carousel controls, wraparound, keyboard, hover/focus pause, reduced motion, translations, and client hydration passed. Browser evidence: `D:/IFUIX/website-review/2026-10-03/hero/`.

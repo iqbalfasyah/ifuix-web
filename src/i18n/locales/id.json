@@ -249,10 +249,10 @@
   },
   "studio": {
     "siteTitle": "IFUIX — Framix Editor, Fuira & Kebun Pintar",
-    "independent": "STUDIO INDEPENDEN DARI INDONESIA",
-    "heroLine1": "Lebih fokus.",
-    "heroLine2": "Lebih banyak tumbuh.",
-    "heroDescription": "Dari cerita yang kamu rangkai di Framix Editor, hari kerja yang lebih teratur bersama Fuira, sampai petualangan belajar si kecil di Kebun Pintar. Aplikasi dari studio independen Indonesia.",
+    "independent": "STUDIO APLIKASI DARI INDONESIA",
+    "heroLine1": "IFUIX.",
+    "heroLine2": "Untuk keseharianmu.",
+    "heroDescription": "IFUIX adalah studio pengembangan aplikasi independen dari Indonesia. Kami membuat produk digital untuk membantu kamu berkarya, bekerja, dan belajar, dengan pengalaman yang sederhana dan mudah digunakan.",
     "explore": "Jelajahi aplikasi",
     "story": "Cerita di balik IFUIX",
     "productivity": "Produktivitas",
@@ -307,6 +307,17 @@
       "chip1": "Timeline multitrack",
       "chip2": "Caption & template",
       "chip3": "Proyek lokal"
+    },
+    "creativity": "Berkarya",
+    "carousel": {
+      "role": "carousel",
+      "label": "JELAJAHI PRODUK IFUIX",
+      "slide": "slide produk",
+      "show": "Tampilkan",
+      "previous": "Produk sebelumnya",
+      "next": "Produk berikutnya",
+      "pause": "Jeda pergantian produk",
+      "play": "Putar pergantian produk"
     }
   },
   "kebun": {

@@ -248,10 +248,10 @@
   },
   "studio": {
     "siteTitle": "IFUIX — Framix Editor, Fuira & Kebun Pintar",
-    "independent": "AN INDEPENDENT STUDIO FROM INDONESIA",
-    "heroLine1": "A little more focus.",
-    "heroLine2": "A little more growth.",
-    "heroDescription": "From stories you shape in Framix Editor and calmer workdays with Fuira to learning adventures in Kebun Pintar. Apps from an independent Indonesian studio.",
+    "independent": "AN APP STUDIO FROM INDONESIA",
+    "heroLine1": "IFUIX.",
+    "heroLine2": "Made for everyday life.",
+    "heroDescription": "IFUIX is an independent app development studio from Indonesia. We build digital products that help you create, work, and learn, with simple, approachable experiences.",
     "explore": "Explore our apps",
     "story": "Our story",
     "productivity": "Productivity",
@@ -306,6 +306,17 @@
       "chip1": "Multitrack timeline",
       "chip2": "Captions & templates",
       "chip3": "Local projects"
+    },
+    "creativity": "Create",
+    "carousel": {
+      "role": "carousel",
+      "label": "EXPLORE IFUIX PRODUCTS",
+      "slide": "product slide",
+      "show": "Show",
+      "previous": "Previous product",
+      "next": "Next product",
+      "pause": "Pause product rotation",
+      "play": "Start product rotation"
     }
   },
   "kebun": {
