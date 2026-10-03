@@ -22,6 +22,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">{t('footer.products')}</h4>
             <ul className="space-y-3 text-sm text-gray-500">
+              <li><Link to="/products/framix" className="hover:text-primary transition-colors">Framix Editor</Link></li>
               <li><Link to="/products/fuira" className="hover:text-primary transition-colors">Fuira Desktop</Link></li>
               <li><Link to="/products/kebunpintar" className="hover:text-primary transition-colors">Kebun Pintar: Huruf &amp; Angka</Link></li>
               <li><Link to="/download" className="hover:text-primary transition-colors">{t('footer.products')}</Link></li>

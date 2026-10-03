@@ -1,4 +1,21 @@
-export const products = [
+export interface Product {
+  id: string
+  name: string
+  image: string
+  platform: string
+  tone: string
+  detail: string
+  download?: string
+}
+export const products: Product[] = [
+  {
+    id: 'framix',
+    name: 'Framix Editor',
+    image: '/images/framix/editor.webp',
+    platform: 'Windows',
+    tone: 'creative',
+    detail: '/products/framix',
+  },
   {
     id: 'kebunpintar',
     name: 'Kebun Pintar: Huruf & Angka',
@@ -17,7 +34,7 @@ export const products = [
     detail: '/products/fuira',
     download: '/download/fuira',
   },
-] as const
+]
 
 // Populate only with a verified APK and a publicly accessible download URL.
 export const kebunRelease: {

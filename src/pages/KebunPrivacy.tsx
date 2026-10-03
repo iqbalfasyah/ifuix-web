@@ -1,17 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft, ShieldCheck, HeartHandshake, Lock, EyeOff, Sparkles, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { SEO } from '../components/seo/SEO';
 
 export const KebunPrivacy = () => {
   return (
     <>
-      <SEO
-        title="Kebijakan Privasi - Kebun Pintar: Huruf & Angka | IFUIX"
-        description="Kebijakan privasi resmi untuk aplikasi Android Kebun Pintar: Huruf & Angka. Didesain untuk keluarga dan anak usia dini: 100% bebas iklan dan tanpa pengumpulan data pribadi."
-        url="https://ifuix.com/kebunpintar/privacy"
-        image="https://ifuix.com/images/kebunpintar/home.png"
-      />
       <div className="pt-20 md:pt-24 pb-20 md:pb-32">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <Link

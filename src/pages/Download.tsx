@@ -5,7 +5,6 @@ import { Button } from '../components/ui/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { SEO } from '../components/seo/SEO';
 
   // Fallback release in case of GitHub API rate limits
   const fallbackRelease = {
@@ -57,7 +56,6 @@ export const Download = () => {
 
   return (
     <div className="pt-20 md:pt-24 pb-16 md:pb-32">
-      <SEO title={`${t('download.title')} | IFUIX`} description={t('download.subtitle')} url="https://ifuix.com/download/fuira" />
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

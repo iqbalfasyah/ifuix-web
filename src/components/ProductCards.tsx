@@ -1,13 +1,14 @@
-import { ArrowDownToLine, ArrowUpRight } from 'lucide-react'
+import { ArrowDownToLine, ArrowUpRight, MessageCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { products } from '../data/products'
+import { framixContact } from '../data/site'
 
-export const ProductCards = () => {
+export const ProductCards = ({ downloadsOnly = false }: { downloadsOnly?: boolean }) => {
   const { t } = useTranslation()
   return (
     <div className="product-grid">
-      {products.map((product) => (
+      {products.filter((product) => !downloadsOnly || product.download).map((product) => (
         <article key={product.id} className={`product-card ${product.tone}`}>
           <Link
             to={product.detail}
@@ -40,10 +41,10 @@ export const ProductCards = () => {
               <Link to={product.detail} className="text-action">
                 {t('studio.discover')} <ArrowUpRight size={18} />
               </Link>
-              <Link to={product.download} className="download-action">
+              {product.download ? <Link to={product.download} className="download-action">
                 <ArrowDownToLine size={16} />
                 {t('studio.download')}
-              </Link>
+              </Link> : <a href={framixContact} className="whatsapp-action" target="_blank" rel="noopener noreferrer"><MessageCircle size={16} />{t('framix.cardContact')}</a>}
             </div>
           </div>
         </article>

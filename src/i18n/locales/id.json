@@ -248,11 +248,11 @@
     "a1_li4": "Google Drive hanya dengan izin Anda"
   },
   "studio": {
-    "siteTitle": "IFUIX — Ruang untuk fokus, bermain, dan tumbuh",
+    "siteTitle": "IFUIX — Framix Editor, Fuira & Kebun Pintar",
     "independent": "STUDIO INDEPENDEN DARI INDONESIA",
     "heroLine1": "Lebih fokus.",
     "heroLine2": "Lebih banyak tumbuh.",
-    "heroDescription": "Aplikasi sederhana untuk hal yang berarti. Dari hari kerja yang lebih tenang bersama Fuira, sampai petualangan belajar si kecil bersama KebunPintar.",
+    "heroDescription": "Dari cerita yang kamu rangkai di Framix Editor, hari kerja yang lebih teratur bersama Fuira, sampai petualangan belajar si kecil di Kebun Pintar. Aplikasi dari studio independen Indonesia.",
     "explore": "Jelajahi aplikasi",
     "story": "Cerita di balik IFUIX",
     "productivity": "Produktivitas",
@@ -261,7 +261,7 @@
     "collection": "DIBUAT DENGAN PERHATIAN",
     "productsHeading": "Temukan teman sehari-hari.",
     "productsTitle": "Aplikasi untuk keseharianmu.",
-    "productsIntro": "Dua kebutuhan berbeda, satu perhatian yang sama: pengalaman yang sederhana dan menyenangkan.",
+    "productsIntro": "Editing video, produktivitas, dan belajar anak. Temukan aplikasi IFUIX yang cocok untuk keseharianmu.",
     "discover": "Kenali aplikasinya",
     "download": "Unduh",
     "allProducts": "Semua produk",
@@ -298,6 +298,15 @@
       "chip1": "Catatan & jadwal",
       "chip2": "Timer fokus",
       "chip3": "Google Drive opsional"
+    },
+    "framix": {
+      "category": "Editing video",
+      "imageAlt": "Editor Framix: library, preview, dan timeline",
+      "label": "UNTUK KREATORMU",
+      "description": "Rangkai video, narasi, caption, dan template dalam editor lokal. Lihat demo dan tanyakan informasi penggunaan melalui WhatsApp.",
+      "chip1": "Timeline multitrack",
+      "chip2": "Caption & template",
+      "chip3": "Proyek lokal"
     }
   },
   "kebun": {
@@ -320,7 +329,7 @@
     "feature2Description": "Materi dan suara disertakan di aplikasi. Tidak perlu koneksi internet untuk kegiatan belajar setelah instalasi.",
     "realScreens": "TAMPILAN APLIKASI",
     "galleryTitle": "Intip kebun belajarnya.",
-    "galleryIntro": "Tampilan dari materi yang disertakan dalam APK Android 3.2.1. Ketuk gambar untuk melihat lebih dekat.",
+    "galleryIntro": "Empat screenshot pertama berasal dari APK Android 3.2.1. Dua screenshot terakhir dan video menunjukkan preview pengembangan terbaru. Ketuk gambar untuk memperbesar.",
     "screen0": "Beranda: pilih dunia belajarmu",
     "screen1": "Dunia Huruf: kenali A sampai Z",
     "screen2": "Kebun Angka: kenali 0 sampai 20",
@@ -330,7 +339,11 @@
     "parentDescription": "Dampingi anak saat mencoba kegiatan baru. Gunakan pengaturan orang tua untuk menyesuaikan tantangan, suara, dan pengingat istirahat. Kemajuan belajar disimpan di perangkat.",
     "futureTitle": "Masih banyak yang bisa tumbuh.",
     "futureDescription": "Pengembangan berikutnya direncanakan untuk memperluas kegiatan menulis, mewarnai, dan eksplorasi lainnya. Fitur mendatang belum termasuk dalam unduhan saat ini.",
-    "installGuide": "Cara instal KebunPintar"
+    "installGuide": "Cara instal KebunPintar",
+    "videoTitle": "Kenali Kebun Pintar dalam video",
+    "videoNote": "Preview pengembangan terbaru: huruf, angka, dan petualangan Pupi. Beberapa tampilan dan kegiatan belum termasuk dalam APK 3.2.1 yang tersedia untuk diunduh.",
+    "screen4": "Preview pengembangan: Kebun Bunga Pupi",
+    "screen5": "Preview pengembangan: Stasiun Kereta"
   },
   "install": {
     "intro": "Pasang Kebun Pintar: Huruf & Angka melalui file APK resmi. Panduan ini ditujukan untuk orang tua atau pendamping.",
@@ -362,5 +375,39 @@
     "trialTitle": "Coba 24 jam, lalu aktivasi",
     "trialDescription": "Trial dimulai otomatis saat pertama dibuka dan tetap berjalan saat aplikasi ditutup. Setelah 24 jam, hubungi WhatsApp resmi untuk informasi pembelian dan kode aktivasi khusus perangkat.",
     "activation": "Tanya aktivasi di WhatsApp"
+  },
+  "framix": {
+    "titleAccent": "Dari ide ke timeline.",
+    "description": "Editor video lokal untuk merangkai footage, narasi, caption, dan visual dalam satu timeline. Dibuat untuk kreator yang ingin mengatur ceritanya sendiri.",
+    "contact": "Minat? Hubungi WhatsApp",
+    "cardContact": "Tanya via WhatsApp",
+    "seeDemo": "Tonton demo",
+    "availability": "Informasi penggunaan dan ketersediaan melalui WhatsApp resmi IFUIX.",
+    "featuresBadge": "RUANG KERJA KREATIF",
+    "featuresTitle": "Atur cerita, sampai detailnya.",
+    "featuresIntro": "Fitur yang sudah tersedia di editor lokal. Hasil otomatis tetap dapat ditinjau dan disunting.",
+    "feature0Title": "Timeline multitrack",
+    "feature0Description": "Susun video, gambar, audio, dan teks. Trim, split, geser clip, lalu tambahkan filter, transisi, dan template.",
+    "feature1Title": "Caption & bantuan AI",
+    "feature1Description": "Import SRT, sunting caption, dan gunakan Auto Captions atau Auto WHAT IF untuk membuat draft yang tetap perlu diperiksa.",
+    "feature2Title": "Proyek tetap lokal",
+    "feature2Description": "Sumber, proyek, dan export disimpan di perangkat. Autosave, undo/redo, dan export H.264 + AAC membantu alur kerja sehari-hari.",
+    "galleryTitle": "Lihat Framix bekerja.",
+    "galleryIntro": "Screenshot asli dari Framix by IFUIX. Ketuk untuk memperbesar dan gunakan panah untuk berpindah.",
+    "screen0": "Editor Framix: library, preview, dan timeline",
+    "screen1": "Caption Studio: sunting teks dan sorotan kata",
+    "screen2": "Auto WHAT IF: pengaturan alur editing",
+    "screen3": "Review: periksa draft sebelum export",
+    "videoTitle": "Demo Framix: dari timeline kosong sampai export",
+    "videoNote": "Demo tersunting dari penggunaan nyata editor. Waktu pemrosesan dipadatkan dan diberi label; hasil AI ditinjau sebelum export. Subtitle bahasa Indonesia tersedia.",
+    "interestedBadge": "MULAI PERCAKAPAN",
+    "interestedTitle": "Mau tahu lebih lanjut?",
+    "interestedDescription": "Tanyakan demo, alur penggunaan, dan ketersediaan Framix Editor langsung ke IFUIX."
+  },
+  "media": {
+    "badge": "SCREENSHOT & VIDEO DEMO",
+    "enlarge": "Perbesar screenshot",
+    "previous": "Screenshot sebelumnya",
+    "next": "Screenshot berikutnya"
   }
 }

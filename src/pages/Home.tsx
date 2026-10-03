@@ -3,15 +3,10 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Hero } from '../sections/home/Hero'
 import { FeaturedProduct } from '../sections/home/FeaturedProduct'
-import { SEO } from '../components/seo/SEO'
 export const Home = () => {
   const { t } = useTranslation()
   return (
     <>
-      <SEO
-        title={t('studio.siteTitle')}
-        description={t('studio.heroDescription')}
-      />
       <Hero />
       <FeaturedProduct />
       <section className="studio-values">

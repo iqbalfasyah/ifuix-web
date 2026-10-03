@@ -15,6 +15,7 @@ i18n
     },
     // Indonesian is the first-visit default; a later manual choice is kept locally.
     fallbackLng: 'id',
+    ...(typeof window === 'undefined' ? { lng: 'id' } : {}),
     detection: {
       order: ['localStorage'],
       caches: ['localStorage'],
@@ -27,6 +28,7 @@ i18n
 export default i18n;
 
 const updateDocumentLanguage = () => {
+  if (typeof document === 'undefined') return;
   document.documentElement.lang = i18n.language?.startsWith('id') ? 'id' : 'en';
 };
 i18n.on('languageChanged', updateDocumentLanguage);

@@ -5,41 +5,15 @@ import {
   BookOpen,
   Volume2,
   WifiOff,
-  X,
 } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { SEO } from '../components/seo/SEO'
-const screenshots = ['home', 'letters', 'numbers', 'activity']
+import { MediaGallery } from '../components/MediaGallery'
+const screenshots = ['home', 'letters', 'numbers', 'activity', 'garden-preview', 'train-preview']
 export const KebunPintar = () => {
   const { t } = useTranslation()
-  const [selected, setSelected] = useState(0)
-  const dialog = useRef<HTMLDialogElement>(null)
-  useEffect(() => {
-    const close = () => {
-      document.body.style.overflow = ''
-    }
-    const element = dialog.current
-    element?.addEventListener('close', close)
-    return () => {
-      element?.removeEventListener('close', close)
-      close()
-    }
-  }, [])
-  const openImage = (index: number) => {
-    setSelected(index)
-    dialog.current?.showModal()
-    document.body.style.overflow = 'hidden'
-  }
   return (
     <>
-      <SEO
-        title="Kebun Pintar: Huruf & Angka | IFUIX"
-        description={t('kebun.description')}
-        url="https://ifuix.com/products/kebunpintar"
-        image="https://ifuix.com/images/kebunpintar/home.png"
-      />
       <section className="kebun-hero">
         <div className="studio-container">
           <Link className="back-link" to="/products">
@@ -77,9 +51,9 @@ export const KebunPintar = () => {
               </div>
               <p className="small-note">{t('kebun.platformNote')}</p>
             </div>
-            <button
+            <a
+              href="#screenshots"
               className="kebun-preview"
-              onClick={() => openImage(0)}
               aria-label={t('kebun.enlarge')}
             >
               <img
@@ -88,7 +62,7 @@ export const KebunPintar = () => {
                 height="800"
                 alt={t('kebun.screen0')}
               />
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -124,39 +98,11 @@ export const KebunPintar = () => {
           ))}
         </div>
       </section>
-      <section id="screenshots" className="screenshot-section">
-        <div className="studio-container">
-          <div className="section-heading">
-            <div>
-              <span className="eyebrow">{t('kebun.realScreens')}</span>
-              <h2>{t('kebun.galleryTitle')}</h2>
-            </div>
-            <p>{t('kebun.galleryIntro')}</p>
-          </div>
-          <div className="screenshot-grid">
-            {screenshots.map((name, i) => (
-              <figure key={name}>
-                <button
-                  onClick={() => openImage(i)}
-                  aria-label={`${t('kebun.enlarge')}: ${t(`kebun.screen${i}`)}`}
-                >
-                  <img
-                    src={`/images/kebunpintar/${name}.png`}
-                    alt={t(`kebun.screen${i}`)}
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                  />
-                </button>
-                <figcaption>
-                  <span>0{i + 1}</span>
-                  {t(`kebun.screen${i}`)}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+      <MediaGallery
+        screenshots={screenshots.map((name, index) => ({ src: `/images/kebunpintar/${name}.${name.endsWith('preview') ? 'webp' : 'png'}`, label: t(`kebun.screen${index}`) }))}
+        video="/videos/kebunpintar-preview.mp4" poster="/images/kebunpintar/video-poster.webp"
+        title={t('kebun.galleryTitle')} intro={t('kebun.galleryIntro')}
+        videoTitle={t('kebun.videoTitle')} videoNote={t('kebun.videoNote')} />
       <section className="studio-container kebun-parent">
         <div>
           <span className="eyebrow">{t('kebun.parentBadge')}</span>
@@ -178,27 +124,6 @@ export const KebunPintar = () => {
           </div>
         </div>
       </section>
-      <dialog
-        ref={dialog}
-        className="screenshot-dialog"
-        onClick={(e) => {
-          if (e.target === e.currentTarget) dialog.current?.close()
-        }}
-        aria-label={t('kebun.galleryTitle')}
-      >
-        <button
-          className="dialog-close"
-          onClick={() => dialog.current?.close()}
-          aria-label={t('studio.close')}
-        >
-          <X size={22} />
-        </button>
-        <img
-          src={`/images/kebunpintar/${screenshots[selected]}.png`}
-          alt={t(`kebun.screen${selected}`)}
-        />
-        <p>{t(`kebun.screen${selected}`)}</p>
-      </dialog>
     </>
   )
 }

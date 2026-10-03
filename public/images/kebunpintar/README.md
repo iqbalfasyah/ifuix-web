@@ -12,3 +12,9 @@ These are actual app content rendered in Microsoft Edge, using the same bundled 
 - `icon.png`: existing app icon from the local KebunPintar project.
 
 Use updated captures from the release APK when the app interface changes.
+
+## Website update — 2026-10-03
+
+The four APK 3.2.1 screenshots above are retained. Two additional WebP screenshots (`garden-preview.webp`, `train-preview.webp`) are development previews from the existing local app captures in `D:/IFUIX/KebunPintar/dist/store-raw/`. Their labels identify them as previews, not features of the downloadable APK.
+
+`/videos/kebunpintar-preview.mp4` is the existing local promotional preview from `dist/video/kebun-pintar-youtube-trailer.mp4` (46 seconds), with a WebP poster from its first scene. The website explicitly distinguishes this development preview from APK 3.2.1. No child data or private activation material is published.

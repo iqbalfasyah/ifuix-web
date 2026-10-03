@@ -1,87 +1,61 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import path from 'node:path'
+import {
+  render,
+  seoPages,
+  canonicalUrl,
+  siteOrigin,
+} from '../dist-ssr/entry-server.js'
 
-// GitHub Pages has no SPA rewrites. Give public routes real HTML entry points
-// so opening a shared product/download link does not return HTTP 404.
-const pages = {
-  '': [
-    'IFUIX — Apps for focus and learning',
-    'Discover Fuira for everyday productivity and KebunPintar for learning letters and numbers. Official downloads and installation guides.',
-  ],
-  products: [
-    'Our apps | IFUIX',
-    'Meet Fuira for Windows and KebunPintar for Android.',
-  ],
-  'products/kebunpintar': [
-    'Kebun Pintar: Huruf & Angka | IFUIX',
-    'Belajar huruf A–Z dan angka 0–20 interaktif dengan suara Indonesia. Ramah anak usia dini, bebas iklan, dan aman untuk keluarga.',
-  ],
-  kebunpintar: [
-    'Kebun Pintar: Huruf & Angka | IFUIX',
-    'Belajar huruf A–Z dan angka 0–20 interaktif dengan suara Indonesia. Ramah anak usia dini, bebas iklan, dan aman untuk keluarga.',
-  ],
-  'kebunpintar/privacy': [
-    'Kebijakan Privasi Kebun Pintar | IFUIX',
-    'Kebijakan privasi resmi untuk aplikasi Kebun Pintar: Huruf & Angka. Dirancang untuk keluarga, 100% bebas iklan, tanpa pengumpulan data pribadi.',
-  ],
-  'privacy/kebunpintar': [
-    'Kebijakan Privasi Kebun Pintar | IFUIX',
-    'Kebijakan privasi resmi untuk aplikasi Kebun Pintar: Huruf & Angka. Dirancang untuk keluarga, 100% bebas iklan, tanpa pengumpulan data pribadi.',
-  ],
-  'download/kebunpintar': [
-    'Download KebunPintar for Android | IFUIX',
-    'Unduh KebunPintar untuk Android 8.0+. Panduan instalasi dan informasi rilis.',
-  ],
-  'products/fuira': [
-    'Fuira — Your everyday workspace | IFUIX',
-    'Notes, schedules, focus timer and reminders in one offline desktop app.',
-  ],
-  'download/fuira': [
-    'Download Fuira for Windows | IFUIX',
-    'Get Fuira for Windows, read release notes and follow the installation guide.',
-  ],
-  download: [
-    'Official app downloads | IFUIX',
-    'Download KebunPintar for Android and Fuira for Windows, with installation guides.',
-  ],
-  about: ['About | IFUIX', 'An independent software studio from Indonesia.'],
-  services: [
-    'Software development | IFUIX',
-    'Custom web, desktop and mobile application development.',
-  ],
-  contact: [
-    'Contact | IFUIX',
-    'Questions, feedback and support for IFUIX apps.',
-  ],
-  support: [
-    'Support our work | IFUIX',
-    'Support independent software development at IFUIX.',
-  ],
-  faq: ['Frequently asked questions | IFUIX', 'Answers about IFUIX and Fuira.'],
-  privacy: ['Privacy | IFUIX', 'Read the IFUIX privacy policy.'],
-  terms: ['Terms | IFUIX', 'Read the IFUIX terms of use.'],
-}
+// Render the same React tree used in the browser, including resolved lazy routes.
+// Each GitHub Pages URL serves real content without JavaScript.
 const template = await readFile('dist/index.html', 'utf8')
-const escape = (value) =>
-  value
-    .replaceAll('&', '&amp;')
-    .replaceAll('"', '&quot;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-for (const [route, [title, description]] of Object.entries(pages)) {
-  const url = `https://ifuix.com/${route}`
-  const image = route.includes('kebunpintar')
-    ? 'https://ifuix.com/images/kebunpintar/home.png'
-    : 'https://ifuix.com/icon.png'
-  const meta = `<meta name="description" content="${escape(description)}" data-rh="true" />\n<link rel="canonical" href="${url}" data-rh="true" />\n<meta property="og:title" content="${escape(title)}" data-rh="true" />\n<meta property="og:description" content="${escape(description)}" data-rh="true" />\n<meta property="og:url" content="${url}" data-rh="true" />\n<meta property="og:type" content="website" data-rh="true" />\n<meta property="og:image" content="${image}" data-rh="true" />`
-  const html = template
-    .replace(/<title>.*?<\/title>/, `<title>${escape(title)}</title>`)
-    .replace('</head>', `${meta}\n</head>`)
-  const directory = path.join('dist', route)
+const assets = {
+  script: template.match(/<script[^>]+src="([^"]+)"/)?.[1],
+  styles: [
+    ...template.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g),
+  ].map((match) => match[1]),
+}
+if (!assets.script || !assets.styles.length)
+  throw new Error('Missing Vite entry assets')
+for (const route of Object.keys(seoPages)) {
+  const html = await render(route, assets)
+  if (
+    !html.includes('<h1') ||
+    (html.match(/rel="canonical"/g) ?? []).length !== 1
+  )
+    throw new Error(`Invalid static content or canonical on ${route}`)
+  const directory = path.join('dist', route === '/' ? '' : route.slice(1))
   await mkdir(directory, { recursive: true })
   await writeFile(path.join(directory, 'index.html'), html)
 }
-await writeFile('dist/404.html', template)
+const urls = Object.entries(seoPages)
+  .filter(([, page]) => !page.canonical)
+  .map(([route]) => `  <url><loc>${canonicalUrl(route)}</loc></url>`)
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
+await writeFile('dist/sitemap.xml', sitemap)
+await writeFile('public/sitemap.xml', sitemap)
+await writeFile(
+  'dist/robots.txt',
+  `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`,
+)
+await writeFile(
+  'dist/404.html',
+  template
+    .replace(
+      /<title[^>]*>[\s\S]*?<\/title>/,
+      '<title data-ifuix-seo="true">Halaman tidak ditemukan | IFUIX</title>',
+    )
+    .replace(
+      '</head>',
+      '<meta data-ifuix-seo="true" name="robots" content="noindex, follow" />\n</head>',
+    )
+    .replace(
+      '<div id="root"></div>',
+      '<div id="root"><main style="padding:80px 24px;text-align:center"><h1>Halaman tidak ditemukan</h1><p>Alamat halaman ini tidak tersedia.</p><a href="/">Kembali ke IFUIX</a></main></div>',
+    ),
+)
+await writeFile('dist/.nojekyll', '')
 console.log(
-  `Created ${Object.keys(pages).length} static route entry points for GitHub Pages.`,
+  `Rendered ${Object.keys(seoPages).length} complete HTML pages and ${urls.length} canonical sitemap URLs.`,
 )

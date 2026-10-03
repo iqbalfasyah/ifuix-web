@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import type { ComponentType, ReactNode } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { MainLayout } from './layouts/MainLayout';
 
@@ -9,6 +10,7 @@ const About = lazy(() => import('./pages/About').then(m => ({ default: m.About }
 const Services = lazy(() => import('./pages/Services').then(m => ({ default: m.Services })));
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const Products = lazy(() => import('./pages/Products').then(m => ({ default: m.Products })));
+const Framix = lazy(() => import('./pages/Framix').then(m => ({ default: m.Framix })));
 const ProductDetail = lazy(() => import('./pages/ProductDetail').then(m => ({ default: m.ProductDetail })));
 const Downloads = lazy(() => import('./pages/Downloads').then(m => ({ default: m.Downloads })));
 const KebunPintar = lazy(() => import('./pages/KebunPintar').then(m => ({ default: m.KebunPintar })));
@@ -34,10 +36,10 @@ const LoadingFallback = () => (
   </div>
 );
 
-function App() {
+function App({ Router = BrowserRouter }: { Router?: ComponentType<{ children: ReactNode }> }) {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <Router>
         <ScrollToTop />
         <MainLayout>
           <Suspense fallback={<LoadingFallback />}>
@@ -47,6 +49,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/framix" element={<Framix />} />
               <Route path="/products/fuira" element={<ProductDetail />} />
               <Route path="/download" element={<Downloads />} />
               <Route path="/download/fuira" element={<Download />} />
@@ -59,11 +62,11 @@ function App() {
               <Route path="/faq" element={<Faq />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
-              <Route path="*" element={<div className="p-24 text-center text-gray-500">Page not found.</div>} />
+              <Route path="*" element={<div className="p-12 md:p-24 text-center text-gray-500"><h1 className="text-3xl font-semibold mb-4">Halaman tidak ditemukan</h1><Link to="/" className="text-action">Kembali ke IFUIX</Link></div>} />
             </Routes>
           </Suspense>
         </MainLayout>
-      </BrowserRouter>
+      </Router>
     </HelmetProvider>
   );
 }

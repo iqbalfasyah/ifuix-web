@@ -6,17 +6,11 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { SEO } from '../components/seo/SEO'
 import { kebunRelease } from '../data/products'
 export const KebunDownload = () => {
   const { t } = useTranslation()
   return (
     <div className="studio-page">
-      <SEO
-        title={`${t('kebun.download')} | IFUIX`}
-        description={t('install.intro')}
-        url="https://ifuix.com/download/kebunpintar"
-      />
       <div className="studio-container">
         <Link className="back-link" to="/products/kebunpintar">
           <ArrowLeft size={16} />

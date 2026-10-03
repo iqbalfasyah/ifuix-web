@@ -247,11 +247,11 @@
     "a1_li4": "Google Drive only with your permission"
   },
   "studio": {
-    "siteTitle": "IFUIX — A little more focus. A little more growth.",
+    "siteTitle": "IFUIX — Framix Editor, Fuira & Kebun Pintar",
     "independent": "AN INDEPENDENT STUDIO FROM INDONESIA",
     "heroLine1": "A little more focus.",
     "heroLine2": "A little more growth.",
-    "heroDescription": "Simple apps for the things that matter. A calmer working day with Fuira. A little learning adventure with KebunPintar.",
+    "heroDescription": "From stories you shape in Framix Editor and calmer workdays with Fuira to learning adventures in Kebun Pintar. Apps from an independent Indonesian studio.",
     "explore": "Explore our apps",
     "story": "Our story",
     "productivity": "Productivity",
@@ -260,7 +260,7 @@
     "collection": "MADE WITH CARE",
     "productsHeading": "Find your everyday companion.",
     "productsTitle": "Apps for your everyday.",
-    "productsIntro": "Different needs, the same care: simple, enjoyable experiences that fit into your day.",
+    "productsIntro": "Video editing, productivity, and learning for children. Find the IFUIX app for your everyday life.",
     "discover": "Meet the app",
     "download": "Download",
     "allProducts": "All products",
@@ -297,6 +297,15 @@
       "chip1": "Notes & schedules",
       "chip2": "Focus timer",
       "chip3": "Optional Google Drive"
+    },
+    "framix": {
+      "category": "Video editing",
+      "imageAlt": "Framix editor: library, preview, and timeline",
+      "label": "FOR YOUR CREATIVITY",
+      "description": "Arrange video, narration, captions, and templates in a local editor. Watch the demo and ask about getting started on WhatsApp.",
+      "chip1": "Multitrack timeline",
+      "chip2": "Captions & templates",
+      "chip3": "Local projects"
     }
   },
   "kebun": {
@@ -319,7 +328,7 @@
     "feature2Description": "Learning content and audio are included in the app. Activities do not need internet after installation.",
     "realScreens": "INSIDE THE APP",
     "galleryTitle": "A peek into their learning garden.",
-    "galleryIntro": "Screens from the content bundled in Android APK 3.2.1. Tap an image for a closer look.",
+    "galleryIntro": "The first four screenshots come from the Android APK 3.2.1. The last two screenshots and video show the latest development preview. Tap to enlarge.",
     "screen0": "Home: choose a learning world",
     "screen1": "Letter world: explore A to Z",
     "screen2": "Number garden: discover 0 to 20",
@@ -329,7 +338,11 @@
     "parentDescription": "Join your child as they try new activities. Parent settings let you adjust the challenge, sound, and break reminders. Learning progress is saved on the device.",
     "futureTitle": "More room to grow.",
     "futureDescription": "Future development is planned to expand writing, coloring, and other activities. Upcoming features are not included in the current download.",
-    "installGuide": "How to install KebunPintar"
+    "installGuide": "How to install KebunPintar",
+    "videoTitle": "Meet Kebun Pintar in a video",
+    "videoNote": "Preview of the latest development: letters, numbers, and Pupi adventures. Some screens and activities are not included in the downloadable APK 3.2.1.",
+    "screen4": "Development preview: Pupi’s flower garden",
+    "screen5": "Development preview: Railway station"
   },
   "install": {
     "intro": "Install Kebun Pintar: Letters & Numbers using the official APK. This guide is for parents and caregivers.",
@@ -361,5 +374,39 @@
     "trialTitle": "Try for 24 hours, then activate",
     "trialDescription": "The trial starts automatically on first launch and continues while the app is closed. After 24 hours, contact our official WhatsApp for purchase information and a device-specific activation code.",
     "activation": "Ask about activation on WhatsApp"
+  },
+  "framix": {
+    "titleAccent": "From idea to timeline.",
+    "description": "A local video editor for bringing footage, narration, captions, and visuals into one timeline. Built for creators who want to shape their own stories.",
+    "contact": "Interested? Chat on WhatsApp",
+    "cardContact": "Ask on WhatsApp",
+    "seeDemo": "Watch the demo",
+    "availability": "Ask about availability and getting started through the official IFUIX WhatsApp.",
+    "featuresBadge": "YOUR CREATIVE WORKSPACE",
+    "featuresTitle": "Shape the story, down to the details.",
+    "featuresIntro": "Features available in the local editor. Automated drafts can be reviewed and edited.",
+    "feature0Title": "Multitrack timeline",
+    "feature0Description": "Arrange video, images, audio, and text. Trim, split, move clips, and add filters, transitions, and templates.",
+    "feature1Title": "Captions & AI assistance",
+    "feature1Description": "Import SRT, edit captions, and use Auto Captions or Auto WHAT IF to create drafts for your review.",
+    "feature2Title": "Local projects",
+    "feature2Description": "Sources, projects, and exports stay on your device. Autosave, undo/redo, and H.264 + AAC export support your workflow.",
+    "galleryTitle": "See Framix in action.",
+    "galleryIntro": "Actual screenshots from Framix by IFUIX. Tap to enlarge and use the arrows to browse.",
+    "screen0": "Framix editor: library, preview, and timeline",
+    "screen1": "Caption Studio: edit text and word highlights",
+    "screen2": "Auto WHAT IF: editing workflow settings",
+    "screen3": "Review: check the draft before export",
+    "videoTitle": "Framix demo: from an empty timeline to export",
+    "videoNote": "An edited demo of the actual editor. Processing waits are shortened and labelled; AI results are reviewed before export. Indonesian captions are available.",
+    "interestedBadge": "START A CONVERSATION",
+    "interestedTitle": "Want to learn more?",
+    "interestedDescription": "Ask IFUIX about demos, the editing workflow, and Framix Editor availability."
+  },
+  "media": {
+    "badge": "SCREENSHOTS & VIDEO DEMO",
+    "enlarge": "Enlarge screenshot",
+    "previous": "Previous screenshot",
+    "next": "Next screenshot"
   }
 }

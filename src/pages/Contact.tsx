@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { Mail, Clock, Code2, Briefcase } from 'lucide-react';
+import { Mail, Clock, Code2, Briefcase, MessageCircle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { useTranslation } from 'react-i18next';
+import { whatsappUrl } from '../data/site';
 
 export const Contact = () => {
   const { t } = useTranslation();
@@ -22,6 +23,10 @@ export const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-8 md:gap-12 items-start">
           <div className="lg:col-span-2 space-y-8">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-6 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-800">
+              <MessageCircle size={30} />
+              <div><strong>WhatsApp IFUIX</strong><p>+62 85211225262</p></div>
+            </a>
             <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary mb-6 shadow-sm">
                 <Mail className="w-6 h-6" />
