@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+'use client'
+
+import { Link } from '../navigation'
+import { useTranslation } from 'react-i18next'
 
 export const Footer = () => {
-  const { t } = useTranslation();
-  const currentYear = new Date().getFullYear();
+  const { t } = useTranslation()
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-gray-50 border-t border-gray-100 pt-16 pb-8">
@@ -11,8 +13,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <img src="/icon.svg" alt="IFUIX Logo" className="w-8 h-8 transform transition-transform group-hover:scale-105" />
-              <span className="font-bold text-xl tracking-tight text-gray-900">IFUIX</span>
+              <img
+                src="/icon.png"
+                alt="IFUIX Logo"
+                className="w-8 h-8 transform transition-transform group-hover:scale-105"
+              />
+              <span className="font-bold text-xl tracking-tight text-gray-900">
+                IFUIX
+              </span>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
               {t('footer.desc')}
@@ -20,39 +28,134 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{t('footer.products')}</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">
+              {t('footer.products')}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-500">
-              <li><Link to="/products/framix" className="hover:text-primary transition-colors">Framix Editor</Link></li>
-              <li><Link to="/products/fuira" className="hover:text-primary transition-colors">Fuira Desktop</Link></li>
-              <li><Link to="/products/kebunpintar" className="hover:text-primary transition-colors">Kebun Pintar: Huruf &amp; Angka</Link></li>
-              <li><Link to="/download" className="hover:text-primary transition-colors">{t('footer.products')}</Link></li>
+              <li>
+                <Link
+                  to="/products/framix"
+                  className="hover:text-primary transition-colors"
+                >
+                  Framix Editor
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products/fuira"
+                  className="hover:text-primary transition-colors"
+                >
+                  Fuira Desktop
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products/kebunpintar"
+                  className="hover:text-primary transition-colors"
+                >
+                  Kebun Pintar: Huruf &amp; Angka
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/download"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('footer.products')}
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{t('footer.company')}</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">
+              {t('footer.company')}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-500">
-              <li><Link to="/about" className="hover:text-primary transition-colors">{t('footer.about')}</Link></li>
-              <li><Link to="/services" className="hover:text-primary transition-colors">{t('nav.services')}</Link></li>
-              <li><Link to="/faq" className="hover:text-primary transition-colors">{t('nav.faq')}</Link></li>
-              <li><Link to="/contact" className="hover:text-primary transition-colors">{t('footer.contact')}</Link></li>
-              <li><Link to="/support" className="hover:text-primary transition-colors flex items-center gap-2"><span className="text-red-500">❤️</span> Support</Link></li>
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('footer.about')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('nav.services')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/faq"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('nav.faq')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('footer.contact')}
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/iqbalfasyah"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/support"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <span className="text-red-500">❤️</span> Support
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{t('footer.legal')}</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">
+              {t('footer.legal')}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-500">
-              <li><Link to="/privacy" className="hover:text-primary transition-colors">{t('footer.privacy')}</Link></li>
-              <li><Link to="/terms" className="hover:text-primary transition-colors">{t('footer.terms')}</Link></li>
+              <li>
+                <Link
+                  to="/privacy"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('footer.privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('footer.terms')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-200 pt-8 flex flex-col justify-center items-center gap-4 text-sm text-gray-400 text-center">
-          <p>© {currentYear} IFUIX. {t('footer.rights')}</p>
+          <p>
+            © {currentYear} IFUIX. {t('footer.rights')}
+          </p>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}

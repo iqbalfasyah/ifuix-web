@@ -1,3 +1,5 @@
+'use client'
+
 import { useTranslation } from 'react-i18next'
 import { ProductCards } from '../../components/ProductCards'
 export const FeaturedProduct = () => {

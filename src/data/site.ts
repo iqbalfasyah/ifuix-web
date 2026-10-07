@@ -2,34 +2,38 @@ export const siteOrigin = 'https://ifuix.com'
 export const whatsappUrl = 'https://wa.me/6285211225262'
 export const framixContact = `${whatsappUrl}?text=${encodeURIComponent('Halo IFUIX, saya tertarik dengan Framix Editor. Boleh minta informasi dan demo?')}`
 
-export const seoPages: Record<
-  string,
-  { title: string; description: string; canonical?: string; image?: string }
-> = {
+export type PageSEO = {
+  title: string
+  description: string
+  canonical?: string
+  image?: string
+}
+
+export const seoPages = {
   '/': {
-    title: 'IFUIX — Framix Editor, Fuira & Kebun Pintar',
+    title: 'IFUIX: Framix Editor, Fuira & Kebun Pintar',
     description:
-      'Studio aplikasi independen Indonesia. Kenali Framix Editor untuk editing video, Fuira untuk produktivitas, dan Kebun Pintar untuk belajar huruf serta angka.',
+      'Aplikasi yang dikembangkan oleh Iqbal Fasyah di Indonesia: Framix untuk editing video, Fuira untuk produktivitas, dan Kebun Pintar untuk belajar huruf serta angka.',
   },
   '/products': {
-    title: 'Aplikasi IFUIX — Framix Editor, Fuira & Kebun Pintar',
+    title: 'Aplikasi IFUIX: Framix Editor, Fuira & Kebun Pintar',
     description:
       'Jelajahi aplikasi IFUIX: Framix Editor untuk video, Fuira untuk Windows, dan Kebun Pintar untuk Android. Lihat screenshot, demo, dan informasi resmi.',
   },
   '/products/framix': {
-    title: 'Framix Editor — Editor Video Lokal & Caption AI | IFUIX',
+    title: 'Framix Editor: Editor Video Lokal & Caption AI | IFUIX',
     description:
       'Framix by IFUIX: editor video lokal dengan timeline multitrack, caption, template, filter, dan ekspor. Lihat demo asli dan hubungi WhatsApp untuk informasi.',
     image: '/images/framix/editor.webp',
   },
   '/products/fuira': {
-    title: 'Fuira — Catatan, Jadwal & Timer Fokus Windows | IFUIX',
+    title: 'Fuira: Catatan, Jadwal & Timer Fokus Windows | IFUIX',
     description:
       'Fuira menyatukan catatan, jadwal, timer fokus, dan pengingat dalam aplikasi desktop Windows. Fitur inti offline dengan sinkronisasi Google Drive opsional.',
     image: '/images/fuira/Welcome.png',
   },
   '/products/kebunpintar': {
-    title: 'Kebun Pintar: Huruf & Angka — Aplikasi Belajar Anak | IFUIX',
+    title: 'Kebun Pintar: Huruf & Angka | Aplikasi Belajar Anak | IFUIX',
     description:
       'Belajar huruf A–Z dan angka 0–20 untuk anak usia 3–6 tahun dengan suara Indonesia. Lihat screenshot, video demo, dan panduan Android Kebun Pintar.',
     image: '/images/kebunpintar/home.png',
@@ -56,9 +60,9 @@ export const seoPages: Record<
       'Unduh APK resmi Kebun Pintar 3.2.1 untuk Android 8.0+. Pelajari cara instalasi, trial 24 jam, dan aktivasi melalui WhatsApp.',
   },
   '/about': {
-    title: 'Tentang IFUIX — Studio Aplikasi Indonesia',
+    title: 'Tentang IFUIX | Studio Aplikasi Indonesia',
     description:
-      'Kenali IFUIX, studio independen Indonesia di balik Framix Editor, Fuira, dan Kebun Pintar.',
+      'Kenali Iqbal Fasyah, pengembang independen IFUIX di balik Framix Editor, Fuira, dan Kebun Pintar. Aplikasi untuk berkarya, bekerja, dan belajar.',
   },
   '/services': {
     title: 'Jasa Pengembangan Aplikasi Web, Desktop & Mobile | IFUIX',
@@ -66,7 +70,7 @@ export const seoPages: Record<
       'Diskusikan pengembangan aplikasi web, desktop, dan mobile bersama IFUIX.',
   },
   '/contact': {
-    title: 'Hubungi IFUIX — WhatsApp & Dukungan Aplikasi',
+    title: 'Hubungi IFUIX | WhatsApp & Dukungan Aplikasi',
     description:
       'Hubungi IFUIX untuk informasi Framix Editor, bantuan Fuira, aktivasi Kebun Pintar, atau pengembangan aplikasi. WhatsApp +62 85211225262.',
   },
@@ -98,10 +102,12 @@ export const seoPages: Record<
     description: 'Kebijakan privasi resmi aplikasi Kebun Pintar.',
     canonical: '/kebunpintar/privacy',
   },
-}
+} satisfies Record<string, PageSEO>
 
-export const canonicalUrl = (pathname: string) => {
-  const route = pathname.replace(/\/$/, '') || '/'
-  const canonical = seoPages[route]?.canonical ?? route
+export type SiteRoute = keyof typeof seoPages
+
+export const canonicalUrl = (route: SiteRoute) => {
+  const page: PageSEO = seoPages[route]
+  const canonical = page.canonical ?? route
   return `${siteOrigin}${canonical === '/' ? '/' : `${canonical}/`}`
 }

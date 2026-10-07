@@ -1,3 +1,5 @@
+'use client'
+
 import {
   ArrowDown,
   ArrowUpRight,
@@ -7,7 +9,7 @@ import {
   Play,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from '../../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { products } from '../../data/products'
 
@@ -63,9 +65,9 @@ export const Hero = () => {
             </Link>
           </div>
           <div className="hero-footnote">
-            <span>01 — {t('studio.creativity')}</span>
-            <span>02 — {t('studio.productivity')}</span>
-            <span>03 — {t('studio.learning')}</span>
+            <span>01 {t('studio.creativity')}</span>
+            <span>02 {t('studio.productivity')}</span>
+            <span>03 {t('studio.learning')}</span>
           </div>
         </div>
         <div
