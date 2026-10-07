@@ -1,6 +1,16 @@
 # GitHub Pages pipeline audit
 
-Updated: 7 October 2026 (Asia/Bangkok). Status: done for local audit and fixes; the new Next.js deployment has not run on GitHub.
+Updated: 7 October 2026 (Asia/Bangkok). Status: done for the owner-authorized push and deployed verification.
+
+## Published verification
+
+The owner explicitly requested the push on 7 October, superseding the earlier no-push constraint for this release. Migration commit `b6ff8fd` and pipeline commit `a56e504cdc8a1f2d7c524fd2341cabd9e97978cb` were pushed normally to `origin/master` without force. [Run 37609137865](https://github.com/iqbalfasyah/ifuix-web/actions/runs/37609137865) completed successfully in 1m8s for `a56e504`: Node 22 lockfile install, lint, typecheck, Ubuntu Webpack build, export verification, artifact upload and Pages deployment all passed.
+
+Verified `https://ifuix.com/` after deployment with `node ../../website-review/2026-10-07/verify-live.mjs`: all 18 direct routes return 200 with one H1, expected canonical, visible initial HTML and Next assets; 60 other internal asset targets return 200 with JavaScript/CSS MIME checks. Unknown route returns 404/noindex. Public APK SHA-256 matches the recorded unchanged binary. Video byte range returns 206 with 1024 bytes. No contact form submitted. Evidence outside Git: `../../website-review/2026-10-07/deployed-qa.json` and `deployed-actions.json`. These paths are relative to the repository root; copy evidence separately when moving machines. This documentation follow-up does not change application code.
+
+GitHub reported dependency alerts during push. A read-only API check found two open alerts still present in the lockfile: source-map-js 1.2.1 (high, patched 1.2.2) and development dependency brace-expansion 5.0.7 (medium, patched 5.0.12). No dependency patch or security audit was performed as part of the push. Follow-up: assess/update these dependencies and validate separately. Runner annotations also report internal Node 20 actions being automatically run on Node 24 and a future ubuntu-latest image migration; this deployment passed despite those annotations.
+
+Earlier audit below records what was verified before push. Its unpublished/Linux-unverified statements are historical, superseded by the successful hosted run above. Future publication still requires owner authorization.
 
 ## Objective and checkout
 
@@ -28,7 +38,7 @@ Repository: `iqbalfasyah/ifuix-web`, branch `master`, base `b6ff8fd6792f82e27076
 - No additional application build/typecheck/browser checks: application source is unchanged from the previously validated migration commit.
 - A fresh Ubuntu `npm ci`/build and actual Pages deployment remain unverified. Local Docker's Linux engine is stopped; WSL has only docker-desktop. No container service was started or installed. No workflow dispatched and no push performed.
 
-## Next step
+## Historical next step before push
 
 After explicit push authorization, push the local commits, inspect that exact commit's Actions run, and verify the deployed home page, deep routes, `_next` assets, downloads and unknown-route 404 at `https://ifuix.com/`. A prior successful deployment does not prove the new commit succeeds.
 

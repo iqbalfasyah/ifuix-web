@@ -1,5 +1,9 @@
 # IFUIX website: Next.js and company presentation
 
+## Current state: published after explicit owner request
+
+7 October 2026. Status done. Owner requested `push lah`; migration/pipeline commits were pushed to origin/master. Actions run 37609137865 succeeded for `a56e504`, including the previously unverified Ubuntu build and Pages deployment. Live verification passed for 18 routes, 60 asset targets, Next HTML/canonical, 404/noindex, unchanged APK and video range. No contact submission. This documentation update changes no application code. See [deployment handoff](DEPLOYMENT-HANDOFF.md) for evidence and the two remaining dependency alerts. Earlier no-push/deployment-pending entries below are historical; future publishing still needs owner authorization.
+
 ## Current follow-up: deployment pipeline checked
 
 7 October 2026. Status: done for local audit and fixes, based on accepted migration commit `b6ff8fd6792f82e27076152ba871911f49174aec`. Pages uses GitHub Actions, `ifuix.com` and enforced HTTPS; the three latest deployments succeeded for older commits. Updated official action versions and added filename-case checks to export verification. Lint, export verification, negative case fixture and diff check pass. No UI changes, push or deployment; the new Next.js Ubuntu run remains unverified. Details and next authorized step: [deployment handoff](DEPLOYMENT-HANDOFF.md). Use Git history for the follow-up commit identity. Earlier restoration/refresh entries below are dated history.
