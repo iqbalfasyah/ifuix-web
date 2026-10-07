@@ -1,5 +1,9 @@
 # IFUIX website: Next.js and company presentation
 
+## Current follow-up: deployment pipeline checked
+
+7 October 2026. Status: done for local audit and fixes, based on accepted migration commit `b6ff8fd6792f82e27076152ba871911f49174aec`. Pages uses GitHub Actions, `ifuix.com` and enforced HTTPS; the three latest deployments succeeded for older commits. Updated official action versions and added filename-case checks to export verification. Lint, export verification, negative case fixture and diff check pass. No UI changes, push or deployment; the new Next.js Ubuntu run remains unverified. Details and next authorized step: [deployment handoff](DEPLOYMENT-HANDOFF.md). Use Git history for the follow-up commit identity. Earlier restoration/refresh entries below are dated history.
+
 ## Current state: owner requested visual rollback
 
 Owner acceptance and commit authorization, 7 October 2026: the owner approved the restored appearance, reviewed the explanation of remaining technical/content differences, and requested a local commit. This handoff is part of that authorized snapshot; use `git log -1` for its commit identity. Next.js/static Pages, restored layout and factual/copy corrections are the accepted scope. No push or publication authorized. Final pre-commit lint, typecheck, static-export verification and diff check passed; production build and 36 browser route checks remain the previously verified results for this unchanged implementation. Workspace handoff records the resulting commit hash after creation. Root workspace files and screenshot evidence live outside this Git repository.

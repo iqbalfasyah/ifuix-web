@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFile, stat } from 'node:fs/promises'
+import { readFile, readdir, stat } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { resolve } from 'node:path'
 
@@ -28,6 +28,12 @@ const aliases = {
   '/privacy/kebunpintar': '/kebunpintar/privacy',
 }
 const root = resolve('out')
+// Windows accepts mismatched filename case; the Ubuntu Pages runner does not.
+const exactPaths = new Set(
+  (await readdir(root, { recursive: true })).map((file) =>
+    file.replaceAll('\\', '/'),
+  ),
+)
 const decode = (text) => text.replaceAll('&amp;', '&')
 const checkedAssets = new Set()
 
@@ -69,6 +75,11 @@ for (const route of routes) {
     const asset = decode(match[1])
     if (checkedAssets.has(asset)) continue
     checkedAssets.add(asset)
+    const relative = asset.replace(/^\/|\/$/g, '')
+    assert.ok(
+      relative === '' || exactPaths.has(relative),
+      `${route}: ${asset} filename case matches exported path`,
+    )
     const file = resolve(root, `.${asset}`)
     assert.ok(
       (await stat(file)).isFile() || (await stat(file)).isDirectory(),

@@ -29,6 +29,6 @@ Preview serves `out/` on `http://127.0.0.1:4175`, without a SPA fallback; unknow
 
 See [ARCHITECTURE.md](docs/ARCHITECTURE.md) for component boundaries, language rendering, and the static hosting constraints. The current custom domain serves the site at `/`; changing to a GitHub repository subpath also requires reviewing asset URLs.
 
-The GitHub Pages workflow uploads `out/`. `.nojekyll` preserves `_next` assets and `CNAME` retains the existing domain. Static export requires no Next.js server or hosting change. Publishing requires owner review.
+The GitHub Pages workflow verifies and uploads `out/`, including checks for filename case on internal paths. Actions deployment skips Jekyll and serves `_next` assets; `CNAME` retains the existing domain. Static export requires no Next.js server or hosting change. Publishing requires owner review. See [deployment audit](docs/DEPLOYMENT-HANDOFF.md) for verified hosting settings and the remaining hosted validation.
 
 Keep product and company claims verifiable. [DESIGN.md](DESIGN.md) records the owner's solo-developer direction and the UI/copy decisions. [Anti-slop workflow](docs/design/ANTI-SLOP.md) contains portable core-only rules and provenance; no optional packages or global preferences were installed. [STARTUP-CONTEXT.md](docs/STARTUP-CONTEXT.md) distinguishes reported facts from suggestions. Binary metadata must match the actual signed artifact; Framix has enquiry/demo links and no public installer.
