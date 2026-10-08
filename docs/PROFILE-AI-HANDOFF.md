@@ -23,3 +23,9 @@ Follow-up validation: lint/build (including TypeScript) and export pass; respons
 ## Published, 8 October 2026
 
 Status: done. Explicit owner push/deploy authorization fulfilled. Application commit e7a5c20e5cac493588f5e9c3775014d807467681 pushed to origin/master. Actions run https://github.com/iqbalfasyah/ifuix-web/actions/runs/37717583436 succeeded (Ubuntu install/lint/typecheck/build/export/deploy). Live verify-ai-saas-live.mjs passed 19 routes and 61 asset targets, updated Home AI positioning, Finance coming-soon, Framix clipping roadmap, Next HTML/canonical, real 404/noindex, unchanged APK hash and video range206. Evidence ../../../website-review/2026-10-07/ai-saas-deployed-qa.json and runnable verification script. This follow-up updates documentation only, uses [skip ci] to avoid an identical deployment, and does not alter deployed application content. No remaining deployment work. No startup application/support contact submitted.
+
+## Founder experience correction, 8 October 2026
+
+Owner explicitly supplied the 10-year founder/developer experience and requested independent-since-2023 copy. Updated shared Home/About profile in ID/EN using those owner-provided facts. This supersedes the earlier removal of an unsupported experience statistic: the new claim now has direct owner confirmation. February2023 remains brand start, not legal incorporation. Prior push/deploy authorization continues for this website follow-up. Validation and deployment pending.
+
+Founder follow-up validation: lint/build (including TypeScript), 19-route export and diff checks pass. Four ID/EN desktop/mobile profile checks pass, mobile screenshot visually reviewed; evidence ../../../website-review/2026-10-07/founder-experience-*.png and verify-founder.cjs. Publishing the checked copy under existing owner authorization; no other features changed.
