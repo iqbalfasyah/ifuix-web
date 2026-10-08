@@ -19,3 +19,7 @@ Follow-up validation: lint/build (including TypeScript) and export pass; respons
 ## Publication authorization
 
 8 October 2026: owner explicitly requested push and deployment, superseding the no-push constraint for this reviewed release. Publishing the existing verified profile/AI/Finance changes to origin/master. Hosted verification pending.
+
+## Published, 8 October 2026
+
+Status: done. Explicit owner push/deploy authorization fulfilled. Application commit e7a5c20e5cac493588f5e9c3775014d807467681 pushed to origin/master. Actions run https://github.com/iqbalfasyah/ifuix-web/actions/runs/37717583436 succeeded (Ubuntu install/lint/typecheck/build/export/deploy). Live verify-ai-saas-live.mjs passed 19 routes and 61 asset targets, updated Home AI positioning, Finance coming-soon, Framix clipping roadmap, Next HTML/canonical, real 404/noindex, unchanged APK hash and video range206. Evidence ../../../website-review/2026-10-07/ai-saas-deployed-qa.json and runnable verification script. This follow-up updates documentation only, uses [skip ci] to avoid an identical deployment, and does not alter deployed application content. No remaining deployment work. No startup application/support contact submitted.
