@@ -11,8 +11,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const language = createInstance()
     language.use(initReactI18next).init({
       resources: { id: { translation: id }, en: { translation: en } },
-      lng: 'id',
-      fallbackLng: 'id',
+      lng: 'en',
+      fallbackLng: 'en',
       initAsync: false,
       interpolation: { escapeValue: false },
     })
@@ -29,14 +29,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         /* Storage is optional. */
       }
     }
-    let saved = 'id'
+    let saved = 'en'
     try {
-      saved = localStorage.getItem('i18nextLng') ?? 'id'
+      saved = localStorage.getItem('i18nextLng') ?? 'en'
     } catch {
       /* Private browsing can deny storage. */
     }
     instance.on('languageChanged', apply)
-    instance.changeLanguage(saved.startsWith('en') ? 'en' : 'id')
+    instance.changeLanguage(saved.startsWith('id') ? 'id' : 'en')
     return () => {
       instance.off('languageChanged', apply)
     }

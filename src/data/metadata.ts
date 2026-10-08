@@ -21,7 +21,7 @@ export function pageMetadata(route: SiteRoute): Metadata {
       description: page.description,
       url: canonical,
       siteName: 'IFUIX',
-      locale: 'id_ID',
+      locale: 'en_US',
       type: 'website',
       images: [image],
     },

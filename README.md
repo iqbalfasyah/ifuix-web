@@ -25,7 +25,7 @@ npm run preview
 
 Preview serves `out/` on `http://127.0.0.1:4175`, without a SPA fallback; unknown routes return the exported 404. Use `npm run preview -- --port 4176` for another port. Video byte ranges are supported.
 
-`src/app/` owns actual routes and metadata; `src/views/` holds translated page components. `src/components/LanguageProvider.tsx` renders Indonesian on the server and applies a saved ID/EN choice after hydration, including when storage is denied. `src/data/site.ts` owns canonical URLs and route metadata. Public downloads, screenshots, and videos remain in `public/`.
+`src/app/` owns actual routes and metadata; `src/views/` holds translated page components. `src/components/LanguageProvider.tsx` renders English on the server and applies a saved ID/EN choice after hydration, including when storage is denied. `src/data/site.ts` owns canonical URLs and route metadata. Public downloads, screenshots, and videos remain in `public/`.
 
 See [ARCHITECTURE.md](docs/ARCHITECTURE.md) for component boundaries, language rendering, and the static hosting constraints. The current custom domain serves the site at `/`; changing to a GitHub repository subpath also requires reviewing asset URLs.
 

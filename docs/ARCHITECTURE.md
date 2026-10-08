@@ -22,9 +22,9 @@ Use a client boundary for state, effects, browser APIs, translations, or motion.
 
 ## Rendering and language
 
-Every route has its own exported HTML and metadata. Indonesian renders during the build and on the client's first render. The provider creates its own i18next instance instead of mutating shared server state. After hydration it reads the saved language and updates the page and `html` language attribute. Storage denial is handled gracefully. Keep browser-dependent values out of the first render to avoid hydration errors.
+Every route has its own exported HTML and metadata. English renders during the build and on the client's first render. The provider creates its own i18next instance instead of mutating shared server state. After hydration it reads the saved language and updates the page and `html` language attribute. Storage denial is handled gracefully. Keep browser-dependent values out of the first render to avoid hydration errors.
 
-The existing language switch is a client preference. Exported HTML, canonical URLs, and page metadata remain Indonesian; there are no separate `/en/` pages or `hreflang` alternatives. Localized search-indexable URLs would be a separate routing/content change.
+The existing language switch is a client preference. Exported HTML, canonical URLs, and page metadata remain English; there are no separate `/en/` pages or `hreflang` alternatives. Localized search-indexable URLs would be a separate routing/content change.
 
 Navigation uses Next.js Link. The compatibility wrapper normalizes internal page links to trailing slashes, matching the exported directory layout, and provides the existing `to` interface. Restored Navbar uses its pathname wrapper to close the mobile menu after navigation. React Router and React Helmet remain removed.
 
@@ -44,7 +44,7 @@ Static export supports the current informational pages, galleries, language swit
 
 ## Validation
 
-Run `npm run lint`, `npm run typecheck`, `npm run build`, and `npm run verify:export`. Type checking runs `next typegen` first, so it works on a fresh checkout without an existing build. Generated `next-env.d.ts` and `.next/` files are ignored. The export check verifies all 18 routes, one primary heading/title/description/canonical per route, JSON-LD, visible initial content, internal targets, sitemap count, exported 404, Pages files, and the APK hash. It is a build-artifact check, not a replacement for browser interaction checks.
+Run `npm run lint`, `npm run typecheck`, `npm run build`, and `npm run verify:export`. Type checking runs `next typegen` first, so it works on a fresh checkout without an existing build. Generated `next-env.d.ts` and `.next/` files are ignored. The export check verifies all 19 routes, one primary heading/title/description/canonical per route, JSON-LD, visible initial content, internal targets, sitemap count, exported 404, Pages files, and the APK hash. It is a build-artifact check, not a replacement for browser interaction checks.
 
 Use `npm run preview` to serve `out/` locally. This preview intentionally has no SPA fallback and supports video byte ranges. Browser QA must include direct navigation, client navigation, saved language hydration, mobile menu, gallery keyboard behavior, overflow, and console errors. Production Pages deployment and owner visual acceptance require separate verification after publication is authorized.
 
