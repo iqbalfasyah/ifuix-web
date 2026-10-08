@@ -34,7 +34,7 @@ export const seoPages = {
   '/products/fuira': {
     title: 'Fuira: Catatan, Jadwal & Timer Fokus Windows | IFUIX',
     description:
-      'Fuira menyatukan catatan, jadwal, timer fokus, dan pengingat dalam aplikasi desktop Windows. Fitur inti offline dengan sinkronisasi Google Drive opsional.',
+      'Fuira menyatukan catatan, jadwal, timer fokus, dan pengingat dalam aplikasi desktop Windows. Sinkronisasi Google Drive tersedia secara opsional.',
     image: '/images/fuira/Welcome.png',
   },
   '/products/kebunpintar': {

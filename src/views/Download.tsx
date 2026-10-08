@@ -250,24 +250,7 @@ export const Download = () => {
                 Yes, Fuira is completely free to use.
               </p>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Does it collect data?
-              </h3>
-              <p className="text-gray-600">
-                No, Fuira is privacy-first and does not collect your personal
-                data.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Does it require internet?
-              </h3>
-              <p className="text-gray-600">
-                No, Fuira is an offline-first application and works perfectly
-                without an internet connection.
-              </p>
-            </div>
+
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Can I sync?

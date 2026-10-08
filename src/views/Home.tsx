@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRight, Heart, WifiOff, Leaf } from 'lucide-react'
+import { ArrowUpRight, Heart, Workflow, Leaf } from 'lucide-react'
 import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { Hero } from '../sections/home/Hero'
@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="studio-container">
           <span className="eyebrow">{t('studio.philosophy')}</span>
           <div className="values-grid">
-            {[Heart, WifiOff, Leaf].map((Icon, i) => (
+            {[Heart, Workflow, Leaf].map((Icon, i) => (
               <div key={i}>
                 <Icon size={25} strokeWidth={1.6} />
                 <h3>{t(`studio.value${i + 1}Title`)}</h3>

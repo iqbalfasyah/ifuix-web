@@ -34,15 +34,15 @@
   "featured": {
     "badge": "Produk Unggulan",
     "title": "Perkenalkan Fuira",
-    "desc": "Aplikasi desktop andalan kami yang dirancang untuk merampingkan alur kerja Anda dengan kecepatan tak tertandingi dan kemampuan offline penuh. Rasakan standar baru dalam keahlian perangkat lunak.",
+    "desc": "Kelola tugas, tulis catatan Markdown, dan atur waktu fokus dalam satu aplikasi.",
     "cta": "Eksplorasi Fuira"
   },
   "trust": {
     "title": "Dibangun Atas Dasar Kepercayaan",
     "t1_title": "Inti Open Source",
     "t1_desc": "Komponen dan fitur dijelaskan melalui dokumentasi serta informasi rilis.",
-    "t2_title": "Mengutamakan Offline",
-    "t2_desc": "Aplikasi kami dirancang untuk bekerja sempurna tanpa koneksi internet. Data Anda tetap di perangkat Anda.",
+    "t2_title": "Fitur yang berguna",
+    "t2_desc": "Produk dikembangkan untuk kegiatan berkarya, bekerja, dan belajar.",
     "t3_title": "Terus dikembangkan",
     "t3_desc": "Masukan pengguna membantu menentukan perbaikan produk berikutnya."
   },
@@ -60,7 +60,7 @@
   "principles": {
     "title": "Prinsip Desain",
     "p1": "Performa adalah sebuah fitur.",
-    "p2": "Dukungan offline adalah wajib.",
+    "p2": "Fitur harus punya tujuan.",
     "p3": "Hargai pengaturan sistem bawaan.",
     "p4": "Tidak ada trik penipuan (dark patterns)."
   },
@@ -157,9 +157,9 @@
     "title": "Produk Kami",
     "badge": "Tersedia Sekarang",
     "fuira_title": "Fuira",
-    "fuira_desc": "Rangkaian produktivitas offline-first yang paling utama. Kelola tugas, tulis catatan markdown, dan lacak waktu fokus Anda tanpa gangguan.",
+    "fuira_desc": "Kelola tugas, tulis catatan Markdown, dan atur waktu fokus dalam satu aplikasi.",
     "fuira_f1": "Performa aplikasi native yang sangat cepat",
-    "fuira_f2": "100% mampu berjalan offline",
+    "fuira_f2": "Jadwal dan pengingat",
     "fuira_f3": "Sinkronisasi Google Drive opsional",
     "btn_learn": "Pelajari Lebih Lanjut",
     "btn_download": "Unduh"
@@ -192,7 +192,7 @@
     "design_title": "Dirancang untuk Fokus",
     "d1": "Catatan dan pengaturan inti tersimpan di perangkat.",
     "d2": "Sinkronisasi ke Google Drive tersedia jika kamu mengaktifkannya.",
-    "d3": "Catatan, jadwal, dan timer fokus dapat digunakan offline.",
+    "d3": "Catatan, jadwal, dan timer membantu mengatur pekerjaan.",
     "d4": "Google Drive, unduhan, dan pembaruan memerlukan internet."
   },
   "support": {
@@ -231,7 +231,7 @@
     "web_title": "Aplikasi Web",
     "web_desc": "Aplikasi web modern, responsif, dan berkinerja tinggi yang dibangun dengan teknologi terbaru seperti React, Tailwind, dan Node.js. Disesuaikan dengan kebutuhan bisnis Anda.",
     "desktop_title": "Aplikasi Desktop",
-    "desktop_desc": "Alat untuk pekerjaan di komputer, termasuk penyimpanan lokal dan kebutuhan penggunaan offline. Fuira dan Framix bisa menjadi contoh aplikasi yang saya kerjakan.",
+    "desktop_desc": "Pengembangan alat untuk pekerjaan di komputer. Fuira dan Framix menjadi contoh aplikasi yang saya kerjakan.",
     "mobile_title": "Aplikasi Mobile",
     "mobile_desc": "Aplikasi untuk digunakan di ponsel atau tablet Android. Kebun Pintar menjadi contoh pengembangan saya untuk aktivitas belajar anak.",
     "trust_title": "Mengapa Bekerja Bersama Kami?",
@@ -250,17 +250,17 @@
     "a1_p4": "Fuira terbuka tentang apa yang dilakukannya:",
     "a1_li1": "Tanpa iklan",
     "a1_li2": "Catatan, jadwal, dan timer fokus",
-    "a1_li3": "Offline-first",
+    "a1_li3": "Aplikasi desktop Windows",
     "a1_li4": "Google Drive hanya dengan izin Anda"
   },
   "studio": {
     "siteTitle": "IFUIX : Framix Editor, Fuira & Kebun Pintar",
-    "independent": "SOFTWARE & SAAS BERBASIS AI",
-    "heroLine1": "IFUIX.",
-    "heroLine2": "Ide jadi aksi.",
-    "heroDescription": "IFUIX membangun software dan merancang SaaS dengan AI sebagai bagian inti alur kerja. Fokus berikutnya: produksi konten lewat Framix dan pengelolaan keuangan lewat IFUIX Finance.",
-    "explore": "Jelajahi aplikasi",
-    "story": "Cerita di balik IFUIX",
+    "independent": "IFUIX · AI SOFTWARE & SAAS",
+    "heroLine1": "AI untuk berkarya.",
+    "heroLine2": "Dan mengelola usaha.",
+    "heroDescription": "Bangun alur kerja dengan AI, dari prompt editing dan caption di Framix hingga konsep pencatatan keuangan di IFUIX Finance. Auto clipping, generasi konten, dan AI Assistant untuk Fuira serta Kebun Pintar sedang menjadi arah pengembangan.",
+    "explore": "Jelajahi produk AI",
+    "story": "Kenali IFUIX",
     "productivity": "Produktivitas",
     "learning": "Bermain & belajar",
     "introducing": "KENALI KEBUNPINTAR",
@@ -274,8 +274,8 @@
     "philosophy": "HAL KECIL YANG KAMI JAGA",
     "value1Title": "Nyaman digunakan.",
     "value1Description": "Tampilan yang jelas dan fitur yang punya tujuan. Memberi ruang untuk hal yang sedang kamu lakukan.",
-    "value2Title": "Tetap bisa, tanpa internet.",
-    "value2Description": "Fitur inti Fuira dan materi KebunPintar dapat digunakan secara offline setelah aplikasi terpasang.",
+    "value2Title": "AI untuk alur kerja berikutnya.",
+    "value2Description": "Framix memakai AI untuk editing. Dukungan AI Assistant direncanakan untuk Fuira dan Kebun Pintar.",
     "value3Title": "Tumbuh sedikit demi sedikit.",
     "value3Description": "Dikembangkan secara independen, dengan perbaikan yang berangkat dari pengalaman pengguna.",
     "madeIn": "DIBANGUN DI INDONESIA",
@@ -294,7 +294,7 @@
       "description": "Belajar huruf A-Z dan angka 0-20 untuk anak usia 3-6 tahun.",
       "chip1": "Huruf A–Z",
       "chip2": "Angka 0–20",
-      "chip3": "Materi offline"
+      "chip3": "Suara Indonesia"
     },
     "fuira": {
       "category": "Produktivitas",
@@ -324,7 +324,10 @@
       "next": "Produk berikutnya",
       "pause": "Jeda pergantian produk",
       "play": "Putar pergantian produk"
-    }
+    },
+    "heroUse1": "Produksi konten",
+    "heroUse2": "Keuangan usaha",
+    "heroUse3": "AI Assistant"
   },
   "kebun": {
     "badge": "KEBUNPINTAR · BERMAIN & BELAJAR",
@@ -342,8 +345,8 @@
     "feature0Description": "Jelajahi huruf besar dan kecil, kenali angka, lalu berlatih lewat kegiatan mencocokkan dan menghitung.",
     "feature1Title": "Dengarkan bersama",
     "feature1Description": "Narasi berbahasa Indonesia membantu anak mengenal nama huruf, angka, dan petunjuk kegiatan.",
-    "feature2Title": "Siap bermain offline",
-    "feature2Description": "Materi dan suara disertakan di aplikasi. Tidak perlu koneksi internet untuk kegiatan belajar setelah instalasi.",
+    "feature2Title": "Belajar bersama pendamping",
+    "feature2Description": "Materi huruf, angka, dan suara membantu anak berlatih bersama orang tua atau pendamping.",
     "realScreens": "TAMPILAN APLIKASI",
     "galleryTitle": "Intip kebun belajarnya.",
     "galleryIntro": "Empat screenshot pertama berasal dari APK Android 3.2.1. Dua screenshot terakhir dan video menunjukkan preview pengembangan terbaru. Ketuk gambar untuk memperbesar.",

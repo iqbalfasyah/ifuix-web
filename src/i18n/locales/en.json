@@ -33,15 +33,15 @@
   "featured": {
     "badge": "Featured Product",
     "title": "Meet Fuira",
-    "desc": "Our flagship desktop application designed to streamline your workflow with unparalleled speed and complete offline capability. Experience a new standard in software craftsmanship.",
+    "desc": "Manage tasks, write Markdown notes, and organize focus time in one app.",
     "cta": "Explore Fuira"
   },
   "trust": {
     "title": "Built on Trust",
     "t1_title": "Open Source Core",
     "t1_desc": "Components and features are explained through documentation and release information.",
-    "t2_title": "Offline First",
-    "t2_desc": "Our applications are designed to work perfectly without an internet connection. Your data stays on your device.",
+    "t2_title": "Useful features",
+    "t2_desc": "Products developed for creating, working, and learning.",
     "t3_title": "Continuing development",
     "t3_desc": "User feedback helps shape future product improvements."
   },
@@ -59,7 +59,7 @@
   "principles": {
     "title": "Design Principles",
     "p1": "Performance is a feature.",
-    "p2": "Offline support is mandatory.",
+    "p2": "Features should serve a purpose.",
     "p3": "Respect system defaults.",
     "p4": "No dark patterns."
   },
@@ -156,9 +156,9 @@
     "title": "Our Products",
     "badge": "Available Now",
     "fuira_title": "Fuira",
-    "fuira_desc": "The ultimate offline-first productivity suite. Manage tasks, write markdown notes, and track your focus time without distractions.",
+    "fuira_desc": "Manage tasks, write Markdown notes, and organize focus time in one app.",
     "fuira_f1": "Blazing fast native performance",
-    "fuira_f2": "100% offline capable",
+    "fuira_f2": "Schedules and reminders",
     "fuira_f3": "Optional Google Drive sync",
     "btn_learn": "Learn More",
     "btn_download": "Download"
@@ -191,7 +191,7 @@
     "design_title": "Designed for Focus",
     "d1": "Core notes and settings are stored on your device.",
     "d2": "Google Drive synchronization is available when you enable it.",
-    "d3": "Notes, schedules, and the focus timer can be used offline.",
+    "d3": "Notes, schedules, and timers help organize work.",
     "d4": "Google Drive, downloads, and updates need internet."
   },
   "support": {
@@ -230,7 +230,7 @@
     "web_title": "Web Applications",
     "web_desc": "Modern, responsive, and performant web applications built with the latest technologies like React, Tailwind, and Node.js. Tailored to your business needs.",
     "desktop_title": "Desktop Applications",
-    "desktop_desc": "Tools for working on a computer, including local storage and offline use. Fuira and Framix are examples of apps I've worked on.",
+    "desktop_desc": "Developing tools for work on a computer. Fuira and Framix are examples of apps I have built.",
     "mobile_title": "Mobile Applications",
     "mobile_desc": "Apps for Android phones and tablets. Kebun Pintar is an example of my work on learning activities for children.",
     "trust_title": "Why Work With Us?",
@@ -249,17 +249,17 @@
     "a1_p4": "Fuira is open about what it does:",
     "a1_li1": "No ads",
     "a1_li2": "Notes, schedules, and focus timer",
-    "a1_li3": "Offline-first",
+    "a1_li3": "Windows desktop app",
     "a1_li4": "Google Drive only with your permission"
   },
   "studio": {
     "siteTitle": "IFUIX : Framix Editor, Fuira & Kebun Pintar",
-    "independent": "AI SOFTWARE & SAAS",
-    "heroLine1": "IFUIX.",
-    "heroLine2": "Ideas into action.",
-    "heroDescription": "IFUIX builds software and designs SaaS with AI at the core of its workflows. Our next focus: content production through Framix and money management through IFUIX Finance.",
-    "explore": "Explore our apps",
-    "story": "Our story",
+    "independent": "IFUIX · AI SOFTWARE & SAAS",
+    "heroLine1": "AI for creating.",
+    "heroLine2": "And running a business.",
+    "heroDescription": "Build workflows with AI, from editing prompts and captions in Framix to the financial-records concept in IFUIX Finance. Auto clipping, content generation, and AI Assistants for Fuira and Kebun Pintar are on the development roadmap.",
+    "explore": "Explore AI products",
+    "story": "Meet IFUIX",
     "productivity": "Productivity",
     "learning": "Play & learn",
     "introducing": "MEET KEBUNPINTAR",
@@ -273,8 +273,8 @@
     "philosophy": "THE LITTLE THINGS WE CARE ABOUT",
     "value1Title": "Comfortably simple.",
     "value1Description": "Clear interfaces and purposeful features. More room for what you are here to do.",
-    "value2Title": "Ready without Wi-Fi.",
-    "value2Description": "Core Fuira features and KebunPintar learning activities work offline after installation.",
+    "value2Title": "AI for the next workflow.",
+    "value2Description": "Framix uses AI for editing. AI Assistant support is planned for Fuira and Kebun Pintar.",
     "value3Title": "Growing, thoughtfully.",
     "value3Description": "Independently developed, with improvements shaped by the people who use our apps.",
     "madeIn": "BUILT IN INDONESIA",
@@ -293,7 +293,7 @@
       "description": "Learn letters A-Z and numbers 0-20 for children ages 3-6.",
       "chip1": "Letters A–Z",
       "chip2": "Numbers 0–20",
-      "chip3": "Offline activities"
+      "chip3": "Indonesian audio"
     },
     "fuira": {
       "category": "Productivity",
@@ -323,7 +323,10 @@
       "next": "Next product",
       "pause": "Pause product rotation",
       "play": "Start product rotation"
-    }
+    },
+    "heroUse1": "Content production",
+    "heroUse2": "Business finances",
+    "heroUse3": "AI Assistants"
   },
   "kebun": {
     "badge": "KEBUNPINTAR · PLAY & LEARN",
@@ -341,8 +344,8 @@
     "feature0Description": "Explore uppercase and lowercase letters, meet numbers, and practice with matching and counting activities.",
     "feature1Title": "Listen together",
     "feature1Description": "Indonesian narration introduces letter names, numbers, and instructions for each activity.",
-    "feature2Title": "Ready for offline play",
-    "feature2Description": "Learning content and audio are included in the app. Activities do not need internet after installation.",
+    "feature2Title": "Learn with a caregiver",
+    "feature2Description": "Letter and number activities with audio help children practice with parents or caregivers.",
     "realScreens": "INSIDE THE APP",
     "galleryTitle": "A peek into their learning garden.",
     "galleryIntro": "The first four screenshots come from the Android APK 3.2.1. The last two screenshots and video show the latest development preview. Tap to enlarge.",

@@ -6,7 +6,7 @@ import {
   ArrowRight,
   BookOpen,
   Volume2,
-  WifiOff,
+  Workflow,
 } from 'lucide-react'
 import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
@@ -99,7 +99,7 @@ export const KebunPintar = () => {
           <p>{t('kebun.featuresIntro')}</p>
         </div>
         <div className="values-grid">
-          {[BookOpen, Volume2, WifiOff].map((Icon, i) => (
+          {[BookOpen, Volume2, Workflow].map((Icon, i) => (
             <div key={i}>
               <Icon size={25} strokeWidth={1.7} />
               <h3>{t(`kebun.feature${i}Title`)}</h3>

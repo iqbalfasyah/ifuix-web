@@ -62,9 +62,9 @@ export const ProductDetail = () => {
               <span className="text-gray-400">•</span>
               <span className="text-gray-600">Free</span>
               <span className="text-gray-400">•</span>
-              <span className="text-gray-600">Offline First</span>
+              <span className="text-gray-600">Windows</span>
               <span className="text-gray-400">•</span>
-              <span className="text-gray-600">Privacy First</span>
+              <span className="text-gray-600">{t('product_detail.w1')}</span>
             </div>
             <div className="flex justify-center">
               <Link to="/download/fuira">

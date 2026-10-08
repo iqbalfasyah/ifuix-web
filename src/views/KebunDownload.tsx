@@ -1,11 +1,6 @@
 'use client'
 
-import {
-  ArrowDownToLine,
-  ArrowLeft,
-  CheckCircle2,
-  Smartphone,
-} from 'lucide-react'
+import { ArrowDownToLine, ArrowLeft, Smartphone } from 'lucide-react'
 import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { kebunRelease } from '../data/products'
@@ -80,10 +75,6 @@ export const KebunDownload = () => {
                 <code>{kebunRelease.sha256}</code>
               </details>
             )}
-            <div className="apk-offline">
-              <CheckCircle2 size={18} />
-              <span>{t('install.offline')}</span>
-            </div>
           </aside>
           <div className="install-guide">
             <span className="eyebrow">{t('install.forParents')}</span>

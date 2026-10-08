@@ -65,9 +65,9 @@ export const Hero = () => {
             </Link>
           </div>
           <div className="hero-footnote">
-            <span>01 {t('studio.creativity')}</span>
-            <span>02 {t('studio.productivity')}</span>
-            <span>03 {t('studio.learning')}</span>
+            <span>01 {t('studio.heroUse1')}</span>
+            <span>02 {t('studio.heroUse2')}</span>
+            <span>03 {t('studio.heroUse3')}</span>
           </div>
         </div>
         <div
