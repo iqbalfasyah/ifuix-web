@@ -11,6 +11,7 @@ import {
 import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { MediaGallery } from '../components/MediaGallery'
+import { PlannedAssistant } from '../components/StudioPresentation'
 const screenshots = [
   'home',
   'letters',
@@ -107,6 +108,7 @@ export const KebunPintar = () => {
           ))}
         </div>
       </section>
+      <PlannedAssistant product="kebunpintar" />
       <MediaGallery
         screenshots={screenshots.map((name, index) => ({
           src: `/images/kebunpintar/${name}.${name.endsWith('preview') ? 'webp' : 'png'}`,

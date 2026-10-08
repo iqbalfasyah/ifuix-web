@@ -16,7 +16,7 @@
     "badge": "Memperkenalkan IFUIX",
     "title": "Perangkat lunak yang dirancang cermat untuk ",
     "title_highlight": "dunia yang bising.",
-    "subtitle": "Kami membangun aplikasi web dan desktop yang cepat, mengutamakan privasi, dan dirancang untuk membantu Anda fokus pada hal yang penting.",
+    "subtitle": "Kami membangun aplikasi web dan desktop untuk membantu kamu berkarya dan bekerja dengan AI.",
     "cta_explore": "Eksplorasi Produk",
     "cta_mission": "Misi Kami"
   },
@@ -24,8 +24,8 @@
     "title": "Perangkat lunak harus menghargai Anda.",
     "p1": "Di era notifikasi tanpa akhir, kelelahan berlangganan, dan pengambilan data, kami mengambil pendekatan berbeda.",
     "p2": "Di IFUIX, kami percaya alat kerja harus memberdayakan Anda, bukan mengganggu Anda. Kami membangun perangkat lunak yang tidak menghalangi Anda sehingga Anda dapat bekerja maksimal.",
-    "f1_title": "Privasi Utama",
-    "f1_desc": "Tanpa telemetri, tanpa pelacak, tanpa menjual data.",
+    "f1_title": "Alur kerja jelas",
+    "f1_desc": "Fitur yang membantu menyelesaikan pekerjaan, dengan hasil yang bisa ditinjau.",
     "f2_title": "Sangat Cepat",
     "f2_desc": "Performa asli yang tidak membuat Anda menunggu.",
     "f3_title": "Bayar Sekali",
@@ -40,11 +40,11 @@
   "trust": {
     "title": "Dibangun Atas Dasar Kepercayaan",
     "t1_title": "Inti Open Source",
-    "t1_desc": "Komponen utama perangkat lunak kami bersifat open source, memungkinkan komunitas memverifikasi klaim keamanan dan privasi kami.",
+    "t1_desc": "Komponen dan fitur dijelaskan melalui dokumentasi serta informasi rilis.",
     "t2_title": "Mengutamakan Offline",
     "t2_desc": "Aplikasi kami dirancang untuk bekerja sempurna tanpa koneksi internet. Data Anda tetap di perangkat Anda.",
-    "t3_title": "Tanpa Telemetri",
-    "t3_desc": "Kami tidak mengumpulkan statistik penggunaan atau analitik. Urusan Anda adalah urusan Anda."
+    "t3_title": "Terus dikembangkan",
+    "t3_desc": "Masukan pengguna membantu menentukan perbaikan produk berikutnya."
   },
   "values": {
     "title": "Nilai Inti",
@@ -53,7 +53,7 @@
     "v2_title": "Keahlian",
     "v2_desc": "Setiap piksel, animasi, dan baris kode dipertimbangkan dengan cermat.",
     "v3_title": "Penghargaan",
-    "v3_desc": "Kami menghargai waktu, perhatian, dan privasi Anda.",
+    "v3_desc": "Kami menghargai waktu dan perhatian Anda.",
     "v4_title": "Kemandirian",
     "v4_desc": "Kami bangga menjadi independen dan hanya menjawab kepada pengguna kami."
   },
@@ -67,7 +67,7 @@
   "founder": {
     "badge": "Sang Pendiri",
     "title": "Halo, saya Iqbal.",
-    "quote": "Membangun perangkat lunak yang cermat dari Indonesia. Saya percaya perangkat lunak harus menghargai waktu, perhatian, dan privasi pengguna alih-alih mengeksploitasi mereka.",
+    "quote": "Membangun software dari Indonesia untuk membantu orang berkarya dan bekerja.",
     "desc": "Saya memulai IFUIX sebagai misi pribadi untuk membangun alat yang saya harap ada. Tanpa modal ventura, tanpa metrik pertumbuhan yang agresif, hanya fokus tanpa henti pada menciptakan perangkat lunak berkualitas tinggi yang memecahkan masalah nyata secara elegan.",
     "link": "Baca cerita lengkapnya"
   },
@@ -91,7 +91,7 @@
   },
   "cta": {
     "title": "Siap mengubah cara Anda bekerja?",
-    "desc": "Bergabunglah dengan ribuan pengguna yang telah beralih ke alat pengutamaan privasi kami.",
+    "desc": "Kenali produk IFUIX dan arah pengembangannya.",
     "btn": "Mulai Hari Ini"
   },
   "footer": {
@@ -165,7 +165,7 @@
     "btn_download": "Unduh"
   },
   "product_detail": {
-    "subtitle": "Cepat. Privat. Offline-first.",
+    "subtitle": "Catatan, jadwal, dan fokus.",
     "btn_download": "Unduh untuk Windows",
     "look_title": "Tampilan Dalam",
     "look_desc": "Antarmuka yang indah dan bebas gangguan dirancang untuk kerja mendalam.",
@@ -198,8 +198,8 @@
   "support": {
     "title": "Dukung pengembangan IFUIX.",
     "no_ads": "Tidak ada iklan.",
-    "no_tracking": "Tidak ada pelacakan.",
-    "no_data": "Tidak ada pengumpulan data.",
+    "no_tracking": "Dikembangkan independen.",
+    "no_data": "Dibangun untuk keseharianmu.",
     "desc": "Saya mengembangkan aplikasi IFUIX sendiri. Kalau aplikasinya membantu, kamu bisa mendukung pengerjaannya melalui Saweria atau PayPal.",
     "impact": "Dukungan membantu saya mengalokasikan waktu untuk memperbaiki aplikasi dan menyiapkan pembaruannya.",
     "saweria_btn": "Dukung via Saweria (IDR)",
@@ -207,7 +207,7 @@
     "why_title": "Mengapa mendukung IFUIX?",
     "why_1": "IFUIX dikembangkan secara independen.",
     "why_2": "Tidak ada iklan.",
-    "why_3": "Tidak ada pelacakan data.",
+    "why_3": "Masukanmu membantu perbaikan produk.",
     "why_4": "Tidak perlu berlangganan.",
     "why_5": "Dukungan Anda memungkinkan kami untuk terus membangun perangkat lunak yang bermakna.",
     "transparency_title": "Yang saya kerjakan berikutnya",
@@ -235,7 +235,7 @@
     "mobile_title": "Aplikasi Mobile",
     "mobile_desc": "Aplikasi untuk digunakan di ponsel atau tablet Android. Kebun Pintar menjadi contoh pengembangan saya untuk aktivitas belajar anak.",
     "trust_title": "Mengapa Bekerja Bersama Kami?",
-    "trust_desc": "Dengan rekam jejak yang terbukti dalam mengembangkan perangkat lunak kompleks dan mengutamakan privasi seperti Fuira, IFUIX menghadirkan keahlian teknis mendalam dan ketelitian desain di setiap proyek. Kami tidak hanya menulis kode; kami membuat produk andal yang akan disukai pengguna Anda.",
+    "trust_desc": "Saya mengembangkan produk IFUIX seperti Fuira dan Framix, serta menerima diskusi pengembangan aplikasi sesuai kebutuhan proyek.",
     "cta_title": "Siap memulai proyek Anda?",
     "cta_desc": "Mari diskusikan kebutuhan Anda dan bagaimana kami dapat membantu membangun produk hebat Anda selanjutnya.",
     "cta_btn": "Hubungi Kami"
@@ -249,7 +249,7 @@
     "a1_p3": "Peringatan penerbit tidak dikenal tidak membuktikan keamanan atau bahaya aplikasi. Periksa sumber unduhan dan hasil pemeriksaan keamanan.",
     "a1_p4": "Fuira terbuka tentang apa yang dilakukannya:",
     "a1_li1": "Tanpa iklan",
-    "a1_li2": "Tanpa pelacakan",
+    "a1_li2": "Catatan, jadwal, dan timer fokus",
     "a1_li3": "Offline-first",
     "a1_li4": "Google Drive hanya dengan izin Anda"
   },
@@ -309,7 +309,7 @@
       "category": "Editing video",
       "imageAlt": "Editor Framix: library, preview, dan timeline",
       "label": "UNTUK KREATORMU",
-      "description": "Editor dengan bantuan AI lokal. Auto clipping dan generasi konten menjadi roadmap berikutnya. Lihat demo dan arah pengembangannya.",
+      "description": "Editor dengan AI. Auto clipping dan generasi konten menjadi roadmap berikutnya. Lihat demo dan arah pengembangannya.",
       "chip1": "Timeline multitrack",
       "chip2": "Caption & template",
       "chip3": "Proyek lokal"
@@ -395,7 +395,7 @@
   },
   "framix": {
     "titleAccent": "Dari ide ke timeline.",
-    "description": "Editor video dengan timeline, caption, dan bantuan AI lokal. Kini diarahkan menjadi workspace produksi konten berbasis AI, dari prompt sampai aset dan editing. Fitur generatif masih dalam roadmap.",
+    "description": "Editor video dengan timeline, caption, dan AI. Kini diarahkan menjadi workspace produksi konten berbasis AI, dari prompt sampai aset dan editing. Fitur generatif masih dalam roadmap.",
     "contact": "Minat? Hubungi WhatsApp",
     "cardContact": "Tanya via WhatsApp",
     "seeDemo": "Tonton demo",
@@ -406,7 +406,7 @@
     "feature0Title": "Timeline multitrack",
     "feature0Description": "Susun video, gambar, audio, dan teks. Trim, split, geser clip, lalu tambahkan filter, transisi, dan template.",
     "feature1Title": "Caption & bantuan AI",
-    "feature1Description": "AI FRAMIX menafsirkan prompt untuk menyusun draft atau merevisi timeline. Caption otomatis memakai Whisper lokal. Proyek hasil tetap bisa disunting dan perlu ditinjau.",
+    "feature1Description": "AI FRAMIX menafsirkan prompt untuk menyusun draft atau merevisi timeline. Caption otomatis memakai Whisper. Proyek hasil tetap bisa disunting dan perlu ditinjau.",
     "feature2Title": "Proyek tetap lokal",
     "feature2Description": "Sumber, proyek, dan export disimpan di perangkat. Autosave, undo/redo, dan export H.264 + AAC membantu alur kerja sehari-hari.",
     "galleryTitle": "Lihat Framix bekerja.",
@@ -464,20 +464,20 @@
     "aiBadge": "AI DI PRODUK IFUIX",
     "aiTitle": "AI sebagai inti alur kerja.",
     "aiIntro": "Framix menjadi fondasi alur kerja kreatif. IFUIX Finance menjadi konsep SaaS berikutnya. Produk yang tersedia dan fitur mendatang ditandai secara terpisah.",
-    "ai0Title": "Framix: AI lokal",
+    "ai0Title": "Framix: AI",
     "ai0Body": "Susun draft dari talking head atau revisi timeline lewat prompt. Caption otomatis membantu proses editing; hasilnya tetap menjadi proyek baru yang bisa disunting dan ditinjau.",
     "ai0Status": "Tersedia pada versi pengembangan",
-    "ai1Title": "Fuira: produktivitas",
-    "ai1Body": "Eksplorasi bantuan AI untuk merencanakan pekerjaan dan memahami catatan. Fitur aplikasi yang tersedia saat ini tetap berfokus pada catatan, jadwal, dan timer.",
-    "ai1Status": "Arah pengembangan",
-    "ai2Title": "Kebun Pintar: belajar",
-    "ai2Body": "Eksplorasi bantuan belajar yang sesuai untuk anak dan pendamping. APK publik saat ini berisi kegiatan huruf dan angka, tanpa asisten AI.",
-    "ai2Status": "Arah pengembangan",
+    "ai1Title": "Fuira: AI Assistant",
+    "ai1Body": "Fuira akan dikembangkan dengan dukungan AI Assistant untuk membantu memahami catatan dan merencanakan pekerjaan. Dukungan ini belum tersedia pada rilis saat ini.",
+    "ai1Status": "Dalam rencana pengembangan",
+    "ai2Title": "Kebun Pintar: AI Assistant",
+    "ai2Body": "Kebun Pintar akan dikembangkan dengan dukungan AI Assistant untuk membantu kegiatan belajar anak bersama pendamping. Dukungan ini belum tersedia pada APK publik saat ini.",
+    "ai2Status": "Dalam rencana pengembangan",
     "aiDetail": "Lihat Framix & demo",
-    "aiNote": "AI Framix memakai model lokal untuk menafsirkan perintah. B-roll dipilih dari aset yang sudah ditinjau berdasarkan tag, bukan pengenalan gambar otomatis. Hasil tetap perlu diperiksa. Integrasi Claude masih berupa rencana.",
+    "aiNote": "AI Framix memakai AI untuk menafsirkan perintah. B-roll dipilih dari aset yang sudah ditinjau berdasarkan tag, bukan pengenalan gambar otomatis. Hasil tetap perlu diperiksa. Integrasi Claude masih berupa rencana.",
     "claudeTitle": "Berikutnya: asisten editing dengan Claude",
     "claudeStatus": "Rencana integrasi",
-    "claudeBody": "Saya berencana memakai Claude API untuk memahami permintaan editing, transkrip, dan metadata proyek. Asisten akan mengusulkan potongan, revisi caption, dan tindakan pada timeline yang bisa disunting. Pengguna akan meninjau draft sebelum ekspor. Integrasi ini belum tersedia; Framix saat ini menggunakan AI lokal.",
+    "claudeBody": "Saya berencana memakai Claude API untuk memahami permintaan editing, transkrip, dan metadata proyek. Asisten akan mengusulkan potongan, revisi caption, dan tindakan pada timeline yang bisa disunting. Pengguna akan meninjau draft sebelum ekspor. Integrasi ini belum tersedia; Framix saat ini menggunakan AI.",
     "claudeContact": "Diskusikan Framix dengan pengembang"
   },
   "finance": {

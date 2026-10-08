@@ -21,9 +21,9 @@ export const seoPages = {
       'Jelajahi aplikasi IFUIX: Framix Editor untuk video, Fuira untuk Windows, dan Kebun Pintar untuk Android. Lihat screenshot, demo, dan informasi resmi.',
   },
   '/products/framix': {
-    title: 'Framix Editor: Editor Video Lokal & Caption AI | IFUIX',
+    title: 'Framix Editor: Editor Video & Caption AI | IFUIX',
     description:
-      'Framix by IFUIX: editor video dengan bantuan AI lokal untuk prompt editing dan caption. Kenali versi pengembangan, lihat demo, dan hubungi WhatsApp.',
+      'Framix by IFUIX: editor video dengan AI untuk prompt editing dan caption. Kenali versi pengembangan, lihat demo, dan hubungi WhatsApp.',
     image: '/images/framix/editor.webp',
   },
   '/products/finance': {

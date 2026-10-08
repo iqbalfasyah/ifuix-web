@@ -15,7 +15,7 @@
   "hero": {
     "title": "Thoughtfully crafted software for a ",
     "title_highlight": "noisy world.",
-    "subtitle": "We build fast, privacy-first desktop and web applications designed to help you focus on what matters most.",
+    "subtitle": "We build web and desktop apps to help you create and work with AI.",
     "cta_explore": "Explore Products",
     "cta_mission": "Our Mission"
   },
@@ -23,8 +23,8 @@
     "title": "Software should respect you.",
     "p1": "In an era of endless notifications, subscription fatigue, and data harvesting, we take a different approach.",
     "p2": "At IFUIX, we believe tools should empower you, not distract you. We build software that gets out of your way so you can do your best work.",
-    "f1_title": "Privacy First",
-    "f1_desc": "No telemetry, no tracking pixels, no selling data.",
+    "f1_title": "Clear workflows",
+    "f1_desc": "Features that help you finish work, with results you can review.",
     "f2_title": "Blazing Fast",
     "f2_desc": "Native performance that doesn't keep you waiting.",
     "f3_title": "Pay Once",
@@ -39,11 +39,11 @@
   "trust": {
     "title": "Built on Trust",
     "t1_title": "Open Source Core",
-    "t1_desc": "Key components of our software are open source, allowing the community to verify our security and privacy claims.",
+    "t1_desc": "Components and features are explained through documentation and release information.",
     "t2_title": "Offline First",
     "t2_desc": "Our applications are designed to work perfectly without an internet connection. Your data stays on your device.",
-    "t3_title": "Zero Telemetry",
-    "t3_desc": "We don't collect usage statistics or analytics. Your business is your business."
+    "t3_title": "Continuing development",
+    "t3_desc": "User feedback helps shape future product improvements."
   },
   "values": {
     "title": "Core Values",
@@ -52,7 +52,7 @@
     "v2_title": "Craftsmanship",
     "v2_desc": "Every pixel, animation, and line of code is carefully considered.",
     "v3_title": "Respect",
-    "v3_desc": "We respect your time, your attention, and your privacy.",
+    "v3_desc": "We respect your time and attention.",
     "v4_title": "Independence",
     "v4_desc": "We are proudly independent and answer only to our users."
   },
@@ -66,7 +66,7 @@
   "founder": {
     "badge": "The Founder",
     "title": "Hi, I'm Iqbal.",
-    "quote": "Building thoughtful software from Indonesia. I believe software should respect users' time, attention, and privacy instead of exploiting them.",
+    "quote": "Building software from Indonesia to help people create and work.",
     "desc": "I started IFUIX as a personal mission to build the tools I wished existed. No venture capital, no aggressive growth metrics, just a relentless focus on creating high-quality software that solves real problems elegantly.",
     "link": "Read the full story"
   },
@@ -90,7 +90,7 @@
   },
   "cta": {
     "title": "Ready to change how you work?",
-    "desc": "Join thousands of users who have already switched to our privacy-first tools.",
+    "desc": "Explore IFUIX products and their development direction.",
     "btn": "Get Started Today"
   },
   "footer": {
@@ -164,7 +164,7 @@
     "btn_download": "Download"
   },
   "product_detail": {
-    "subtitle": "Fast. Private. Offline-first.",
+    "subtitle": "Notes, schedules, and focus.",
     "btn_download": "Download for Windows",
     "look_title": "A Look Inside",
     "look_desc": "A beautiful, distraction-free interface designed for deep work.",
@@ -197,8 +197,8 @@
   "support": {
     "title": "Support IFUIX development.",
     "no_ads": "There are no ads.",
-    "no_tracking": "There is no tracking.",
-    "no_data": "There is no data collection.",
+    "no_tracking": "Independently developed.",
+    "no_data": "Built for everyday life.",
     "desc": "I develop IFUIX apps independently. If an app helps you, you can support the work through Saweria or PayPal.",
     "impact": "Support helps me spend time improving the apps and preparing updates.",
     "saweria_btn": "Support via Saweria",
@@ -206,7 +206,7 @@
     "why_title": "Why support IFUIX?",
     "why_1": "IFUIX is developed independently.",
     "why_2": "There are no ads.",
-    "why_3": "There is no tracking.",
+    "why_3": "Your feedback helps improve the products.",
     "why_4": "There is no subscription required.",
     "why_5": "Your support allows us to keep building thoughtful software.",
     "transparency_title": "What I'm working on next",
@@ -234,7 +234,7 @@
     "mobile_title": "Mobile Applications",
     "mobile_desc": "Apps for Android phones and tablets. Kebun Pintar is an example of my work on learning activities for children.",
     "trust_title": "Why Work With Us?",
-    "trust_desc": "With a proven track record of developing complex, privacy-first software like Fuira, IFUIX brings deep technical expertise and a meticulous eye for design to every project. We don't just write code; we craft reliable products that your users will love.",
+    "trust_desc": "I develop IFUIX products such as Fuira and Framix, and discuss app development based on project needs.",
     "cta_title": "Ready to start your project?",
     "cta_desc": "Let's discuss your requirements and how we can help you build your next great product.",
     "cta_btn": "Get in Touch"
@@ -248,7 +248,7 @@
     "a1_p3": "An unknown-publisher warning does not establish whether an app is safe or harmful. Check the download source and security scan results.",
     "a1_p4": "Fuira is open about what it does:",
     "a1_li1": "No ads",
-    "a1_li2": "No tracking",
+    "a1_li2": "Notes, schedules, and focus timer",
     "a1_li3": "Offline-first",
     "a1_li4": "Google Drive only with your permission"
   },
@@ -308,7 +308,7 @@
       "category": "Video editing",
       "imageAlt": "Framix editor: library, preview, and timeline",
       "label": "FOR YOUR CREATIVITY",
-      "description": "An editor with local AI assistance. Auto clipping and content generation are next on the roadmap. Explore the demo and direction.",
+      "description": "An editor with AI. Auto clipping and content generation are next on the roadmap. Explore the demo and direction.",
       "chip1": "Multitrack timeline",
       "chip2": "Captions & templates",
       "chip3": "Local projects"
@@ -394,7 +394,7 @@
   },
   "framix": {
     "titleAccent": "From idea to timeline.",
-    "description": "A video editor with a timeline, captions, and local AI assistance. Moving toward an AI content-production workspace, from prompts to assets and edits. Generative features remain on the roadmap.",
+    "description": "A video editor with a timeline, captions, and AI. Moving toward an AI content-production workspace, from prompts to assets and edits. Generative features remain on the roadmap.",
     "contact": "Interested? Chat on WhatsApp",
     "cardContact": "Ask on WhatsApp",
     "seeDemo": "Watch the demo",
@@ -405,7 +405,7 @@
     "feature0Title": "Multitrack timeline",
     "feature0Description": "Arrange video, images, audio, and text. Trim, split, move clips, and add filters, transitions, and templates.",
     "feature1Title": "Captions & AI assistance",
-    "feature1Description": "AI FRAMIX interprets prompts to build drafts or revise timelines. Automatic captions use local Whisper. Resulting projects remain editable and need review.",
+    "feature1Description": "AI FRAMIX interprets prompts to build drafts or revise timelines. Automatic captions use Whisper. Resulting projects remain editable and need review.",
     "feature2Title": "Local projects",
     "feature2Description": "Sources, projects, and exports stay on your device. Autosave, undo/redo, and H.264 + AAC export support your workflow.",
     "galleryTitle": "See Framix in action.",
@@ -463,20 +463,20 @@
     "aiBadge": "AI IN IFUIX PRODUCTS",
     "aiTitle": "AI at the core of the workflow.",
     "aiIntro": "Framix provides a foundation for creative workflows. IFUIX Finance is our next SaaS concept. Available products and future features are labeled separately.",
-    "ai0Title": "Framix: local AI",
+    "ai0Title": "Framix: AI",
     "ai0Body": "Build a draft from talking-head footage or revise a timeline through prompts. Automatic captions assist editing; results become a new project you can edit and review.",
     "ai0Status": "Available in the development version",
-    "ai1Title": "Fuira: productivity",
-    "ai1Body": "Exploring AI assistance for planning work and understanding notes. Current app features remain focused on notes, schedules, and timers.",
-    "ai1Status": "Development direction",
-    "ai2Title": "Kebun Pintar: learning",
-    "ai2Body": "Exploring learning assistance suitable for children and caregivers. The current public APK contains letter and number activities, without an AI assistant.",
-    "ai2Status": "Development direction",
+    "ai1Title": "Fuira: AI Assistant",
+    "ai1Body": "Fuira will be developed with AI Assistant support to help users understand notes and plan work. This support is not available in the current release.",
+    "ai1Status": "Planned development",
+    "ai2Title": "Kebun Pintar: AI Assistant",
+    "ai2Body": "Kebun Pintar will be developed with AI Assistant support for children learning with a caregiver. This support is not available in the current public APK.",
+    "ai2Status": "Planned development",
     "aiDetail": "Explore Framix & demo",
-    "aiNote": "Framix AI uses a local model to interpret instructions. B-roll selection uses tags on reviewed assets, rather than automatic image understanding. Results still need review. Claude integration remains planned.",
+    "aiNote": "Framix AI uses AI to interpret instructions. B-roll selection uses tags on reviewed assets, rather than automatic image understanding. Results still need review. Claude integration remains planned.",
     "claudeTitle": "Next: an editing assistant using Claude",
     "claudeStatus": "Planned integration",
-    "claudeBody": "I plan to use the Claude API to interpret editing requests, transcripts, and project metadata. The assistant would suggest cuts, caption revisions, and editable timeline actions. Users would review the draft before export. This integration is not available yet; Framix currently uses local AI.",
+    "claudeBody": "I plan to use the Claude API to interpret editing requests, transcripts, and project metadata. The assistant would suggest cuts, caption revisions, and editable timeline actions. Users would review the draft before export. This integration is not available yet; Framix currently uses AI.",
     "claudeContact": "Discuss Framix with its developer"
   },
   "finance": {

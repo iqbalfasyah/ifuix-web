@@ -89,3 +89,21 @@ export function ProductAI({ detail = false }: { detail?: boolean }) {
     </section>
   )
 }
+
+export function PlannedAssistant({
+  product,
+}: {
+  product: 'fuira' | 'kebunpintar'
+}) {
+  const { t } = useTranslation()
+  const index = product === 'fuira' ? 1 : 2
+  return (
+    <section className="studio-container studio-contact">
+      <div>
+        <span className="eyebrow">{t(`presentation.ai${index}Status`)}</span>
+        <h2>{t(`presentation.ai${index}Title`)}</h2>
+        <p>{t(`presentation.ai${index}Body`)}</p>
+      </div>
+    </section>
+  )
+}
