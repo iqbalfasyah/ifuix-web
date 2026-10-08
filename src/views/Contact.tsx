@@ -5,9 +5,44 @@ import { Mail, Clock, Code2, Briefcase, MessageCircle } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { useTranslation } from 'react-i18next'
 import { whatsappUrl } from '../data/site'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
 
 export const Contact = () => {
   const { t } = useTranslation()
+  const [demo, setDemo] = useState(false)
+  const [errorKey, setErrorKey] = useState('booking.error')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const confirmation = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (status === 'success') confirmation.current?.focus()
+  }, [status])
+  useEffect(() => {
+    setDemo(new URLSearchParams(window.location.search).get('demo') === 'finance')
+  }, [])
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    if (status === 'sending') return
+    const data = new FormData(event.currentTarget)
+    setErrorKey('booking.error')
+    setStatus('sending')
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/hello@ifuix.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(data)),
+        signal: AbortSignal.timeout(20000),
+      })
+      const result = await response.json()
+      if (/activat|confirm.*email/i.test(result.message ?? '')) {
+        setErrorKey('booking.activationError')
+        throw new Error('Activation required')
+      }
+      if (!response.ok || ![true, 'true'].includes(result.success)) throw new Error('Not accepted')
+      setStatus('success')
+    } catch {
+      setStatus('error')
+    }
+  }
 
   return (
     <div className="pt-20 md:pt-24 pb-16 md:pb-32">
@@ -87,10 +122,17 @@ export const Contact = () => {
           <div className="lg:col-span-3">
             <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/40">
               <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                {t('contact.form_title')}
+                {t(demo ? 'booking.title' : 'contact.form_title')}
               </h2>
 
-              <form
+              {status === 'success' ? (
+                <div ref={confirmation} tabIndex={-1} role="status" className="booking-success">
+                  <h3>{t(demo ? 'booking.success' : 'booking.messageSuccess')}</h3>
+                  <p>{t(demo ? 'booking.successBody' : 'booking.messageSuccessBody')}</p>
+                  <button type="button" className="text-action" onClick={() => setStatus('idle')}>{t('booking.another')}</button>
+                </div>
+              ) : <form
+                onSubmit={submit}
                 action="https://formsubmit.co/hello@ifuix.com"
                 method="POST"
                 className="space-y-6"
@@ -99,8 +141,9 @@ export const Contact = () => {
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New submission from IFUIX Contact Form"
+                  value={demo ? 'IFUIX Finance demo request' : 'New submission from IFUIX Contact Form'}
                 />
+                {demo && <input type="hidden" name="product" value="IFUIX Finance (coming-soon concept)" />}
                 <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_captcha" value="false" />
 
@@ -117,6 +160,7 @@ export const Contact = () => {
                       name="name"
                       id="name"
                       required
+                      autoComplete="name"
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white"
                       placeholder="John Doe"
                     />
@@ -133,6 +177,7 @@ export const Contact = () => {
                       name="email"
                       id="email"
                       required
+                      autoComplete="email"
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white"
                       placeholder="john@example.com"
                     />
@@ -146,6 +191,8 @@ export const Contact = () => {
                     {t('contact.form_message')}
                   </label>
                   <textarea
+                    key={demo ? `finance-${t('booking.prefill')}` : 'general'}
+                    defaultValue={demo ? t('booking.prefill') : ''}
                     id="message"
                     name="message"
                     required
@@ -154,10 +201,12 @@ export const Contact = () => {
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
-                <Button type="submit" size="lg" className="w-full">
-                  {t('contact.form_btn')}
+                {demo && <p className="small-note">{t('booking.note')}</p>}
+                {status === 'error' && <p role="alert" className="booking-error">{t(errorKey)}</p>}
+                <Button type="submit" size="lg" className="w-full" disabled={status === 'sending'}>
+                  {t(status === 'sending' ? 'booking.sending' : demo ? 'booking.submit' : 'contact.form_btn')}
                 </Button>
-              </form>
+              </form>}
             </div>
           </div>
         </div>

@@ -504,6 +504,21 @@
     "privacyTitle": "Users stay in control",
     "privacyBody": "The design includes consent for document processing, account data separation, export, and deletion. AI would not move money or save transactions without confirmation. Provider and data-policy details will be established before launch."
   },
+  "booking": {
+    "activationError": "This contact form is awaiting email activation. Please contact IFUIX by WhatsApp or email for now.",
+  "cta": "Book a demo",
+  "title": "Book an IFUIX Finance demo",
+  "prefill": "Hi IFUIX, I would like to book a demo of IFUIX Finance. Please let me know when a preview is available and help arrange a time.",
+  "note": "IFUIX Finance is coming soon. Send a demo request and we will contact you about preview availability. A time is not confirmed yet.",
+  "submit": "Send demo request",
+  "sending": "Sending…",
+  "success": "Demo request received",
+  "successBody": "Thanks for your interest in IFUIX Finance. We will follow up by email about availability and a suitable time.",
+  "messageSuccess": "Message received",
+  "messageSuccessBody": "Thanks for reaching out. We will reply by email.",
+  "another": "Send another message",
+  "error": "We could not send your request. Please try again or contact us by WhatsApp or email."
+},
   "premium": {
     "navContact": "Talk to us",
     "heroDemo": "Explore Framix",

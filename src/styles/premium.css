@@ -640,3 +640,14 @@
     transform: none;
   }
 }
+.finance-carousel-concept { width:100%; height:100%; min-height:240px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:32px; background:radial-gradient(ellipse at 50% 110%, #493325 0%, #211e1a 65%); }
+.finance-carousel-concept strong { font:400 clamp(32px,5vw,64px)/1.15 Georgia,serif; color:var(--studio-ink); margin:24px 0 12px; }
+.finance-carousel-title { font:400 clamp(20px,3vw,34px)/1.2 Georgia,serif; color:#f49a62; }
+.finance-carousel-concept p { max-width:420px; color:var(--studio-muted); font-size:14px; margin:20px 0; }
+.finance-carousel-status { border:1px solid #72513b; border-radius:30px; padding:8px 16px; color:#f49a62; font-size:12px; }
+@media(max-width:767px) { .hero-carousel.finance .showcase-screen { aspect-ratio:auto; } .finance-carousel-concept { padding:30px 20px; } }
+.booking-success { border:1px solid #42654e; border-radius:16px; background:#18261e; padding:24px; }
+.booking-success h3 { font-size:24px; color:#bde0c7; margin-bottom:12px; }
+.booking-success p { color:#c4cec7; line-height:1.7; margin-bottom:20px; }
+.booking-error { color:#ffc4a6; }
+.finance-carousel-status { display:inline-flex; align-items:center; gap:8px; }

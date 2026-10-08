@@ -3,12 +3,10 @@
 import { ArrowUpRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from './navigation'
-import { whatsappUrl } from '../data/site'
 
 export function FinanceConcept({ full = false }: { full?: boolean }) {
   const { t } = useTranslation()
   const Heading = full ? 'h1' : 'h2'
-  const contact = `${whatsappUrl}?text=${encodeURIComponent(t('finance.contact'))}`
   return (
     <section
       className={`studio-products finance-section ${full ? 'finance-full' : 'finance-teaser'}`}
@@ -70,15 +68,13 @@ export function FinanceConcept({ full = false }: { full?: boolean }) {
               <ArrowUpRight size={18} />
             </Link>
           )}
-          <a
-            href={contact}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contact/?demo=finance"
             className={full ? 'primary-action' : 'text-action'}
           >
-            {t('finance.contact')}
+            {t('booking.cta')}
             <ArrowUpRight size={18} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

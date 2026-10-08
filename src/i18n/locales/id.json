@@ -505,6 +505,21 @@
     "privacyTitle": "Kendali tetap di pengguna",
     "privacyBody": "Rancangan mencakup persetujuan pemrosesan dokumen, pemisahan data akun, ekspor, dan penghapusan data. AI tidak memindahkan uang atau menyimpan transaksi tanpa konfirmasi. Detail penyedia dan kebijakan data akan ditetapkan sebelum produk dibuka."
   },
+  "booking": {
+    "activationError": "Form kontak ini masih menunggu aktivasi email. Untuk sementara, hubungi IFUIX lewat WhatsApp atau email.",
+  "cta": "Jadwalkan demo",
+  "title": "Minta demo IFUIX Finance",
+  "prefill": "Halo IFUIX, saya ingin menjadwalkan demo IFUIX Finance. Tolong kabari saat preview tersedia dan bantu atur waktunya.",
+  "note": "IFUIX Finance akan datang. Kirim permintaan demo dan kami akan menghubungi kamu tentang ketersediaan preview. Waktu demo belum dikonfirmasi.",
+  "submit": "Kirim permintaan demo",
+  "sending": "Mengirim…",
+  "success": "Permintaan demo diterima",
+  "successBody": "Terima kasih sudah tertarik dengan IFUIX Finance. Kami akan menghubungi kamu lewat email tentang ketersediaan dan waktu yang cocok.",
+  "messageSuccess": "Pesan diterima",
+  "messageSuccessBody": "Terima kasih sudah menghubungi kami. Kami akan membalas lewat email.",
+  "another": "Kirim pesan lain",
+  "error": "Permintaan belum berhasil dikirim. Coba lagi atau hubungi kami lewat WhatsApp atau email."
+},
   "premium": {
     "navContact": "Hubungi kami",
     "heroDemo": "Kenali Framix",

@@ -11,7 +11,9 @@ import {
 import { useEffect, useState } from 'react'
 import { Link } from '../../components/navigation'
 import { useTranslation } from 'react-i18next'
-import { products } from '../../data/products'
+import { products as releasedProducts } from '../../data/products'
+
+const products = [...releasedProducts, { id: 'finance', name: 'IFUIX Finance', image: '', platform: 'SaaS', tone: 'finance', detail: '/products/finance' }]
 
 export const Hero = () => {
   const { t } = useTranslation()
@@ -91,7 +93,7 @@ export const Hero = () => {
           }}
         >
           <div className="showcase-top">
-            <span>{t('premium.showcaseStatus')}</span>
+            <span>{t(products[active].id === 'finance' ? 'finance.badge' : 'premium.showcaseStatus')}</span>
             <span className="carousel-count">
               {String(active + 1).padStart(2, '0')} /{' '}
               {String(products.length).padStart(2, '0')}
@@ -111,24 +113,32 @@ export const Hero = () => {
                 aria-label={`${index + 1} / ${products.length} · ${product.name}`}
               >
                 <Link
-                  to={product.detail}
+                  to={product.id === 'finance' ? '/contact/?demo=finance' : product.detail}
                   className="carousel-product"
                   aria-label={`${t('studio.discover')}: ${product.name}`}
                 >
                   <div className="showcase-screen">
-                    <img
+                    {product.id === 'finance' ? (
+                      <div className="finance-carousel-concept">
+                        <span className="eyebrow">{t('finance.badge')}</span>
+                        <strong>{t('finance.name')}</strong>
+                        <span className="finance-carousel-title">{t('finance.title')}</span>
+                        <p>{t('premium.financeTeaser')}</p>
+                        <span className="finance-carousel-status">{t('booking.cta')} <ArrowUpRight size={14} aria-hidden="true" /></span>
+                      </div>
+                    ) : <img
                       src={product.image}
                       width="1200"
                       height="800"
                       alt={t(`studio.${product.id}.imageAlt`)}
                       fetchPriority={index === 0 ? 'high' : 'auto'}
-                    />
+                    />}
                   </div>
                   <div className="showcase-caption">
                     <div>
                       <span>
                         {product.platform} ·{' '}
-                        {t(`studio.${product.id}.category`)}
+                        {t(product.id === 'finance' ? 'premium.financeStatus' : `studio.${product.id}.category`)}
                       </span>
                       <strong>{product.name}</strong>
                     </div>
@@ -138,7 +148,7 @@ export const Hero = () => {
                   </div>
                 </Link>
                 <p className="carousel-description">
-                  {t(`studio.${product.id}.description`)}
+                  {t(product.id === 'finance' ? 'finance.intro' : `studio.${product.id}.description`)}
                 </p>
               </div>
             ))}
