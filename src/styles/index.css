@@ -1,18 +1,27 @@
-@import "tailwindcss";
-@import "./studio.css";
+@import 'tailwindcss';
+@import './studio.css';
+@import './premium.css';
 
 @theme {
-  --color-primary: #ff6100;
+  --color-primary: #f49a62;
   --color-secondary: #ff8a00;
-  --color-gray-900: #242325;
-  --color-gray-800: #242325;
-  --color-background: #FAFAFA;
+  --color-gray-900: #f5f2eb;
+  --color-gray-800: #eeeae3;
+  --color-gray-700: #c9c7c1;
+  --color-gray-600: #b0afa9;
+  --color-gray-500: #a5a49f;
+  --color-gray-400: #94948f;
+  --color-gray-300: #5c5e60;
+  --color-gray-200: #37393b;
+  --color-gray-100: #292b2d;
+  --color-gray-50: #17191b;
+  --color-background: #101214;
 }
 
 @layer base {
   :root {
     font-family: 'Inter', system-ui, sans-serif;
     background-color: var(--color-background);
-    color: #1a1a1a;
+    color: #f5f2eb;
   }
 }

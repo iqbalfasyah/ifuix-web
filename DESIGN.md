@@ -2,6 +2,8 @@
 
 ## Current owner decision
 
+8 October 2026, latest: owner explicitly requested a premium visual redesign inspired by nalarx.com. This new brief supersedes the old preserve-layout restriction for this task. Use a dark charcoal shell, serif display headings, restrained orange actions, real product imagery, larger whitespace and consistent desktop/mobile surfaces. Keep English default, ID/EN, current truth/roadmap distinctions, no public Claude naming, no founder block, and no offline/privacy marketing promises. Previous rejected design remains historical, not the source to restore. Capture screenshots for this materially new design before publication.
+
 8 October 2026: owner directed IFUIX toward AI software/SaaS, requested a coming-soon finance concept and Framix generative/auto-clipping roadmap. This authorizes product/copy additions while preserving the restored appearance. It does not establish a formal incorporated company or available SaaS/generative integrations. Details: docs/AI-SAAS-DIRECTION.md.
 
 7 October 2026: the owner rejected the full visual refresh and asked to restore the prior appearance. The original layout, carousel, colors and product cards are restored. Keep Next.js/GitHub Pages, no em dashes, LinkedIn and verified factual corrections. Do not reapply the editorial redesign or interpret the earlier delegated brief as current approval for another broad redesign. Changes below are historical decisions for the rejected version, not current implementation instructions.

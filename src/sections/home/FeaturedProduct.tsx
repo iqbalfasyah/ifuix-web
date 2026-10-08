@@ -10,9 +10,9 @@ export const FeaturedProduct = () => {
         <div className="section-heading">
           <div>
             <span className="eyebrow">{t('studio.collection')}</span>
-            <h2>{t('studio.productsHeading')}</h2>
+            <h2>{t('premium.collection')}</h2>
           </div>
-          <p>{t('studio.productsIntro')}</p>
+          <p>{t('premium.collectionIntro')}</p>
         </div>
         <ProductCards />
       </div>

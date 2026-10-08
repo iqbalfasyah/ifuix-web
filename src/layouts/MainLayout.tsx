@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col font-sans selection:bg-primary/20 selection:text-primary">
+    <div className="ifuix-site min-h-screen flex flex-col font-sans selection:bg-primary/20 selection:text-primary">
       <a href="#main-content" className="skip-link">
         Skip to content / Lewati ke konten
       </a>

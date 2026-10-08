@@ -257,7 +257,7 @@
     "independent": "IFUIX · AI SOFTWARE & SAAS",
     "heroLine1": "AI for creating.",
     "heroLine2": "And running a business.",
-    "heroDescription": "Build workflows with AI, from editing prompts and captions in Framix to the financial-records concept in IFUIX Finance. Auto clipping, content generation, and AI Assistants for Fuira and Kebun Pintar are on the development roadmap.",
+    "heroDescription": "Bring AI into your creative and business workflows. Start with Framix for editing. Explore what comes next in finance and AI assistants.",
     "explore": "Explore AI products",
     "story": "Meet IFUIX",
     "productivity": "Productivity",
@@ -503,5 +503,20 @@
     "scopeBody": "The initial scope is transactions, invoices, categories, and summaries. Bank connections, payments, investments, and tax filing are outside the initial scope.",
     "privacyTitle": "Users stay in control",
     "privacyBody": "The design includes consent for document processing, account data separation, export, and deletion. AI would not move money or save transactions without confirmation. Provider and data-policy details will be established before launch."
+  },
+  "premium": {
+    "navContact": "Talk to us",
+    "heroDemo": "Explore Framix",
+    "heroNote": "Framix development demo available. More AI workflows on the roadmap.",
+    "showcaseTitle": "Meet your next creative workspace.",
+    "showcaseStatus": "Product preview",
+    "collection": "Tools for what comes next.",
+    "collectionIntro": "A working editor today. AI assistants and new workflows ahead.",
+    "footerTitle": "Build your next idea with IFUIX.",
+    "footerSubtitle": "AI software for creating, working, and learning.",
+    "footerContact": "Start a conversation",
+    "financeLabel": "NEXT IN DEVELOPMENT",
+    "financeStatus": "Coming soon",
+    "financeTeaser": "A clearer picture of your business, from receipts to cash flow."
   }
 }

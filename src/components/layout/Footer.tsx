@@ -2,13 +2,24 @@
 
 import { Link } from '../navigation'
 import { useTranslation } from 'react-i18next'
+import { ArrowUpRight } from 'lucide-react'
 
 export const Footer = () => {
   const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-50 border-t border-gray-100 pt-16 pb-8">
+    <footer className="premium-footer border-t border-gray-100 pt-16 pb-8">
+      <div className="studio-container footer-invitation">
+        <div>
+          <span className="eyebrow">IFUIX · AI SOFTWARE & SAAS</span>
+          <h2>{t('premium.footerTitle')}</h2>
+        </div>
+        <Link className="primary-action" to="/contact">
+          {t('premium.footerContact')}
+          <ArrowUpRight size={18} aria-hidden="true" />
+        </Link>
+      </div>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="md:col-span-1">
@@ -16,7 +27,7 @@ export const Footer = () => {
               <img
                 src="/icon.png"
                 alt="IFUIX Logo"
-                className="w-8 h-8 transform transition-transform group-hover:scale-105"
+                className="brand-icon w-8 h-8"
               />
               <span className="font-bold text-xl tracking-tight text-gray-900">
                 IFUIX

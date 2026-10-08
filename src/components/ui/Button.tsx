@@ -1,30 +1,44 @@
-import React from 'react';
-import { motion, type HTMLMotionProps } from 'framer-motion';
-import { Loader2 } from 'lucide-react';
+import React from 'react'
+import { motion, type HTMLMotionProps } from 'framer-motion'
+import { Loader2 } from 'lucide-react'
 
-interface ButtonProps extends HTMLMotionProps<"button"> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
-  isLoading?: boolean;
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
+interface ButtonProps extends HTMLMotionProps<'button'> {
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
+  size?: 'sm' | 'md' | 'lg'
+  isLoading?: boolean
+  leftIcon?: React.ReactNode
+  rightIcon?: React.ReactNode
 }
 
 const variants = {
-  primary: 'bg-primary text-white hover:bg-orange-500 shadow-lg shadow-primary/30',
-  secondary: 'bg-white text-gray-900 border border-gray-200 hover:bg-gray-50 shadow-sm',
-  outline: 'bg-transparent text-primary border-2 border-primary hover:bg-primary/5',
+  primary: 'bg-primary text-[#19140f] hover:bg-orange-300',
+  secondary:
+    'bg-white text-gray-900 border border-gray-200 hover:bg-gray-50 shadow-sm',
+  outline:
+    'bg-transparent text-primary border-2 border-primary hover:bg-primary/5',
   ghost: 'bg-transparent text-gray-600 hover:text-gray-900 hover:bg-gray-100',
-};
+}
 
 const sizes = {
   sm: 'px-3 py-1.5 text-sm',
   md: 'px-5 py-2.5 text-base',
   lg: 'px-8 py-4 text-lg font-medium',
-};
+}
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className = '', variant = 'primary', size = 'md', isLoading, leftIcon, rightIcon, children, ...props }, ref) => {
+  (
+    {
+      className = '',
+      variant = 'primary',
+      size = 'md',
+      isLoading,
+      leftIcon,
+      rightIcon,
+      children,
+      ...props
+    },
+    ref,
+  ) => {
     return (
       <motion.button
         ref={ref}
@@ -39,8 +53,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {children as React.ReactNode}
         {!isLoading && rightIcon && <span className="ml-2">{rightIcon}</span>}
       </motion.button>
-    );
-  }
-);
+    )
+  },
+)
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'

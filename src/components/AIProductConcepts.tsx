@@ -10,7 +10,10 @@ export function FinanceConcept({ full = false }: { full?: boolean }) {
   const Heading = full ? 'h1' : 'h2'
   const contact = `${whatsappUrl}?text=${encodeURIComponent(t('finance.contact'))}`
   return (
-    <section className="studio-products" aria-labelledby="finance-concept">
+    <section
+      className={`studio-products finance-section ${full ? 'finance-full' : 'finance-teaser'}`}
+      aria-labelledby="finance-concept"
+    >
       <div className="studio-container">
         <div className="section-heading">
           <div>
@@ -26,6 +29,13 @@ export function FinanceConcept({ full = false }: { full?: boolean }) {
           <p>{t('finance.intro')}</p>
         </div>
         <p className="small-note">{t('finance.note')}</p>
+        {!full && (
+          <ul className="finance-capabilities">
+            {[0, 1, 2].map((i) => (
+              <li key={i}>{t(`finance.f${i}Title`)}</li>
+            ))}
+          </ul>
+        )}
         {full && (
           <>
             <h2 className="text-2xl font-semibold mt-12">

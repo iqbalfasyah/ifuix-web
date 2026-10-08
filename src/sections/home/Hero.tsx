@@ -16,7 +16,7 @@ import { products } from '../../data/products'
 export const Hero = () => {
   const { t } = useTranslation()
   const [active, setActive] = useState(0)
-  const [playing, setPlaying] = useState(true)
+  const [playing, setPlaying] = useState(false)
   const [hovered, setHovered] = useState(false)
   const [focused, setFocused] = useState(false)
   const interacting = hovered || focused
@@ -55,15 +55,16 @@ export const Hero = () => {
           </h1>
           <p>{t('studio.heroDescription')}</p>
           <div className="hero-actions">
-            <a href="#our-products" className="primary-action">
+            <Link to="/products/framix" className="primary-action">
+              {t('premium.heroDemo')}
+              <ArrowUpRight size={18} />
+            </Link>
+            <a href="#our-products" className="text-action">
               {t('studio.explore')}
               <ArrowDown size={18} />
             </a>
-            <Link to="/about" className="text-action">
-              {t('studio.story')}
-              <ArrowUpRight size={18} />
-            </Link>
           </div>
+          <p className="hero-availability">{t('premium.heroNote')}</p>
           <div className="hero-footnote">
             <span>01 {t('studio.heroUse1')}</span>
             <span>02 {t('studio.heroUse2')}</span>
@@ -90,7 +91,7 @@ export const Hero = () => {
           }}
         >
           <div className="showcase-top">
-            <span>{t('studio.carousel.label')}</span>
+            <span>{t('premium.showcaseStatus')}</span>
             <span className="carousel-count">
               {String(active + 1).padStart(2, '0')} /{' '}
               {String(products.length).padStart(2, '0')}
@@ -154,6 +155,7 @@ export const Hero = () => {
                   aria-controls="hero-product-slides"
                 >
                   <span />
+                  {product.name.split(':')[0]}
                 </button>
               ))}
             </div>

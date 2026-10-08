@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from '../navigation'
 import { Menu, X, Globe } from 'lucide-react'
-import { Button } from '../ui/Button'
 import { useTranslation } from 'react-i18next'
 
 export const Navbar = () => {
@@ -20,7 +19,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav className="premium-nav fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         <Link
           to="/"
@@ -30,7 +29,7 @@ export const Navbar = () => {
           <img
             src="/icon.png"
             alt="IFUIX Logo"
-            className="w-8 h-8 md:w-10 md:h-10 transform transition-transform group-hover:scale-105"
+            className="brand-icon w-8 h-8 md:w-10 md:h-10"
           />
           <span className="font-bold text-xl md:text-2xl tracking-tight text-gray-900">
             IFUIX
@@ -65,8 +64,8 @@ export const Navbar = () => {
             <Globe className="w-4 h-4" />
             {i18n.language.startsWith('id') ? 'ID' : 'EN'}
           </button>
-          <Link to="/download">
-            <Button>{t('nav.get_apps')}</Button>
+          <Link to="/contact" className="nav-contact">
+            {t('premium.navContact')}
           </Link>
         </div>
 
@@ -101,7 +100,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div
           id="mobile-navigation"
-          className="lg:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl py-4 px-4 flex flex-col gap-4"
+          className="premium-mobile-menu lg:hidden absolute top-full left-0 right-0 py-4 px-4 flex flex-col gap-4"
         >
           <Link
             to="/about"
@@ -140,10 +139,12 @@ export const Navbar = () => {
           </Link>
           <div className="h-px bg-gray-100 my-2"></div>
           <div className="flex flex-col gap-3 px-2">
-            <Link to="/download" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button className="w-full justify-center">
-                {t('nav.get_apps')}
-              </Button>
+            <Link
+              to="/contact"
+              className="nav-contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('premium.navContact')}
             </Link>
           </div>
         </div>

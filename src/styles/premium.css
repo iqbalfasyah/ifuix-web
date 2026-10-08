@@ -1,0 +1,642 @@
+/* IFUIX premium theme. Product screenshots keep their original colors. */
+.skip-link {
+  color: #19140f;
+}
+.ifuix-site .framix-hero-layout > div > p:not(.small-note) {
+  color: var(--studio-muted);
+}
+.ifuix-site .screenshot-grid button,
+.ifuix-site .screenshot-grid img,
+.ifuix-site .demo-video {
+  background: #191c1f;
+}
+.ifuix-site .demo-video figcaption {
+  background: #191c1f;
+  color: var(--studio-ink);
+}
+:root {
+  --studio-ink: #f5f2eb;
+  --studio-muted: #afafa8;
+  --studio-paper: #101214;
+  --studio-border: #303234;
+  --garden: #a3cdb0;
+  --premium-accent: #f49a62;
+}
+.ifuix-site {
+  background: #101214;
+  color: var(--studio-ink);
+}
+.ifuix-site h1,
+.ifuix-site .section-heading h2,
+.ifuix-site .page-intro h1,
+.ifuix-site .studio-contact h2,
+.footer-invitation h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+.ifuix-site .bg-white {
+  background-color: #191c1f;
+}
+.ifuix-site .bg-gray-50,
+.ifuix-site .bg-gray-100 {
+  background-color: #16191b;
+}
+.ifuix-site .prose {
+  color: var(--studio-muted);
+}
+.ifuix-site .prose :is(h2, h3, strong) {
+  color: var(--studio-ink);
+}
+.ifuix-site :is(a, button, summary):focus-visible {
+  outline-color: var(--premium-accent);
+}
+.ifuix-site .studio-container {
+  width: min(1200px, calc(100% - 80px));
+}
+.ifuix-site .eyebrow {
+  font-size: 10px;
+  color: #c6c4bf;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+}
+.premium-nav {
+  background: #101214eb;
+  border-bottom: 1px solid #ffffff0d;
+  backdrop-filter: blur(18px);
+}
+.premium-nav > div:first-child {
+  max-width: 1320px;
+}
+.brand-icon {
+  background: #f7f4ee;
+  padding: 5px;
+  border-radius: 7px;
+}
+.nav-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 19px;
+  border-radius: 99px;
+  border: 1px solid #454647;
+  background: #222528;
+  color: #f5f2eb;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.nav-contact:hover {
+  background: #34373a;
+}
+.premium-mobile-menu {
+  background: #171a1d;
+  border-bottom: 1px solid #424344;
+}
+.ifuix-site .primary-action {
+  background: var(--premium-accent);
+  color: #19140f;
+  border-radius: 99px;
+  padding: 14px 23px;
+  font-size: 13px;
+  box-shadow: none;
+}
+.ifuix-site .primary-action:hover {
+  background: #ffb385;
+  transform: translateY(-1px);
+}
+.ifuix-site .text-action,
+.ifuix-site .download-action {
+  color: #eeece6;
+  font-size: 13px;
+}
+.ifuix-site .text-action:hover,
+.ifuix-site .download-action:hover {
+  color: var(--premium-accent);
+}
+.ifuix-site .studio-hero {
+  background: #101214;
+  padding: 78px 0 80px;
+}
+.ifuix-site .hero-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.ifuix-site .hero-copy {
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.ifuix-site .hero-copy h1 {
+  font-size: clamp(46px, 5.5vw, 78px);
+  line-height: 1.08;
+  margin: 25px 0;
+  text-wrap: balance;
+}
+.ifuix-site .hero-copy h1 span {
+  color: #d8d2c7;
+}
+.ifuix-site .hero-copy > p {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #b5b5af;
+}
+.ifuix-site .hero-copy .hero-availability {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 18px auto 0;
+  color: #a0a19c;
+}
+.ifuix-site .hero-actions {
+  justify-content: flex-start;
+}
+.ifuix-site .hero-copy .hero-actions {
+  justify-content: center;
+  gap: 25px;
+}
+.ifuix-site .status-dot {
+  background: var(--premium-accent);
+}
+.ifuix-site .hero-footnote {
+  border: 0;
+  padding: 0;
+  margin-top: 24px;
+  justify-content: center;
+  gap: 24px;
+  color: #b2b2ac;
+  font-size: 11px;
+}
+.ifuix-site .hero-carousel {
+  --carousel-accent: #d6b793;
+  width: 100%;
+  max-width: 1010px;
+  padding: 20px;
+  border: 1px solid #3a3b3e;
+  border-radius: 18px;
+  background: #181b1e;
+  box-shadow: 0 24px 60px #0003;
+}
+.ifuix-site .hero-carousel.garden,
+.ifuix-site .hero-carousel.focus {
+  background: #181b1e;
+  border-color: #3a3b3e;
+}
+.ifuix-site .showcase-top {
+  margin-bottom: 18px;
+}
+.ifuix-site .hero-carousel .showcase-top {
+  color: #c4c2bc;
+}
+.ifuix-site .showcase-screen {
+  border: 1px solid #43454a;
+  background: #101214;
+  border-radius: 9px;
+  box-shadow: none;
+}
+.ifuix-site .hero-carousel .showcase-screen img {
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  background: #111316;
+  width: 100%;
+}
+.ifuix-site .hero-carousel .showcase-caption {
+  min-height: 68px;
+  margin-top: 16px;
+}
+.ifuix-site .showcase-caption strong {
+  color: #f3f0e9;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.ifuix-site .hero-carousel .showcase-caption > div > span {
+  color: #b7b8b1;
+}
+.ifuix-site .showcase-round {
+  background: #2a2d30;
+  color: #efebe2;
+  border: 1px solid #454649;
+}
+.ifuix-site .carousel-description {
+  min-height: 0;
+  max-width: 720px;
+  margin: 6px 0 21px;
+  color: #b2b3ae;
+}
+.ifuix-site .carousel-controls {
+  border-top: 1px solid #34373a;
+  padding-top: 17px;
+}
+.ifuix-site .carousel-dots {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ifuix-site .carousel-dots button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border-radius: 99px;
+  font-size: 11px;
+  color: #babbb5;
+  background: transparent;
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+}
+.ifuix-site .carousel-dots button span {
+  width: 5px;
+  height: 5px;
+  background: #777b7d;
+}
+.ifuix-site .carousel-dots button.active {
+  border-color: #57504a;
+  color: #f2c7a8;
+  background: #27221e;
+}
+.ifuix-site .carousel-dots button.active span {
+  width: 5px;
+  background: var(--premium-accent);
+}
+.ifuix-site .carousel-buttons button {
+  background: #222528;
+  color: #e4e1da;
+  border: 1px solid #45474a;
+}
+.ifuix-site .studio-products {
+  padding: 88px 0;
+  background: #101214;
+  border-top: 1px solid #292c2e;
+}
+.ifuix-site .section-heading {
+  align-items: center;
+  margin-bottom: 40px;
+}
+.ifuix-site .section-heading h2 {
+  font-size: clamp(34px, 3.6vw, 49px);
+  line-height: 1.14;
+  margin-top: 14px;
+  max-width: 730px;
+}
+.ifuix-site .section-heading > p {
+  font-size: 15px;
+  max-width: 340px;
+}
+.ifuix-site .product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.ifuix-site .product-card {
+  border-color: #36393c;
+  border-radius: 14px;
+  background: #191c1f;
+  box-shadow: none;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.ifuix-site .product-card:hover {
+  border-color: #6a5d51;
+  transform: translateY(-3px);
+}
+.ifuix-site .product-preview,
+.ifuix-site .product-card.creative .product-preview,
+.ifuix-site .product-card.focus .product-preview {
+  background: #202427;
+  height: 245px;
+  padding: 62px 20px 0;
+}
+.ifuix-site .product-preview img {
+  box-shadow: 0 8px 24px #0003;
+  border-radius: 6px 6px 0 0;
+}
+.ifuix-site .platform-pill,
+.ifuix-site .creative .platform-pill {
+  color: #c9c7c1;
+  top: 23px;
+  left: 22px;
+  font-size: 9px;
+}
+.ifuix-site .product-card-content {
+  padding: 24px 22px;
+}
+.ifuix-site .product-title {
+  display: block;
+}
+.ifuix-site .product-title h3 {
+  font-size: 23px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #f0ede5;
+}
+.ifuix-site .product-title > span {
+  display: block;
+  text-align: left;
+  margin-top: 9px;
+  color: #c1b09e;
+  font-size: 9px;
+}
+.ifuix-site .product-card-content > p {
+  color: #b3b4ae;
+  line-height: 1.8;
+}
+.ifuix-site .feature-chips li {
+  border-color: #414549;
+  color: #b9bab4;
+  background: transparent;
+  font-size: 10px;
+}
+.ifuix-site .card-actions {
+  gap: 12px;
+  border-color: #373b3f;
+  flex-wrap: wrap;
+}
+.ifuix-site .whatsapp-action {
+  color: #ebbc98;
+  font-size: 12px;
+}
+.ifuix-site .finance-section {
+  background: #18191a;
+}
+.ifuix-site .finance-teaser {
+  background: #211e1a;
+}
+.ifuix-site .finance-section .section-heading {
+  align-items: flex-start;
+}
+.ifuix-site .finance-section .eyebrow {
+  color: #edb78f;
+}
+.ifuix-site .finance-section #finance-concept {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 4.8vw, 60px);
+  font-weight: 400;
+}
+.ifuix-site .finance-section .section-heading h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #d9c3ad;
+}
+.ifuix-site .finance-section .small-note {
+  max-width: 750px;
+  color: #b8afa4;
+}
+.finance-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 30px 0 0;
+  gap: 12px;
+  list-style: none;
+}
+.finance-capabilities li {
+  padding: 10px 16px;
+  border: 1px solid #5b4b3d;
+  border-radius: 6px;
+  color: #e0cbb5;
+  font-size: 12px;
+}
+.ifuix-site .values-grid {
+  gap: 30px;
+}
+.ifuix-site .values-grid > div {
+  padding-top: 24px;
+  border-top: 1px solid #3b3e40;
+}
+.ifuix-site .values-grid h3 {
+  margin-top: 14px;
+  color: #f1eee7;
+  font-weight: 500;
+}
+.ifuix-site .values-grid p {
+  color: #b4b5af;
+}
+.ifuix-site .values-grid svg {
+  color: var(--premium-accent);
+}
+.ifuix-site .studio-values {
+  background: #16191b;
+  padding: 65px 0;
+}
+.ifuix-site .studio-contact {
+  padding-block: 64px;
+}
+.ifuix-site .studio-contact h2 {
+  font-size: clamp(30px, 3.2vw, 44px);
+  max-width: 680px;
+}
+.ifuix-site .studio-contact p {
+  max-width: 700px;
+  color: #b1b3ad;
+  line-height: 1.8;
+}
+.ifuix-site .page-intro h1 {
+  font-size: clamp(43px, 5vw, 66px);
+}
+.ifuix-site .studio-page,
+.ifuix-site .kebun-hero,
+.ifuix-site .framix-hero {
+  background: #101214;
+}
+.ifuix-site .kebun-hero-layout h1,
+.ifuix-site .framix-hero h1 {
+  font-size: clamp(42px, 4.8vw, 66px);
+}
+.ifuix-site .kebun-hero h1 span,
+.ifuix-site .framix-hero h1 span {
+  color: #d5b18e;
+}
+.ifuix-site .kebun-hero-layout > div > p:not(.small-note),
+.ifuix-site .framix-hero-layout p {
+  color: #b4b5ae;
+}
+.ifuix-site .kebun-preview,
+.ifuix-site .framix-preview {
+  background: #222629;
+  border-color: #44474b;
+  transform: none;
+  padding: 10px;
+  box-shadow: 0 24px 40px #0003;
+}
+.ifuix-site .framix-preview img {
+  background: #141619;
+}
+.ifuix-site .back-link,
+.ifuix-site .small-note {
+  color: #b1b4ad;
+}
+.ifuix-site .garden-action,
+.ifuix-site .framix-action {
+  background: var(--premium-accent);
+  color: #19140f;
+}
+.ifuix-site .garden-action:hover,
+.ifuix-site .framix-action:hover {
+  background: #ffb385;
+}
+.ifuix-site .kebun-parent,
+.ifuix-site .kebun-gallery {
+  background: #16191b;
+}
+.ifuix-site .activation-note,
+.ifuix-site .apk-card,
+.ifuix-site .apk-offline,
+.ifuix-site .install-steps li,
+.ifuix-site .checksum,
+.ifuix-site .kebun-note {
+  background: #1b1f22;
+  border-color: #3f4647;
+  color: #ccd2c7;
+}
+.ifuix-site .activation-note p,
+.ifuix-site .install-steps p,
+.ifuix-site .apk-card p {
+  color: #b7bab3;
+}
+.ifuix-site .kebun-parent-note {
+  background: #26221c;
+  color: #d2c0a8;
+  border-color: #4b4337;
+}
+.ifuix-site .media-dialog {
+  color: #f5f2eb;
+}
+.premium-footer {
+  background: #121517;
+}
+.footer-invitation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 12px 0 65px;
+  margin-bottom: 55px;
+  border-bottom: 1px solid #36393b;
+}
+.footer-invitation h2 {
+  font-size: clamp(34px, 3.8vw, 52px);
+  max-width: 650px;
+  line-height: 1.15;
+  margin-top: 15px;
+}
+.premium-footer > div:last-child {
+  max-width: 1280px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ifuix-site .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .ifuix-site .studio-container {
+    width: calc(100% - 36px);
+  }
+  .ifuix-site .studio-hero {
+    padding: 45px 0 48px;
+  }
+  .ifuix-site .hero-layout {
+    gap: 36px;
+  }
+  .ifuix-site .hero-copy h1 {
+    font-size: clamp(38px, 9.5vw, 54px);
+    line-height: 1.13;
+    margin: 22px 0;
+  }
+  .ifuix-site .hero-copy > p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .ifuix-site .hero-copy .hero-availability {
+    font-size: 11px;
+  }
+  .ifuix-site .hero-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .ifuix-site .hero-footnote {
+    gap: 10px 16px;
+    font-size: 10px;
+  }
+  .ifuix-site .hero-carousel {
+    padding: 12px;
+    border-radius: 13px;
+  }
+  .ifuix-site .hero-carousel .showcase-caption strong {
+    font-size: 25px;
+  }
+  .ifuix-site .showcase-top > span {
+    font-size: 9px;
+  }
+  .ifuix-site .carousel-controls {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .ifuix-site .carousel-dots {
+    gap: 5px;
+  }
+  .ifuix-site .carousel-dots button {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .ifuix-site .carousel-buttons {
+    gap: 5px;
+    flex-shrink: 0;
+  }
+  .ifuix-site .carousel-buttons button {
+    width: 29px;
+    height: 29px;
+  }
+  .ifuix-site .carousel-description {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .ifuix-site .studio-products {
+    padding: 53px 0;
+  }
+  .ifuix-site .section-heading h2 {
+    font-size: 34px;
+  }
+  .ifuix-site .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ifuix-site .product-preview {
+    height: 260px;
+  }
+  .ifuix-site .values-grid {
+    gap: 25px;
+  }
+  .ifuix-site .values-grid > div {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .ifuix-site .finance-section #finance-concept {
+    font-size: 42px;
+  }
+  .ifuix-site .finance-section .section-heading h3 {
+    font-size: 19px;
+  }
+  .finance-capabilities {
+    gap: 8px;
+  }
+  .finance-capabilities li {
+    font-size: 11px;
+    padding: 9px 12px;
+  }
+  .footer-invitation {
+    display: block;
+    padding-bottom: 40px;
+    margin-bottom: 38px;
+  }
+  .footer-invitation .primary-action {
+    margin-top: 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ifuix-site .product-card:hover,
+  .ifuix-site .primary-action:hover {
+    transform: none;
+  }
+}

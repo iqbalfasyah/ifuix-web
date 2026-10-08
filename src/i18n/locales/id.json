@@ -258,7 +258,7 @@
     "independent": "IFUIX · AI SOFTWARE & SAAS",
     "heroLine1": "AI untuk berkarya.",
     "heroLine2": "Dan mengelola usaha.",
-    "heroDescription": "Bangun alur kerja dengan AI, dari prompt editing dan caption di Framix hingga konsep pencatatan keuangan di IFUIX Finance. Auto clipping, generasi konten, dan AI Assistant untuk Fuira serta Kebun Pintar sedang menjadi arah pengembangan.",
+    "heroDescription": "Hadirkan AI dalam alur kerja kreatif dan usaha. Mulai dari editing di Framix. Kenali arah berikutnya untuk keuangan dan AI Assistant.",
     "explore": "Jelajahi produk AI",
     "story": "Kenali IFUIX",
     "productivity": "Produktivitas",
@@ -504,5 +504,20 @@
     "scopeBody": "Versi awal direncanakan untuk transaksi, invoice, kategori, dan ringkasan. Koneksi bank, pembayaran, investasi, dan pelaporan pajak belum masuk cakupan awal.",
     "privacyTitle": "Kendali tetap di pengguna",
     "privacyBody": "Rancangan mencakup persetujuan pemrosesan dokumen, pemisahan data akun, ekspor, dan penghapusan data. AI tidak memindahkan uang atau menyimpan transaksi tanpa konfirmasi. Detail penyedia dan kebijakan data akan ditetapkan sebelum produk dibuka."
+  },
+  "premium": {
+    "navContact": "Hubungi kami",
+    "heroDemo": "Kenali Framix",
+    "heroNote": "Demo pengembangan Framix tersedia. Alur kerja AI lainnya ada di roadmap.",
+    "showcaseTitle": "Kenali workspace kreatif berikutnya.",
+    "showcaseStatus": "Preview produk",
+    "collection": "Alat untuk langkah berikutnya.",
+    "collectionIntro": "Editor yang bisa dicoba hari ini. AI Assistant dan alur kerja baru menyusul.",
+    "footerTitle": "Bangun ide berikutnya bersama IFUIX.",
+    "footerSubtitle": "Software AI untuk berkarya, bekerja, dan belajar.",
+    "footerContact": "Mulai percakapan",
+    "financeLabel": "PENGEMBANGAN BERIKUTNYA",
+    "financeStatus": "Coming soon",
+    "financeTeaser": "Gambaran usaha lebih jelas, dari struk sampai arus kas."
   }
 }
