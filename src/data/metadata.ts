@@ -78,7 +78,7 @@ export function pageGraph(route: SiteRoute) {
       isPartOf: { '@id': `${siteOrigin}/#website` },
     },
   ]
-  if (route.startsWith('/products/')) {
+  if (route.startsWith('/products/') && route !== '/products/finance') {
     const isFramix = route.endsWith('framix')
     const isFuira = route.endsWith('fuira')
     const name = isFramix

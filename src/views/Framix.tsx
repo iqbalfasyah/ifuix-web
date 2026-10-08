@@ -12,6 +12,8 @@ import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { MediaGallery } from '../components/MediaGallery'
 import { framixContact } from '../data/site'
+import { ProductAI } from '../components/StudioPresentation'
+import { FramixRoadmap } from '../components/AIProductConcepts'
 
 export const Framix = () => {
   const { t } = useTranslation()
@@ -79,6 +81,8 @@ export const Framix = () => {
           ))}
         </div>
       </section>
+      <ProductAI detail />
+      <FramixRoadmap />
       <MediaGallery
         screenshots={['editor', 'captions', 'workflow', 'review'].map(
           (name, index) => ({

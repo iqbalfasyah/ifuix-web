@@ -2,6 +2,8 @@
 
 ## Current owner decision
 
+8 October 2026: owner directed IFUIX toward AI software/SaaS, requested a coming-soon finance concept and Framix generative/auto-clipping roadmap. This authorizes product/copy additions while preserving the restored appearance. It does not establish a formal incorporated company or available SaaS/generative integrations. Details: docs/AI-SAAS-DIRECTION.md.
+
 7 October 2026: the owner rejected the full visual refresh and asked to restore the prior appearance. The original layout, carousel, colors and product cards are restored. Keep Next.js/GitHub Pages, no em dashes, LinkedIn and verified factual corrections. Do not reapply the editorial redesign or interpret the earlier delegated brief as current approval for another broad redesign. Changes below are historical decisions for the rejected version, not current implementation instructions.
 
 Owner brief, 7 October 2026: Iqbal develops IFUIX himself. The site should explain its direction using existing product/chat context, look specific to IFUIX, avoid em dashes and generic AI copy, use Next.js/React with good architecture, and remain compatible with GitHub Pages. The owner delegated the remaining design/copy decisions to the assistant. No push or publication; screenshots first.

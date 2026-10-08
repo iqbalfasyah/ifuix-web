@@ -34,6 +34,14 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-gray-500">
               <li>
                 <Link
+                  to="/products/finance"
+                  className="hover:text-primary transition-colors"
+                >
+                  IFUIX Finance · Coming soon
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/products/framix"
                   className="hover:text-primary transition-colors"
                 >

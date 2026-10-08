@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import { DeveloperProfile } from '../components/StudioPresentation'
 
 export const About = () => {
   const { t } = useTranslation()
@@ -30,6 +31,7 @@ export const About = () => {
           <p className="leading-relaxed">{t('about.story_p2')}</p>
         </div>
       </div>
+      <DeveloperProfile about />
     </div>
   )
 }

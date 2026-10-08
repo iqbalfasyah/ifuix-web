@@ -11,9 +11,9 @@ export type PageSEO = {
 
 export const seoPages = {
   '/': {
-    title: 'IFUIX: Framix Editor, Fuira & Kebun Pintar',
+    title: 'IFUIX | Software & SaaS Berbasis AI',
     description:
-      'Aplikasi yang dikembangkan oleh Iqbal Fasyah di Indonesia: Framix untuk editing video, Fuira untuk produktivitas, dan Kebun Pintar untuk belajar huruf serta angka.',
+      'IFUIX mengembangkan software dan merancang SaaS berbasis AI untuk konten kreatif dan keuangan. Kenali Framix Editor dan konsep IFUIX Finance yang coming soon.',
   },
   '/products': {
     title: 'Aplikasi IFUIX: Framix Editor, Fuira & Kebun Pintar',
@@ -23,8 +23,13 @@ export const seoPages = {
   '/products/framix': {
     title: 'Framix Editor: Editor Video Lokal & Caption AI | IFUIX',
     description:
-      'Framix by IFUIX: editor video lokal dengan timeline multitrack, caption, template, filter, dan ekspor. Lihat demo asli dan hubungi WhatsApp untuk informasi.',
+      'Framix by IFUIX: editor video dengan bantuan AI lokal untuk prompt editing dan caption. Kenali versi pengembangan, lihat demo, dan hubungi WhatsApp.',
     image: '/images/framix/editor.webp',
+  },
+  '/products/finance': {
+    title: 'IFUIX Finance | Konsep SaaS Keuangan AI, Coming Soon',
+    description:
+      'Konsep SaaS IFUIX untuk freelancer dan usaha kecil: draft transaksi dari struk, kategorisasi, dan ringkasan arus kas dengan AI. Belum tersedia.',
   },
   '/products/fuira': {
     title: 'Fuira: Catatan, Jadwal & Timer Fokus Windows | IFUIX',

@@ -2,6 +2,8 @@
 
 import { useTranslation } from 'react-i18next'
 import { ProductCards } from '../components/ProductCards'
+import { ProductAI } from '../components/StudioPresentation'
+import { FinanceConcept } from '../components/AIProductConcepts'
 export const Products = () => {
   const { t } = useTranslation()
   return (
@@ -14,6 +16,8 @@ export const Products = () => {
         </header>
         <ProductCards />
       </div>
+      <FinanceConcept />
+      <ProductAI />
     </div>
   )
 }

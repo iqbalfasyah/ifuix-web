@@ -17,6 +17,7 @@ const routes = [
   '/privacy/kebunpintar',
   '/products',
   '/products/framix',
+  '/products/finance',
   '/products/fuira',
   '/products/kebunpintar',
   '/services',
@@ -89,7 +90,7 @@ for (const route of routes) {
 }
 
 const sitemap = await readFile(resolve(root, 'sitemap.xml'), 'utf8')
-assert.equal((sitemap.match(/<loc>/g) ?? []).length, 16)
+assert.equal((sitemap.match(/<loc>/g) ?? []).length, 17)
 assert.ok(
   (await readFile(resolve(root, '404.html'), 'utf8')).includes('noindex'),
 )
@@ -106,5 +107,5 @@ assert.equal(
   'dba0ac7294012d10450ec4cc9627153da9becc11499c8f381a510cdba85f35a6',
 )
 console.log(
-  `PASS: ${routes.length} routes; static content, metadata, structured data, ${checkedAssets.size} internal targets; 16 sitemap URLs, noindex 404, Pages files, unchanged APK.`,
+  `PASS: ${routes.length} routes; static content, metadata, structured data, ${checkedAssets.size} internal targets; 17 sitemap URLs, noindex 404, Pages files, unchanged APK.`,
 )
