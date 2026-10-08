@@ -476,10 +476,10 @@
     "ai2Body": "Kebun Pintar will be developed with AI Assistant support for children learning with a caregiver. This support is not available in the current public APK.",
     "ai2Status": "Planned development",
     "aiDetail": "Explore Framix & demo",
-    "aiNote": "Framix AI uses AI to interpret instructions. B-roll selection uses tags on reviewed assets, rather than automatic image understanding. Results still need review. Claude integration remains planned.",
-    "claudeTitle": "Next: an editing assistant using Claude",
+    "aiNote": "Framix AI uses AI to interpret instructions. B-roll selection uses tags on reviewed assets, rather than automatic image understanding. Results still need review. AI Assistant development remains planned.",
+    "claudeTitle": "Next: an editing assistant using AI",
     "claudeStatus": "Planned integration",
-    "claudeBody": "I plan to use the Claude API to interpret editing requests, transcripts, and project metadata. The assistant would suggest cuts, caption revisions, and editable timeline actions. Users would review the draft before export. This integration is not available yet; Framix currently uses AI.",
+    "claudeBody": "I plan to develop an AI Assistant to interpret editing requests, transcripts, and project metadata. The assistant would suggest cuts, caption revisions, and editable timeline actions. Users would review the draft before export. This integration is not available yet; Framix currently uses AI for editing and captions.",
     "claudeContact": "Discuss Framix with its developer"
   },
   "finance": {

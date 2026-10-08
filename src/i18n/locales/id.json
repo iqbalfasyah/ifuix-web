@@ -477,10 +477,10 @@
     "ai2Body": "Kebun Pintar akan dikembangkan dengan dukungan AI Assistant untuk membantu kegiatan belajar anak bersama pendamping. Dukungan ini belum tersedia pada APK publik saat ini.",
     "ai2Status": "Dalam rencana pengembangan",
     "aiDetail": "Lihat Framix & demo",
-    "aiNote": "AI Framix memakai AI untuk menafsirkan perintah. B-roll dipilih dari aset yang sudah ditinjau berdasarkan tag, bukan pengenalan gambar otomatis. Hasil tetap perlu diperiksa. Integrasi Claude masih berupa rencana.",
-    "claudeTitle": "Berikutnya: asisten editing dengan Claude",
+    "aiNote": "AI Framix memakai AI untuk menafsirkan perintah. B-roll dipilih dari aset yang sudah ditinjau berdasarkan tag, bukan pengenalan gambar otomatis. Hasil tetap perlu diperiksa. Pengembangan AI Assistant masih berupa rencana.",
+    "claudeTitle": "Berikutnya: asisten editing dengan AI",
     "claudeStatus": "Rencana integrasi",
-    "claudeBody": "Saya berencana memakai Claude API untuk memahami permintaan editing, transkrip, dan metadata proyek. Asisten akan mengusulkan potongan, revisi caption, dan tindakan pada timeline yang bisa disunting. Pengguna akan meninjau draft sebelum ekspor. Integrasi ini belum tersedia; Framix saat ini menggunakan AI.",
+    "claudeBody": "Saya berencana mengembangkan AI Assistant untuk memahami permintaan editing, transkrip, dan metadata proyek. Asisten akan mengusulkan potongan, revisi caption, dan tindakan pada timeline yang bisa disunting. Pengguna akan meninjau draft sebelum ekspor. Integrasi ini belum tersedia; Framix saat ini menggunakan AI untuk editing dan caption.",
     "claudeContact": "Diskusikan Framix dengan pengembang"
   },
   "finance": {

@@ -5,7 +5,7 @@ import { Link } from '../components/navigation'
 import { useTranslation } from 'react-i18next'
 import { Hero } from '../sections/home/Hero'
 import { FeaturedProduct } from '../sections/home/FeaturedProduct'
-import { DeveloperProfile, ProductAI } from '../components/StudioPresentation'
+import { ProductAI } from '../components/StudioPresentation'
 import { FinanceConcept } from '../components/AIProductConcepts'
 export const Home = () => {
   const { t } = useTranslation()
@@ -15,7 +15,6 @@ export const Home = () => {
       <FeaturedProduct />
       <FinanceConcept />
       <ProductAI />
-      <DeveloperProfile />
       <section className="studio-values">
         <div className="studio-container">
           <span className="eyebrow">{t('studio.philosophy')}</span>
